@@ -7,15 +7,19 @@
 
 ## ▶ HEADLINE (latest status line on top)
 
-**2026-06-22 — ROUND 1 COMPLETE (audited). `(★)` still OPEN; real progress.** GPT-5.5-Pro returned
-PARTIAL; two independent audits (numeric + fresh-agent) confirm **all claims VALID**. NET: (i) our brief's
-"unit-vectors-WLOG" reduction is **REFUTED** (δ=1/4 counterexample; scaled steering matters) — correction,
-not a kill; (ii) **new verified substrate**: P6 (principal-angle `sinθ≥δ_T/r`), P2-refined, P1-sharpened
-(`δ_T/√|B|`), **P4-upgrade** (support-function iteration identity DERIVED ⇒ HS1 reduction now rigorous),
-**P3 REVIVED** (`κ_A≤1/δ_A` source-backed ⇒ `|T|≤2πr⁴/δ_T`, poly-many directions); (iii) crux sharpened to
-two crisp missing theorems — **G1** (poly total-variation theorem, HS1) and **G2** (history-dependent
-summability invariant, HS2). Confidence: **~67%** (↑ from 65: structural assets; crux untouched).
-**NOTHING frozen as "proved".** Next = Round-2 brief.
+**2026-06-22 — ROUND 2 COMPLETE (audited). `(★)` reduced to ONE clean lemma; confidence ~72%.**
+GPT-5.5-Pro returned PARTIAL (93%); two independent audits (numeric + analytic line-by-line) confirm **all
+claims VALID**. NET: (i) **NEW PROVEN partial theorem P7** — every realizable chamber has a margin-one dual
+certificate of norm `O(r²/δ_T²)`; (ii) **`(★)` ⟺ a bounded cyclically-monotone selection** (Prop 2, via
+P4-upgrade) — local feasibility done (P7), **integrability is the open core**; (iii) **N2** rank-3
+obstruction: no convex `F` linear on the ORIGINAL chambers (kills naive per-chamber patching); (iv) `(★)`
+now = the **bounded dual-drift lemma** (`sup_j‖p_j‖≤poly` ⟹ `G(T)≤2·poly`); (v) **direct TV numerics**
+(the right object via P4-upgrade) show clean **sub-linear/poly** growth tracking `√d/δ`, no exponential.
+Confidence **~72%** (↑5: a proven local theorem + crux is one well-posed lemma + TV evidence). **NOTHING
+frozen as "proved".** Next = Round-3 brief (attack the dual-drift lemma via P3′+P6 energy/Friedrichs-angle).
+
+*(Round 1, 2026-06-22: refuted our "unit-vectors-WLOG" reduction; produced P6, P2′, P1-sharp, P4-upgrade,
+P3′. See `docs/round1_*`.)*
 
 ---
 
@@ -56,6 +60,12 @@ summability invariant, HS2). Confidence: **~67%** (↑ from 65: structural asset
   one rep per antipodal line gives **`|T| ≤ 2π r⁴/δ_T`** (poly-many directions at constant δ). *Status:*
   **✅ CONFIRMED** (numeric: `κ_A≤1/δ_A` all cases, dep_pairs equality √2; agent VALID, source-backed).
   🔴 NEEDS-HUMAN NH1: eyeball the one-line `κ_A≤1/δ_A` proof in the paper before fully load-bearing.
+- `P7` (NEW 2026-06-22, Round-2 Theorem 1) **polynomial chamber certificate:** every realizable chamber
+  `C_s={x:⟨s_i t_i,x⟩≥0}` has a margin-one dual certificate `p_s=z_*/‖z_*‖²` (z_*=min-norm point of
+  `conv{s_i t_i}`) in `cone{s_i t_i}` with `‖p_s‖ ≤ √(r(r+1))(1+(r+1)κ)/δ_T ≤ (r+2)√(r(r+1))/δ_T² =
+  O(r²/δ_T²)`. *Proof:* Carathéodory + circuit-imbalance (P3′) + P1. *Status:* **✅ proven (analytic audit
+  line-by-line VALID) + numerically confirmed** (`‖p_s‖≤R_loc`, 0 violations; actual norms 4–9). Inherits
+  NH1 via P3′. *Use:* LOCAL feasibility for HS1; integrability is the open part (see `(★)`).
 - `P4` `G(T) ≤ radius(K_T)`. *Status:* **base CONFIRMED full-text (anchor Thm 2.4 + Lemma 2.2)** — citable.
   **P4-UPGRADE (2026-06-22, Round-1): the support-function ITERATION identity is now DERIVED & VALID** for
   the recursive projective closure `K_{n+1}=conv ∪_t(π_t K_n+[-t,t])`: `h_{K_{n+1}}(y)=max_t(h_{K_n}(π_t y)
@@ -79,6 +89,11 @@ summability invariant, HS2). Confidence: **~67%** (↑ from 65: structural asset
 - `N1` (refuted route — do NOT attempt): a fixed-`O(1)`-rank recursive "amplifier" multiplying the norm
   `R ↦ (1+c)R`. Refuted by `P5` (fixed-rank phases are **additive**, not multiplicative). This is the
   sibling A-side's dead gadget — do not assume it amplifies.
+- `N2` (refuted route 2026-06-22, Round-2 §3): assigning **one fixed dual certificate per ORIGINAL chamber**
+  to build a convex potential `F` linear on those chambers. Refuted at rank 3, constant δ (⟨t_i,t_j⟩=¾,
+  δ_T=√(5/14)): margins force `(1−2c)Σw≥3` ⟹ `−½Σw≥3`, impossible (numeric LP infeasible + analytic VALID).
+  ⇒ any HS1/HS2 proof MUST refine the chamber fan, vary the gradient inside chambers, or carry HISTORY. Does
+  NOT refute `(★)`.
 
 ## 4. Barriers `B*`
 
@@ -86,7 +101,9 @@ summability invariant, HS2). Confidence: **~67%** (↑ from 65: structural asset
   (Güntürk–Thao, "Unrestricted iterations of relaxed projections… absolute convergence"), NOT 1603.00854
   (Vladimirov, a different object). 1901.07516 gives `Σ‖y_{j+1}−y_j‖^γ ≤ C(geometry)·‖y_0‖^γ` but the
   constant is **geometry-dependent / non-polynomial (root-exponential)** — so it does NOT supply the poly
-  bound G1 needs. The poly QUANTITATIVE bound is the open part (G1).
+  bound G1 needs. The poly QUANTITATIVE bound is the open part (G1). **2026 follow-ups confirmed (Round-2
+  audit):** arXiv:2601.07002 (polyhedral cones; limiting counterexamples), arXiv:2602.00544 (affine
+  subspaces, empty intersection; qualitative boundedness only) — **neither gives poly-in-(r,1/δ).**
 - `B2` any construction giving **exponential TV at constant δ** is evidence the truth is the **exponential
   (A) side** — if found, report as a refutation of `(★)`, not a failure (→ human gate, pivot-to-A).
 
@@ -107,10 +124,19 @@ summability invariant, HS2). Confidence: **~67%** (↑ from 65: structural asset
 >   geometric quantity, history-dependently.
 > - **HS3 (assemble):** G1 or G2 + substrate ⟹ `G(T) ≤ poly(d,1/δ_T)`.
 >
+> **OPERATIVE FORM after Round 2 — the single remaining lemma:**
+> > **Bounded dual-drift lemma.** `∃ D=poly(r,1/δ_T)` s.t. along any reversed orthogonal-projection
+> > trajectory, the dual sequence `p_{j+1}=Proj_{P_{s_{j+1}}}(p_j)` (init `‖p_1‖≤R_loc=O(r²/δ²)` via P7,
+> > `P_s={p:⟨s_i t_i,p⟩≥1}`) satisfies `sup_j‖p_j‖≤D`. **Then `G(T) ≤ 2D` (reduction VALID, audited).**
+> > Equivalently (static): a bounded cyclic-monotone selector `p(y)∈P_{sign(Aᵀy)}` = subgradient field of a
+> > convex `F` with `F(y)≤poly·‖y‖`. Local feasibility = P7; **global integrability is the open core.**
+> > Attack (Round 3): history-dependent energy/potential charging each norm increase to the old/new active-
+> > face angle (`≥δ_T/r` by P6) over the `O(r⁴/δ)` walls (P3′) — Friedrichs-angle/contraction for the
+> > projector-onto-polyhedra semigroup. Must be history-dependent (N2 + `B↦B/δ` kill static/counting).
+>
 > 🔴 `(★)` is ATTACKER-originated (web GPT-5.5-Pro), NOT Claude. Pivot trigger if refuted (TV provably
-> exponential at constant δ ⟹ truth is A-side). **Routing note:** P4-upgrade made HS1's reduction rigorous;
-> G1 is now a clean finitary geometry problem → HS1 is at least co-equal to HS2 (owner's "HS2-only" worth
-> relaxing — flagged to owner).
+> exponential at constant δ ⟹ truth is A-side). **Routing:** HS1 reduction rigorous (P4-upgrade) + Theorem 1
+> ⇒ HS1/dual-drift is the live route; HS2 folded into the same dual-drift object.
 
 ## 6. Confidence trend (% that the B-side / `(★)` is TRUE; dated)
 
@@ -120,6 +146,7 @@ summability invariant, HS2). Confidence: **~67%** (↑ from 65: structural asset
 | 2026-06-21 (lit scan) | ~65% (held) | No scoop; anchor machinery confirmed; P3 dropped (cost-free); support-fn iteration absent (HS1 needs derivation, HS2 intact). Awaiting Sim 1. |
 | 2026-06-21 (de-risk) | ~65% (held) | Sim 1 found **no super-poly growth** (falsifier not triggered) → no death-evidence against B; but the heuristic adversary under-explores amplitude (did not reach √d/δ), so this is **negative evidence, not a poly proof**. Sim 2 confirmed P1,P2. Net: crux still genuinely open; confidence unchanged, not raised (honesty rail: de-risk ≠ proof). |
 | 2026-06-22 (Round 1) | ~67% (↑2) | GPT-Pro PARTIAL, both audits VALID. New verified substrate (P6 angle-sep, P2′, P1-sharp, P4-upgrade ⇒ HS1 rigorous, P3′ ⇒ poly-many directions) makes an exponential construction structurally harder and turns the crux into a clean finitary geometry problem (G1). BUT the core poly-TV/summability question is untouched and BV-lit gives exponential — progress is reduction-clarity, not proof. Modest uptick only. |
+| 2026-06-22 (Round 2) | ~72% (↑5) | GPT-Pro PARTIAL (93%), both audits VALID. Proven NEW local theorem P7 (`O(r²/δ²)` certificate); `(★)` ⟺ bounded dual-drift lemma (one clean well-posed lemma) with a concrete P3′+P6 attack; direct TV numerics show sub-linear/poly growth tracking `√d/δ`, no exponential. Tempered: global integrability unproven, N2 + 2026 BV counterexamples show real subtlety, TV is a lower-bound search. Not a proof. |
 
 ---
 

@@ -10,7 +10,10 @@
 | 1 | 2026-06-21 | `docs/round1_brief.md` | dispatched | Crux `(★)`, HS2 primary. P1,P2 "use freely"; P3 omitted; HS1 fallback. |
 | 1 | 2026-06-22 | `docs/round1_response.md` | **PARTIAL** (GPT-5.5-Pro, conf 95% in analysis) | `(★)` not closed/refuted. Refuted our unit-WLOG reduction; derived HS1 identity; new lemmas P6, P2′, P3′. |
 | 1 | 2026-06-22 | `docs/round1_audit.md` + `code/round1_audit_checks.py` | **AUDITED — all claims VALID** | 2 independent audits (numeric + fresh-agent). FATAL-to-brief: unit-WLOG false. New substrate promoted. GAPs G1 (poly-TV)/G2 (history invariant). No FATAL vs `(★)`. Conf 65→67%. |
-| 2 | 2026-06-22 | `docs/round2_brief.md` | **READY — awaiting owner relay to GPT-5.5-Pro** | Targets G1 (HS1 poly-TV, reduction now rigorous) + G2; ships P1-sharp/P2′/P6/P3′/P4-upgrade as substrate; retracts unit-WLOG; methods free. |
+| 2 | 2026-06-22 | `docs/round2_brief.md` | dispatched | Targets G1/G2; ships P1-sharp/P2′/P6/P3′/P4-upgrade; methods free. |
+| 2 | 2026-06-22 | `docs/round2_response.md` | **PARTIAL** (GPT-5.5-Pro, conf 93%) | NEW Theorem 1 (chamber certificate `O(r²/δ²)`); `(★)`⟺bounded cyclic-monotone selection; rank-3 obstruction; bounded dual-drift lemma = the remaining crux. |
+| 2 | 2026-06-22 | `docs/round2_audit.md` + `code/round2_audit_checks.py` | **AUDITED — all claims VALID** | Numeric + analytic (line-by-line). Freeze **P7** (Theorem 1), **N2** (rank-3 obstruction). Direct TV probe: sub-linear/poly growth tracking √d/δ. No FATAL vs `(★)`. Conf 67→72%. |
+| 3 | 2026-06-22 | `docs/round3_brief.md` | **READY — awaiting owner relay to GPT-5.5-Pro** | Targets the **bounded dual-drift lemma**; ships P7/N2 + P3′+P6 attack (history-dependent energy/Friedrichs-angle); methods free. |
 
 ## Stop criteria (guide §4) — AI convergence only when ALL hold
 1. solver explicitly claims closure of `(★)` + assembly, no further conditions;

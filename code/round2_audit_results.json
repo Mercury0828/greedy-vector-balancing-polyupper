@@ -1,0 +1,155 @@
+{
+  "T1": [
+    {
+      "r": 2,
+      "delta": 0.25,
+      "m": 3,
+      "delta_T": 0.4068,
+      "kappa": 2.2789,
+      "R_loc": 47.18,
+      "worst_cert_norm": 4.808,
+      "r2_over_delta2": 24.17,
+      "violations_vs_Rloc": 0
+    },
+    {
+      "r": 3,
+      "delta": 0.25,
+      "m": 5,
+      "delta_T": 0.3462,
+      "kappa": 2.2674,
+      "R_loc": 100.76,
+      "worst_cert_norm": 7.017,
+      "r2_over_delta2": 75.09,
+      "violations_vs_Rloc": 0
+    },
+    {
+      "r": 4,
+      "delta": 0.25,
+      "m": 4,
+      "delta_T": 0.3759,
+      "kappa": 2.6604,
+      "R_loc": 170.16,
+      "worst_cert_norm": 3.929,
+      "r2_over_delta2": 113.24,
+      "violations_vs_Rloc": 0
+    },
+    {
+      "r": 5,
+      "delta": 0.25,
+      "m": 6,
+      "delta_T": 0.359,
+      "kappa": 1.8979,
+      "R_loc": 189.0,
+      "worst_cert_norm": 8.921,
+      "r2_over_delta2": 193.98,
+      "violations_vs_Rloc": 0
+    },
+    {
+      "r": 6,
+      "delta": 0.25,
+      "m": 6,
+      "delta_T": 0.3734,
+      "kappa": 2.6778,
+      "R_loc": 342.65,
+      "worst_cert_norm": 4.981,
+      "r2_over_delta2": 258.14,
+      "violations_vs_Rloc": 0
+    },
+    {
+      "r": 4,
+      "delta": 0.5,
+      "m": 4,
+      "delta_T": 0.5685,
+      "kappa": 1.7591,
+      "R_loc": 77.06,
+      "worst_cert_norm": 4.452,
+      "r2_over_delta2": 49.51,
+      "violations_vs_Rloc": 0
+    },
+    {
+      "r": 5,
+      "delta": 0.1,
+      "m": 6,
+      "delta_T": 0.1912,
+      "kappa": 2.5557,
+      "R_loc": 467.92,
+      "worst_cert_norm": 8.722,
+      "r2_over_delta2": 683.83,
+      "violations_vs_Rloc": 0
+    }
+  ],
+  "R3": {
+    "delta_T": 0.5976,
+    "claimed_sqrt(5/14)": 0.5976,
+    "Ginv_diag": [
+      2.8,
+      2.8,
+      2.8
+    ],
+    "claimed_Ginv_ii": 2.8,
+    "margin_LP_feasible": false,
+    "VERDICT": "obstruction holds (no convex F linear on 8 chambers)"
+  },
+  "TV": {
+    "rows": [
+      {
+        "d": 2,
+        "max_TV_over_y0": 6.774,
+        "winner": "gadgets",
+        "delta_T": 0.25,
+        "sqrt_d_over_delta": 5.66,
+        "exp_bound": 8.0
+      },
+      {
+        "d": 3,
+        "max_TV_over_y0": 6.769,
+        "winner": "gadgets",
+        "delta_T": 0.25,
+        "sqrt_d_over_delta": 6.93,
+        "exp_bound": 64.0
+      },
+      {
+        "d": 4,
+        "max_TV_over_y0": 8.609,
+        "winner": "gadgets",
+        "delta_T": 0.25,
+        "sqrt_d_over_delta": 8.0,
+        "exp_bound": 512.0
+      },
+      {
+        "d": 5,
+        "max_TV_over_y0": 8.698,
+        "winner": "gadgets",
+        "delta_T": 0.25,
+        "sqrt_d_over_delta": 8.94,
+        "exp_bound": 4096.0
+      },
+      {
+        "d": 6,
+        "max_TV_over_y0": 10.151,
+        "winner": "gadgets",
+        "delta_T": 0.25,
+        "sqrt_d_over_delta": 9.8,
+        "exp_bound": 32768.0
+      },
+      {
+        "d": 7,
+        "max_TV_over_y0": 10.049,
+        "winner": "gadgets",
+        "delta_T": 0.25,
+        "sqrt_d_over_delta": 10.58,
+        "exp_bound": 262144.0
+      },
+      {
+        "d": 8,
+        "max_TV_over_y0": 11.473,
+        "winner": "gadgets",
+        "delta_T": 0.25,
+        "sqrt_d_over_delta": 11.31,
+        "exp_bound": 2097152.0
+      }
+    ],
+    "loglog_poly_slope": 0.393,
+    "semilog_exp_slope": 0.091
+  }
+}

@@ -1,9 +1,8 @@
 # PROJECT_STATE — `greedy-vector-balancing-polyupper`
 
-**Last updated:** 2026-06-22 · **Current phase:** ATTACK LOOP — Round 1 COMPLETE & audited (PARTIAL,
-`(★)` open, real progress); **Round 2 brief READY** (`docs/round2_brief.md`, awaiting owner relay to
-GPT-5.5-Pro). Target = SODA 2027 (time waived). Routing: HS1 reduction now rigorous → recommend relaxing
-"HS2-only" (owner flag).
+**Last updated:** 2026-06-22 · **Current phase:** ATTACK LOOP — Round 2 COMPLETE & audited (PARTIAL,
+`(★)` open; proven local theorem P7; crux = bounded dual-drift lemma); **Round 3 brief READY**
+(`docs/round3_brief.md`, awaiting owner relay to GPT-5.5-Pro). Target = SODA 2027 (time waived).
 **Role:** Claude = orchestrator/referee/archivist (NOT prover). Target: **SODA 2027** (deadline
 **2026-07-09 AoE**, lightweight double-blind — confirmed live 2026-06-21).
 
@@ -12,28 +11,33 @@ GPT-5.5-Pro). Target = SODA 2027 (time waived). Routing: HS1 reduction now rigor
 ## ▶ COLD-START (read this first to resume)
 
 **One-liner:** Phase 0 done & GREEN; external-solver attack loop running with **GPT-5.5-Pro** (owner-relayed).
-Round 1 = PARTIAL (audited, all VALID); **Round 2 brief is written and waiting to be sent.**
+Rounds 1 & 2 = PARTIAL (both fully audited, all VALID); **Round 3 brief is written and waiting to be sent.**
 
 **Read in this order to rebuild context:** `guide.md` (read-only constitution) → this file →
 `LEDGER_polyupper.md` (frozen model/substrate/`(★)`/confidence) → `docs/ATTACK_LOG.md` (round index) →
 latest `docs/round{n}_*.md`. 🔴 Never work from memory; re-read these first.
 
-**THE NEXT ACTION (resume here):** owner relays **`docs/round2_brief.md`** (the `✂️`-delimited block) to
-GPT-5.5-Pro → pastes the reply back → Claude archives `docs/round2_response.md`, runs an independent
-adversarial audit (`docs/round2_audit.md`; 3 audits if closure is claimed), classifies FATAL/GAP/MINOR,
-updates the ledger confidence trend, and writes Round 3 — OR calls convergence → human gate (b).
+**THE NEXT ACTION (resume here):** owner relays **`docs/round3_brief.md`** (the `✂️`-delimited block) to
+GPT-5.5-Pro → pastes the reply back → Claude archives `docs/round3_response.md`, runs an independent
+adversarial audit (`docs/round3_audit.md`; 3 audits if closure is claimed), classifies FATAL/GAP/MINOR,
+updates the ledger confidence trend, and writes Round 4 — OR calls convergence → human gate (b).
 
-**Where the math stands:** `(★)` = "prove `G(T) ≤ poly(d,1/δ_T)` at `δ_T ≥ 1/poly`". Reduced to ONE of two
-crisp open theorems — **G1** (poly total-variation for the projection family; HS1 reduction is rigorous via
-P4-upgrade) or **G2** (history-dependent summability invariant; HS2). Verified substrate to use freely:
-P1-sharp `σ_min(B)≥δ_T/√|B|`, P2/P2′, **P6** `sinθ≥δ_T/r`, **P3′** `|T|≤2πr⁴/δ_T`, **P4-upgrade**
-(support-fn iteration identity derived). Retracted: "unit-vectors-WLOG". Confidence (B-side true): **~67%**.
+**Where the math stands (after Round 2):** `(★)` = "prove `G(T) ≤ poly(d,1/δ_T)` at `δ_T ≥ 1/poly`" is now
+reduced to ONE clean open lemma — the **bounded dual-drift lemma**: along any reversed projection trajectory,
+`p_{j+1}=Proj_{P_{s_{j+1}}}(p_j)` (init `‖p_1‖≤O(r²/δ²)` by Theorem 1/P7) has `sup_j‖p_j‖≤poly(r,1/δ)`;
+then `G(T)≤2·poly` (reduction audited VALID). **Proven so far (P7, Theorem 1):** every chamber has a
+margin-one dual certificate of norm `O(r²/δ²)` — the LOCAL part; integrability/global patching is open.
+Verified substrate (use freely): P1-sharp `σ_min(B)≥δ_T/√|B|`, P2/P2′, **P6** `sinθ≥δ_T/r`, **P3′**
+`|T|≤2πr⁴/δ_T`, **P4-upgrade** (support-fn iteration identity), **P7** (chamber certificate). Refuted:
+N1 (fixed-rank amplifier), **N2** (one fixed certificate per ORIGINAL chamber — rank-3 obstruction).
+Retracted: "unit-vectors-WLOG". **Confidence (B-side true): ~72%.**
 
-**Pending human items:** routing (relax "HS2-only"? — recommended yes); NH1 (eyeball `κ_A≤1/δ_A` proof in
-arXiv:2510.20301); NH2 (1901.07516 constant non-poly). 🔴 Nothing is frozen as "proved".
+**Pending human items:** NH1 (eyeball `κ_A≤1/δ_A` proof in arXiv:2510.20301 — also under P7); NH2
+(1901.07516 / 2601.07002 / 2602.00544 BV constants non-poly → G1 needs a new argument); P5 hand-proof
+audit. 🔴 Nothing is frozen as "proved".
 
-**Repro:** `python code/sim1_killtest.py`, `python code/sim2_levers.py`, `python code/round1_audit_checks.py`
-(Python 3.11 + numpy; seeds in-file; JSON outputs alongside).
+**Repro:** `python code/sim1_killtest.py`, `sim2_levers.py`, `round1_audit_checks.py`, `round2_audit_checks.py`
+(Python 3.11 + numpy + scipy; seeds in-file; JSON outputs alongside).
 
 ---
 
@@ -93,16 +97,15 @@ handled (GREEN = "no death-evidence, attempt the proof", NOT "(★) likely true"
 
 - ✅ Owner rulings (2026-06-21): (1) GREEN — start attack loop, solver = **GPT-5.5-Pro** (relayed);
   (2) target **SODA 2027**, ignore time; (3) **HS2 = sole primary route**.
-- ✅ Round 1 done: GPT-Pro PARTIAL → archived `docs/round1_response.md`; audited (numeric + fresh-agent,
-  all VALID) `docs/round1_audit.md`; ledger + substrate updated.
-- 🔴 **AWAITING OWNER:** (1) relay `docs/round2_brief.md` to GPT-5.5-Pro, paste reply back. (2) Routing
-  decision: P4-upgrade made HS1's reduction rigorous and G1 is now a clean finitary problem → recommend
-  **relaxing "HS2-only" to "both routes, lead HS1"**; Round-2 brief is already method-open pending your OK.
-- Attack-loop state in `docs/ATTACK_LOG.md`. NEEDS-HUMAN: NH1 (eyeball κ_A≤1/δ_A proof in 2510.20301),
-  NH2 (1901.07516 non-poly constant). P5 still needs a hand-written proof audit before "use freely".
-- **Round-1 substrate gains (frozen):** P1-sharpened `δ_T/√|B|`; P2′ `‖P_{H(x)}x‖≤q/(2δ_T)`; P6
-  `sinθ≥δ_T/r`; P4-upgrade (support-fn iteration DERIVED ⇒ HS1 rigorous); P3′ `|T|≤2πr⁴/δ_T`. Open crux:
-  G1 (poly-TV theorem) / G2 (history-dependent summability invariant). Retracted: unit-vectors-WLOG.
+- ✅ Rounds 1 & 2 done: GPT-Pro PARTIAL each → archived `docs/round{1,2}_response.md`; both audited
+  (numeric + fresh-agent, all VALID) `docs/round{1,2}_audit.md`; ledger + substrate updated.
+- 🔴 **AWAITING OWNER:** relay `docs/round3_brief.md` to GPT-5.5-Pro, paste reply back. (Routing settled:
+  the live route is HS1/dual-drift; HS2 folded into the same dual-drift object — Round-3 brief is method-free.)
+- Attack-loop state in `docs/ATTACK_LOG.md`. NEEDS-HUMAN: NH1 (eyeball κ_A≤1/δ_A proof in 2510.20301; also
+  under P7), NH2 (BV constants non-poly). P5 still needs a hand-written proof audit before "use freely".
+- **Substrate gains (frozen):** R1 — P1-sharp `δ_T/√|B|`, P2′, P6 `sinθ≥δ_T/r`, P4-upgrade, P3′ `|T|≤2πr⁴/δ_T`;
+  R2 — **P7** chamber certificate `O(r²/δ²)` (proven). **Open crux:** the bounded dual-drift lemma
+  (`sup_j‖p_j‖≤poly` ⟹ `G(T)≤2·poly`). Refuted: N1, **N2** (rank-3). Retracted: unit-vectors-WLOG.
 - Re-confirm at submission / at convergence: SODA27 anonymity wording on live CFP (caveat C1); Lemma 1.4
   dimension bookkeeping S^{2d-1} (caveat C2); anchor v2/scoop re-scan.
 
@@ -113,3 +116,4 @@ handled (GREEN = "no death-evidence, attempt the proof", NOT "(★) likely true"
 | 2026-06-21 (lit) | ~65% (held) | lit scan: no scoop, machinery confirmed; awaiting Sim 1 |
 | 2026-06-21 (de-risk) | ~65% (held) | Sim 1 no super-poly (no death-evidence) but weak adversary (not a proof); Sim 2 confirms P1,P2. Crux still open; honesty rail — de-risk ≠ proof, so confidence not raised. |
 | 2026-06-22 (Round 1) | ~67% (↑2) | GPT-Pro PARTIAL, both audits VALID. New substrate (P6/P2′/P1-sharp/P4-upgrade/P3′) → crux is now a clean finitary geometry problem; exponential structurally harder. But poly-TV/summability untouched, BV-lit exponential → reduction-clarity, not proof. Modest uptick. |
+| 2026-06-22 (Round 2) | ~72% (↑5) | GPT-Pro PARTIAL (93%), both audits VALID. Proven local theorem P7 (`O(r²/δ²)` certificate); `(★)`⟺bounded dual-drift lemma (one clean lemma) + concrete P3′+P6 attack; direct TV numerics sub-linear/poly tracking √d/δ. Tempered: global integrability unproven, N2 + 2026 BV counterexamples show subtlety; TV is lower-bound search. Not a proof. |
