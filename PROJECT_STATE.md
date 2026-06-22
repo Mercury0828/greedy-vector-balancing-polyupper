@@ -1,9 +1,9 @@
 # PROJECT_STATE — `greedy-vector-balancing-polyupper`
 
-**Last updated:** 2026-06-22 · **Current phase:** ATTACK LOOP — Round 4 COMPLETE & audited (PARTIAL, all
-math correct, genuine progress; obstruction localized to codim-≥2 clusters; **refutation hunt NEGATIVE** ⟹
-`(★)` likely TRUE). **ESCALATING:** Round-5 fresh-context attacker brief READY (`docs/round5_brief_fresh.md`).
-Target = SODA 2027 (time waived). Confidence ~75%.
+**Last updated:** 2026-06-22 · **Current phase:** ATTACK LOOP — Round 5 COMPLETE & audited (fresh-context
+escalation paid off: **rank ≤2 CLOSED (P11)**, all-word exp bound (D_exp), `(★)` ⟺ cocycle identity).
+**Round-6 brief READY** (`docs/round6_brief.md`: rank induction r→r+1). Target = SODA 2027 (time waived).
+Confidence ~75%.
 **Role:** Claude = orchestrator/referee/archivist (NOT prover). Target: **SODA 2027** (deadline
 **2026-07-09 AoE**, lightweight double-blind — confirmed live 2026-06-21).
 
@@ -12,30 +12,30 @@ Target = SODA 2027 (time waived). Confidence ~75%.
 ## ▶ COLD-START (read this first to resume)
 
 **One-liner:** Phase 0 done & GREEN; external-solver attack loop with **GPT-5.5-Pro** (owner-relayed).
-Rounds 1–4 = PARTIAL (all fully audited; all math correct). Obstruction now localized to codim-≥2 clusters;
-refutation hunt NEGATIVE ⟹ `(★)` likely TRUE. **ESCALATING — Round-5 fresh-context attacker brief is written
-and waiting to be sent.**
+Rounds 1–5 = PARTIAL (all fully audited; all math correct). **rank ≤2 now CLOSED (P11)**; `(★)` reduced to a
+single algebraic **return-cocycle identity**; all numerics + refutation hunts support `(★)` TRUE.
+**Round-6 brief (rank induction r→r+1) is written and waiting to be sent.**
 
 **Read in this order to rebuild context:** `guide.md` (read-only constitution) → this file →
 `LEDGER_polyupper.md` (frozen model/substrate/`(★)`/confidence) → `docs/ATTACK_LOG.md` (round index) →
 latest `docs/round{n}_*.md`. 🔴 Never work from memory; re-read these first.
 
-**THE NEXT ACTION (resume here):** owner relays **`docs/round5_brief_fresh.md`** (the `✂️` block) to a
-**NEW / fresh GPT-5.5-Pro conversation** (escalation — fresh context, clean no-cusp framing) → pastes the
-reply back → Claude archives `docs/round5_response.md`, runs an independent audit (`docs/round5_audit.md`;
-3 if closure claimed), classifies, updates confidence. No-retreat: escalate/attack harder, never downgrade.
+**THE NEXT ACTION (resume here):** owner relays **`docs/round6_brief.md`** (the `✂️` block) to GPT-5.5-Pro
+(continue the fresh thread) → pastes the reply back → Claude archives `docs/round6_response.md`, runs an
+independent audit (`docs/round6_audit.md`; 3 if closure claimed), classifies, updates confidence. No-retreat:
+escalate/attack harder, never downgrade.
 
-**Where the math stands (after Round 4):** `(★)` = "prove `G(T) ≤ poly(d,1/δ_T)`" ⟺ **bounded dual-drift ⟺
-DA ⟺ PC ⟺ NC** (`sup_j‖p_j‖≤poly` ⟹ `G(T)≤2·poly`; reduction audited). Round 4 **localized** the obstruction:
-`P9` (positive dual drift only at switches sharing active constraints both sides; no-common ⟹ no increase) +
-`P10` (all UNPAID drift in a poly-thin tube around a **codim-≥2 wall cluster**). The local per-switch payment
-route is DEAD (`N4`). The single missing ingredient: **a polynomial multiwall-cluster RETURN-POINT / no-cusp
-theorem** (needs the ordered oriented-matroid gallery). **Numerics strongly support TRUTH:** dual-drift
-`sup_j‖p_j‖` is bounded & flat in N even under TARGETED codim-≥2 cluster stress (refutation hunt NEGATIVE) —
-the §3-chain accumulation does NOT happen. Verified substrate (use freely): P1-sharp, P2/P2′, **P6**, **P3′**
-`|T|≤2πr⁴/δ`, **P4-upgrade**, **P7** (`r/δ` certificate), **P8** (dual dynamics), **P9** (KKT localization),
-**P10** (codim-≥2 confinement), **NC** (inversive no-cusp). Refuted: N1, **N2**, **N3**, **N4**. Retracted:
-"unit-vectors-WLOG". **Confidence (B-side true): ~75%.**
+**Where the math stands (after Round 5):** `(★)` = "prove `G(T) ≤ poly(d,1/δ_T)`" ⟺ bounded dual-drift ⟺
+DA ⟺ PC ⟺ NC ⟺ **the admissible cluster RETURN-COCYCLE identity** `b_B=c_τ−Q_B c_σ` (closed: `(I−Q_B)c_σ`),
+`‖c_σ‖≤poly`. **PROVEN now:** rank ≤2 fully closed (**P11**, `sup_j‖p_j‖≤r/δ`, saturated); an all-word
+exponential ceiling (**D_exp**, avoids the dead angle route). The obstruction is confined to codim-≥2 wall
+clusters (P9/P10) and all local routes are dead (N3/N4); the deep step is the cocycle/coboundary cancellation.
+**Best path (Round 6): rank induction r→r+1** — run the rank-r bound inside each proper `J` (exact-J-cluster:
+`P_{J^⊥}p` invariant, `P_J p` runs the lower-rank process) + prove the cocycle for top-rank full-span blocks.
+**Numerics strongly support TRUTH** (refutation hunt NEGATIVE; cocycle probe ~r/δ; rank≤2 saturates r/δ).
+Verified substrate (use freely): P1-sharp, P2/P2′, **P6**, **P3′**, **P4-upgrade**, **P7** (`r/δ` cert),
+**P8** (dynamics), **P9** (KKT loc), **P10** (codim-≥2), **NC**, **P11** (rank≤2 closure), **D_exp** (all-word).
+Refuted: N1, **N2**, **N3**, **N4**. Retracted: "unit-vectors-WLOG". **Confidence (B-side true): ~75%.**
 
 **Pending human items:** NH1 (κ_A≤1/δ_A proof in 2510.20301); NH2 (BV constants non-poly, confirmed); **NH3**
 (Betke-797 attribution); **NH4** (§1 `P_s⊆C_s+(r/δ)B_2` holds within `E=span T` only); P5 hand-proof audit.
@@ -102,15 +102,15 @@ handled (GREEN = "no death-evidence, attempt the proof", NOT "(★) likely true"
 
 - ✅ Owner rulings (2026-06-21): (1) GREEN — start attack loop, solver = **GPT-5.5-Pro** (relayed);
   (2) target **SODA 2027**, ignore time; (3) **HS2 = sole primary route**.
-- ✅ Rounds 1–4 done: GPT-Pro PARTIAL each → archived `docs/round{1..4}_response.md`; all audited (numeric +
-  fresh-agent; R4 also a decisive refutation hunt) `docs/round{1..4}_audit.md`; ledger + substrate updated.
-- 🔴 **AWAITING OWNER:** relay `docs/round5_brief_fresh.md` to a **NEW / fresh GPT-5.5-Pro conversation**
-  (escalation). Paste reply back. No-retreat: escalate/attack harder, never downgrade.
-- Attack-loop state in `docs/ATTACK_LOG.md`. NEEDS-HUMAN: NH1, NH2, **NH3**, **NH4**; P5 hand-proof audit.
-- **Substrate gains (frozen):** R1 — P1-sharp, P2′, P6, P4-upgrade, P3′; R2 — **P7** (R3→`r/δ`); R3 — **P8**
-  dynamics; R4 — **P9** KKT-localization, **P10** codim-≥2 confinement, **NC** inversive no-cusp.
-  **Open crux:** the polynomial **multiwall-cluster return-point / no-cusp theorem** (= DA ⟺ PC ⟺ NC).
-  Refuted: N1, **N2**, **N3**, **N4** (no local per-switch payment). Retracted: unit-vectors-WLOG.
+- ✅ Rounds 1–5 done: GPT-Pro PARTIAL each → archived `docs/round{1..5}_response.md`; all audited (numeric +
+  fresh-agent; R4 refutation hunt; R5 fresh-context escalation) `docs/round{1..5}_audit.md`.
+- 🔴 **AWAITING OWNER:** relay `docs/round6_brief.md` to GPT-5.5-Pro (continue fresh thread). Paste reply back.
+  No-retreat: escalate/attack harder, never downgrade.
+- Attack-loop state in `docs/ATTACK_LOG.md`. NEEDS-HUMAN: NH1, NH2, NH3, NH4; P5 hand-proof audit.
+- **Substrate gains (frozen):** R1 — P1-sharp, P2′, P6, P4-upgrade, P3′; R2 — **P7** (R3→`r/δ`); R3 — **P8**;
+  R4 — **P9**, **P10**, **NC**; R5 — **P11** (rank ≤2 closed, `sup≤r/δ`, saturated), **D_exp** (all-word).
+  **Open crux:** the **admissible cluster return-cocycle identity** `b_B=c_τ−Q_B c_σ` (= DA⟺PC⟺NC). Best path:
+  rank induction r→r+1 (J-cluster + cocycle on top blocks). Refuted: N1, N2, N3, N4. Retracted: unit-WLOG.
 - Re-confirm at submission / at convergence: SODA27 anonymity wording on live CFP (caveat C1); Lemma 1.4
   dimension bookkeeping S^{2d-1} (caveat C2); anchor v2/scoop re-scan.
 
@@ -124,3 +124,4 @@ handled (GREEN = "no death-evidence, attempt the proof", NOT "(★) likely true"
 | 2026-06-22 (Round 2) | ~72% (↑5) | GPT-Pro PARTIAL (93%), both audits VALID. Proven local theorem P7 (`O(r²/δ²)` certificate); `(★)`⟺bounded dual-drift lemma (one clean lemma) + concrete P3′+P6 attack; direct TV numerics sub-linear/poly tracking √d/δ. Tempered: global integrability unproven, N2 + 2026 BV counterexamples show subtlety; TV is lower-bound search. Not a proof. |
 | 2026-06-22 (Round 3) | ~72% (held) | GPT-Pro PARTIAL (96%), all math sound. STALL #1: P7→`r/δ` + P8 dynamics, but P3′+P6 attack DIED (N3) and net = refutation+reformulation (`(★)`⟺DA/PC). Counterweight: dual-drift numeric bounded & flat in N ⟹ conclusion likely TRUE. Two-sided → held. Round 4 = last before escalation. |
 | 2026-06-22 (Round 4) | ~75% (↑3) | GPT-Pro PARTIAL (97%), all math correct (genuine progress). Obstruction localized to codim-≥2 clusters (P9/P10); local payment dead (N4); NC reformulation. **Refutation hunt NEGATIVE** — `sup_j‖p_j‖` flat in N under cluster stress ⟹ §3-chain accumulation does NOT happen ⟹ evidence `(★)` TRUE. Tempered: deep no-cusp proof absent, numerics heuristic. Escalating to fresh attacker. |
+| 2026-06-22 (Round 5) | ~75% (held) | Fresh-context escalation paid off: rank ≤2 CLOSED (P11, saturated) + all-word exp bound (D_exp) + `(★)`⟺cocycle identity. Both audits VALID; cocycle probe NEGATIVE. Base case + sharp algebraic crux + clear path (rank induction). Held: positive structure vs deep coboundary step unproven (N2 ⟹ history-dependent). |

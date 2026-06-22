@@ -7,6 +7,20 @@
 
 ## ▶ HEADLINE (latest status line on top)
 
+**2026-06-22 — ROUND 5 COMPLETE (audited; fresh-context escalation paid off). rank≤2 CLOSED; all-word
+exp bound; `(★)` ⟺ cocycle identity; confidence ~75% (held).** Fresh GPT-5.5-Pro PARTIAL+WHERE (97% on
+the rank-exp theorem, 72% the full poly lemma true); both audits VALID. NET: (i) **P11** — rank ≤2 fully
+CLOSED, `sup_j‖p_j‖ ≤ r/δ` (numerically SATURATED at 0.997·r/δ) — the first closed *orbit* bound; (ii)
+**D_exp** all-word bound `2(r/δ)·5^{r-1}·(2r/δ)^{r(r-1)}` (exp in r, but via a block-contraction induction
+that AVOIDS the dead angle-transfer route — uses only original-flat angles); (iii) **`(★)` ⟺ the admissible
+cluster return-cocycle identity** `b_B=c_τ−Q_B c_σ` (closed: `b_B=(I−Q_B)c_σ`) with `‖c_σ‖≤poly` — the sharp
+crux; (iv) qualitative all-word boundedness is known (Bauschke–Tung 2506.22553 covers polyhedra) ⟹ any
+refutation needs a FAMILY `T_r`, none found. **Best path: rank induction r→r+1** via exact-J-cluster
+structure (`P_{J^⊥}p` invariant, `P_J p` runs lower-rank process) + cocycle on top-rank blocks. → Round-6.
+**NOTHING frozen as "proved" beyond P11 + D_exp.**
+
+---
+
 **2026-06-22 — ROUND 4 COMPLETE (audited). Obstruction localized to codim-≥2 clusters; refutation hunt
 NEGATIVE; confidence ~75%; ESCALATING to fresh-context attacker.** GPT-5.5-Pro PARTIAL (97%); all math
 CORRECT (genuine progress, not stall). NET: (i) **P9** KKT localization — every positive dual jump comes
@@ -100,6 +114,16 @@ P3′. See `docs/round1_*`.)*
   forces `dist(u,J^⊥)≤rη/δ`, `dim J≥2`. *Status:* **✅ VALID.** *Use:* all UNPAID drift sits in a poly-thin
   tube around a codim-≥2 stratum (clustered multiwall). **Refutation hunt: that mechanism does NOT
   accumulate — `sup_j‖p_j‖` flat in N (`code/round4_refutation_results.json`).**
+- `P11` (NEW 2026-06-22, Round-5) **rank ≤2 closure:** for `r=dim span(T) ≤ 2`, `sup_j‖p_j‖ ≤ r/δ` (the
+  full bounded-dual-drift conclusion, hence `(★)`, holds at rank ≤2). *Proof:* P9 (no-common ⟹ Δ≤0) + P8
+  (`H_j=E ⟹ p_{j+1}=q_j`) + "two distinct central walls meet only at 0". *Status:* **✅ analytic VALID &
+  RIGOROUS + numeric SATURATED** (worst sup/(r/δ)=0.9971, 0 violations). First closed *orbit* bound (vs the
+  P7 *certificate*). *Use:* base case for a rank induction r→r+1.
+- `D_exp` (NEW 2026-06-22, Round-5) **all-word bound:** for ANY chamber word (no admissibility),
+  `sup_j‖p_j‖ ≤ 2(r/δ)·5^{r-1}·(2r/δ)^{r(r-1)}`. *Proof:* two-flat regularity (`K=2r/δ`) + full-rank block
+  contraction `‖Q‖≤β_k=1/√(1+K^{-2(k-1)})` + recursion `F_k≤(R_0+F_{k-1})/(1−β_k)`. *Status:* **✅ VALID**
+  (numeric: contraction 0 viol, two-flat 0 viol). Exp in r (NOT the target) but **avoids the dead
+  angle-transfer route** (original-flat angles only) — the inductive scaffold.
 - `NC` (NEW 2026-06-22, Round-4) **inversive no-cusp reformulation:** `I(p)=p/‖p‖²`, `I(P_s)=L_s∖{0}`
   (`L_s=∩B(v_i/2,½)`), `(★)⟺ inf_j‖z_j‖≥1/poly` (`z_j=I(p_j)`). *Status:* **✅ VALID (exact).** Cleanest
   standalone statement of the crux.
@@ -191,9 +215,14 @@ P3′. See `docs/round1_*`.)*
 > > DEAD (`N4`: no local per-switch payment). Equivalent clean form **NC** (inversive): the relative-nearest-
 > > point process on tangent lobes never cusps into 0. **Refutation hunt NEGATIVE** (`sup_j‖p_j‖` flat in N
 > > even under codim-≥2 stress) ⟹ conclusion likely TRUE.
-> > **Missing ingredient (Round-5 target): a polynomial multiwall-cluster RETURN-POINT / no-cusp theorem** —
-> > cluster excursions must cancel after the admissible cluster+revisits without re-paying rank/angle; needs
-> > the ordered oriented-matroid gallery. **ESCALATED to a fresh-context attacker** (`docs/round5_brief_fresh.md`).
+> > **Missing ingredient — SHARPEST FORM (Round-5): the admissible cluster RETURN-COCYCLE identity**
+> > `b_B = c_τ − Q_B c_σ` (closed block: `b_B=(I−Q_B)c_σ`), `‖c_σ‖≤poly`, for the affine map
+> > `A_B(p)=Q_B p+b_B` of each admissible cluster block — i.e. per-block translations COBOUNDARY-cancel
+> > rather than accumulate the `(1−β_k)^{-1}≍K^{2(k-1)}` factor. **`(★)` ⟺ this cocycle (route-equivalence).**
+> > Proven: rank ≤2 (P11); all-word exp ceiling (D_exp). **Best path (Round-6): rank induction r→r+1** —
+> > run the rank-r bound inside each proper J (exact-J-cluster: `P_{J^⊥}p` invariant) + prove the cocycle for
+> > top-rank full-span blocks. Refutation target: a repeatable admissible closed block with `‖(I−Q_B)^†b_B‖`
+> > super-poly (none found; probe stayed ~r/δ).
 >
 > 🔴 `(★)` is ATTACKER-originated (web GPT-5.5-Pro), NOT Claude. Pivot trigger if refuted (TV provably
 > exponential at constant δ ⟹ truth is A-side). **Routing:** HS1 reduction rigorous (P4-upgrade) + Theorem 1
@@ -210,6 +239,7 @@ P3′. See `docs/round1_*`.)*
 | 2026-06-22 (Round 2) | ~72% (↑5) | GPT-Pro PARTIAL (93%), both audits VALID. Proven NEW local theorem P7 (`O(r²/δ²)` certificate); `(★)` ⟺ bounded dual-drift lemma (one clean well-posed lemma) with a concrete P3′+P6 attack; direct TV numerics show sub-linear/poly growth tracking `√d/δ`, no exponential. Tempered: global integrability unproven, N2 + 2026 BV counterexamples show real subtlety, TV is a lower-bound search. Not a proof. |
 | 2026-06-22 (Round 3) | ~72% (held) | GPT-Pro PARTIAL (96%), all math SOUND. **STALL #1:** P7 sharpened to `r/δ` + P8 dynamics, but the P3′+P6 attack DIED (N3: P6 doesn't transfer to projected images) and the round is net refutation+reformulation (`(★)`⟺DA/PC). Counterweight: dual-drift numeric `sup_j‖p_j‖` bounded & flat in N ~`r/δ` ⟹ conclusion likely TRUE. Two-sided ⟹ held. K_stall=2: Round 4 = last before escalation. |
 | 2026-06-22 (Round 4) | ~75% (↑3) | GPT-Pro PARTIAL (97%), all math CORRECT (genuine progress). Obstruction localized to codim-≥2 clusters (P9/P10); N4 kills local payment; NC clean reformulation. **Decisive refutation hunt NEGATIVE** — `sup_j‖p_j‖` flat in N under cluster stress ⟹ the §3-chain accumulation does NOT happen ⟹ strong evidence DA/`(★)` TRUE. Tempered: proof absent (deep no-cusp theorem), numerics heuristic. Escalating to fresh attacker. |
+| 2026-06-22 (Round 5) | ~75% (held) | Fresh-context attacker PARTIAL+WHERE (72% full lemma), both audits VALID. **rank ≤2 CLOSED (P11, saturated)** + all-word exp bound (D_exp, avoids dead route) + `(★)`⟺cocycle identity. Cocycle refutation probe NEGATIVE. Net: base case + sharp algebraic crux + clearest path (rank induction). Confidence held (positive structure vs deep step still unproven; N2 ⟹ induction must be history-dependent). |
 
 ---
 

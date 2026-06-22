@@ -19,7 +19,10 @@
 | 4 | 2026-06-22 | `docs/round4_brief.md` | dispatched | Targets DA/PC via itinerary-admissibility / radial-budget Lyapunov. |
 | 4 | 2026-06-22 | `docs/round4_response.md` | **PARTIAL** (GPT-5.5-Pro, conf 97%) | Localized obstruction: P9 KKT-localization, P10 codim-≥2 confinement, NC inversive reformulation; killed radial-budget Lyapunov (N4). |
 | 4 | 2026-06-22 | `docs/round4_audit.md` + `code/round4_audit_checks.py` + `round4_refutation_hunt.py` | **AUDITED — all math CORRECT; genuine progress** | Numeric + analytic + **decisive refutation hunt NEGATIVE** (`sup_j‖p_j‖` flat in N under codim-≥2 stress ⟹ DA conclusion likely TRUE). Freeze P9/P10/NC, N4. Conf 72→75%. |
-| 5 | 2026-06-22 | `docs/round5_brief_fresh.md` | **READY (ESCALATION) — awaiting owner relay to a NEW GPT-5.5-Pro session** | Fresh-context attacker: clean NC / multiwall-cluster return-point theorem, invites oriented-matroid / projection-orbit machinery. |
+| 5 | 2026-06-22 | `docs/round5_brief_fresh.md` | dispatched (ESCALATION, fresh context) | Clean NC / multiwall-cluster return-point theorem. |
+| 5 | 2026-06-22 | `docs/round5_response.md` | **PARTIAL+WHERE** (fresh GPT-5.5-Pro; 97% rank-exp thm, 72% full lemma) | rank≤2 CLOSED; all-word D_exp bound; `(★)`⟺ cocycle identity `b_B=c_τ−Q_B c_σ`. |
+| 5 | 2026-06-22 | `docs/round5_audit.md` + `code/round5_audit_checks.py` | **AUDITED — all 5 claims VALID; genuine progress** | Numeric + analytic. Freeze **P11** (rank≤2, saturated) + **D_exp**. Cocycle = sharp crux. Conf held 75%. Best path: rank induction r→r+1. |
+| 6 | 2026-06-22 | `docs/round6_brief.md` | **READY — awaiting owner relay to GPT-5.5-Pro (continue fresh thread)** | Rank induction r→r+1 (start rank 3) via exact-J-cluster + prove the cocycle identity for top-rank full-span blocks. |
 
 ## Stop criteria (guide §4) — AI convergence only when ALL hold
 1. solver explicitly claims closure of `(★)` + assembly, no further conditions;

@@ -1,0 +1,88 @@
+{
+  "RANK2": {
+    "cases": [
+      {
+        "m": 3,
+        "delta_T": 0.7662,
+        "sup": 2.366,
+        "r/delta=2/delta": 2.61,
+        "ok(<=)": true
+      },
+      {
+        "m": 6,
+        "delta_T": 0.1617,
+        "sup": 12.329,
+        "r/delta=2/delta": 12.37,
+        "ok(<=)": true
+      },
+      {
+        "m": 3,
+        "delta_T": 0.1527,
+        "sup": 13.055,
+        "r/delta=2/delta": 13.093,
+        "ok(<=)": true
+      },
+      {
+        "m": 4,
+        "delta_T": 0.3013,
+        "sup": 6.56,
+        "r/delta=2/delta": 6.637,
+        "ok(<=)": true
+      },
+      {
+        "m": 4,
+        "delta_T": 0.189,
+        "sup": 10.533,
+        "r/delta=2/delta": 10.581,
+        "ok(<=)": true
+      },
+      {
+        "m": 6,
+        "delta_T": 0.152,
+        "sup": 13.12,
+        "r/delta=2/delta": 13.159,
+        "ok(<=)": true
+      },
+      {
+        "m": 3,
+        "delta_T": 0.4192,
+        "sup": 4.659,
+        "r/delta=2/delta": 4.771,
+        "ok(<=)": true
+      },
+      {
+        "m": 3,
+        "delta_T": 0.5016,
+        "sup": 3.85,
+        "r/delta=2/delta": 3.987,
+        "ok(<=)": true
+      }
+    ],
+    "worst_sup_over_bound": 0.9971,
+    "violations": 0
+  },
+  "CONTRACT": {
+    "worst (||Q||-beta_k)": -0.030897,
+    "violations": 0,
+    "note": "<=0 confirms ||Q||<=beta_k (the block contraction)"
+  },
+  "TWOFLAT": {
+    "worst dAB/(K*max)": 0.3542,
+    "violations": 0,
+    "note": "<=1 confirms two-flat regularity (eq 1)"
+  },
+  "COCYCLE": [
+    {
+      "r": 2,
+      "delta_T": 0.8783,
+      "r/delta": 2.28,
+      "worst ||(I-Q_B)^+ b_B||": 1.958
+    },
+    {
+      "r": 3,
+      "delta_T": 0.3621,
+      "r/delta": 8.28,
+      "worst ||(I-Q_B)^+ b_B||": 6.45
+    }
+  ]
+}
