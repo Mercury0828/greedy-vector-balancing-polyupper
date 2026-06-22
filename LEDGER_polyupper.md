@@ -7,6 +7,19 @@
 
 ## ▶ HEADLINE (latest status line on top)
 
+**2026-06-22 — ROUND 3 COMPLETE (audited). STALL round #1; `(★)` ⟺ DA/PC; confidence ~72% (held).**
+GPT-5.5-Pro PARTIAL (96%); both audits confirm **all mathematics SOUND**. NET: (i) **P7 sharpened to
+`R_loc=r/δ`**; (ii) **P8** exact dual dynamics `p⁺=P_{H^⊥}p+q_B` (+ energy/telescoping/Bessel identities,
+numerically exact); (iii) **N3** — the P6/Friedrichs-angle attack (which our R3 brief proposed) is **DEAD**
+(P6 governs original flats, not the dynamically projected images `R_j H_j`, whose angles collapse to ~0.003);
+(iv) `(★)` ⟺ **Dynamic affine-synthesis (DA) ⟺ Polynomial circulation (PC)** — radial part solved (`r/δ`),
+only accumulated curl open; (v) **dual-drift numeric POSITIVE**: `sup_j‖p_j‖` bounded & flat in N (~r/δ),
+no √N blowup ⟹ evidence DA/PC's conclusion (hence `(★)`) is TRUE. 🔴 **STALL on provability** (no new
+closing lemma; natural attack died). **K_stall=2: Round 4 is the last GPT-Pro round before escalation to a
+fresh-context attacker.** Confidence held ~72% (truth-evidence up, proof stuck). **NOTHING frozen as "proved".**
+
+---
+
 **2026-06-22 — ROUND 2 COMPLETE (audited). `(★)` reduced to ONE clean lemma; confidence ~72%.**
 GPT-5.5-Pro returned PARTIAL (93%); two independent audits (numeric + analytic line-by-line) confirm **all
 claims VALID**. NET: (i) **NEW PROVEN partial theorem P7** — every realizable chamber has a margin-one dual
@@ -60,12 +73,17 @@ P3′. See `docs/round1_*`.)*
   one rep per antipodal line gives **`|T| ≤ 2π r⁴/δ_T`** (poly-many directions at constant δ). *Status:*
   **✅ CONFIRMED** (numeric: `κ_A≤1/δ_A` all cases, dep_pairs equality √2; agent VALID, source-backed).
   🔴 NEEDS-HUMAN NH1: eyeball the one-line `κ_A≤1/δ_A` proof in the paper before fully load-bearing.
-- `P7` (NEW 2026-06-22, Round-2 Theorem 1) **polynomial chamber certificate:** every realizable chamber
-  `C_s={x:⟨s_i t_i,x⟩≥0}` has a margin-one dual certificate `p_s=z_*/‖z_*‖²` (z_*=min-norm point of
-  `conv{s_i t_i}`) in `cone{s_i t_i}` with `‖p_s‖ ≤ √(r(r+1))(1+(r+1)κ)/δ_T ≤ (r+2)√(r(r+1))/δ_T² =
-  O(r²/δ_T²)`. *Proof:* Carathéodory + circuit-imbalance (P3′) + P1. *Status:* **✅ proven (analytic audit
-  line-by-line VALID) + numerically confirmed** (`‖p_s‖≤R_loc`, 0 violations; actual norms 4–9). Inherits
-  NH1 via P3′. *Use:* LOCAL feasibility for HS1; integrability is the open part (see `(★)`).
+- `P7` (Round-2 Theorem 1; **SHARPENED 2026-06-22 Round-3 Prop 1**) **polynomial chamber certificate:**
+  every realizable chamber `C_s={x:⟨s_i t_i,x⟩≥0}` has a margin-one dual certificate in `cone{s_i t_i}` with
+  **`‖p_s‖ ≤ r/δ_T`** (vertex of `P_s` + `r` independent active normals + P1; was `O(r²/δ²)` via
+  Carathéodory). *Status:* **✅ proven (analytic VALID both forms) + numerically confirmed** (cert norms 4–6,
+  0 violations vs `r/δ`). Inherits NH1 via P3′. *Use:* LOCAL feasibility; integrability open (see `(★)`).
+- `P8` (NEW 2026-06-22, Round-3) **exact dual-drift dynamics:** the dual update is an affine projection
+  `p⁺=Proj_{P_s}(p)=P_{H^⊥}p+q_B`, `H`=active-face normal span, `q_B`=its affine hull's min-norm point,
+  `‖q_B‖≤r/δ_T`; with **energy identity** `‖p⁺‖²−‖p‖²=‖q_B‖²−‖P_H p‖²`, **telescoping**
+  `I−Q_NQ_Nᵀ=Σ_j R_j P_{H_j}R_jᵀ`, **Bessel** `Σ_j‖P_{H_j}R_jᵀu‖²≤‖u‖²`. *Status:* **✅ analytic VALID +
+  numeric (telescoping err 0.0).** Caveat: the "Proj onto P_s = Proj onto active-face affine hull" step needs
+  the non-degenerate-face justification (generic). *Use:* machinery for the dual-drift/DA analysis.
 - `P4` `G(T) ≤ radius(K_T)`. *Status:* **base CONFIRMED full-text (anchor Thm 2.4 + Lemma 2.2)** — citable.
   **P4-UPGRADE (2026-06-22, Round-1): the support-function ITERATION identity is now DERIVED & VALID** for
   the recursive projective closure `K_{n+1}=conv ∪_t(π_t K_n+[-t,t])`: `h_{K_{n+1}}(y)=max_t(h_{K_n}(π_t y)
@@ -94,6 +112,11 @@ P3′. See `docs/round1_*`.)*
   δ_T=√(5/14)): margins force `(1−2c)Σw≥3` ⟹ `−½Σw≥3`, impossible (numeric LP infeasible + analytic VALID).
   ⇒ any HS1/HS2 proof MUST refine the chamber fan, vary the gradient inside chambers, or carry HISTORY. Does
   NOT refute `(★)`.
+- `N3` (refuted approach 2026-06-22, Round-3): the **P6/Friedrichs-angle charging attack** (charge dual-drift
+  reorientations using `sinθ≥δ/r`). DEAD: the interacting spaces are the dynamically projected images
+  `R_j H_j=P_{H_N^⊥}⋯P_{H_{j+1}^⊥}H_j`, NOT `T`-spanned — P6 inapplicable; they form an infinite family
+  (P3′ count inapplicable) and angles collapse to ~0.003 after one projector (numerically confirmed). The
+  energy method stops at `√N`. ⇒ Round-4 must use itinerary-admissibility, NOT angle-transfer. Not a refutation of `(★)`.
 
 ## 4. Barriers `B*`
 
@@ -129,10 +152,14 @@ P3′. See `docs/round1_*`.)*
 > > trajectory, the dual sequence `p_{j+1}=Proj_{P_{s_{j+1}}}(p_j)` (init `‖p_1‖≤R_loc=O(r²/δ²)` via P7,
 > > `P_s={p:⟨s_i t_i,p⟩≥1}`) satisfies `sup_j‖p_j‖≤D`. **Then `G(T) ≤ 2D` (reduction VALID, audited).**
 > > Equivalently (static): a bounded cyclic-monotone selector `p(y)∈P_{sign(Aᵀy)}` = subgradient field of a
-> > convex `F` with `F(y)≤poly·‖y‖`. Local feasibility = P7; **global integrability is the open core.**
-> > Attack (Round 3): history-dependent energy/potential charging each norm increase to the old/new active-
-> > face angle (`≥δ_T/r` by P6) over the `O(r⁴/δ)` walls (P3′) — Friedrichs-angle/contraction for the
-> > projector-onto-polyhedra semigroup. Must be history-dependent (N2 + `B↦B/δ` kill static/counting).
+> > convex `F` with `F(y)≤poly·‖y‖`. Local feasibility = P7 (`r/δ`); **global integrability is the open core.**
+> > **Round-3 sharpening (P8): `(★)` ⟺ DA ⟺ PC** — `DA: sup_N‖Σ_j P_{H_N^⊥}⋯P_{H_{j+1}^⊥}q_j‖≤poly`
+> > (`q_j∈H_j`, `‖q_j‖≤r/δ`); `PC: C(Γ)=Σ∫ρ d⟨a_s,u⟩ ≤ poly·‖y_0‖`. Radial part solved; only accumulated
+> > curl open. **Dual-drift numeric (Round-3): `sup_j‖p_j‖` bounded & flat in N ~`r/δ` ⟹ conclusion holds
+> > empirically.** ❌ Dead attack `N3`: P6/Friedrichs-angle (P6 doesn't transfer to projected images).
+> > ✅ Round-4 attack: itinerary-admissibility / radial-budget Lyapunov — `‖p_j‖` non-increasing on fixed-face
+> > sub-runs; growth only at reorientations, which are itinerary-coupled (successive faces share `x_j`); make
+> > `C(Γ)` summable via history-dependent `a_s` tied to ρ-monotonicity. NOT angle-transfer.
 >
 > 🔴 `(★)` is ATTACKER-originated (web GPT-5.5-Pro), NOT Claude. Pivot trigger if refuted (TV provably
 > exponential at constant δ ⟹ truth is A-side). **Routing:** HS1 reduction rigorous (P4-upgrade) + Theorem 1
@@ -147,6 +174,7 @@ P3′. See `docs/round1_*`.)*
 | 2026-06-21 (de-risk) | ~65% (held) | Sim 1 found **no super-poly growth** (falsifier not triggered) → no death-evidence against B; but the heuristic adversary under-explores amplitude (did not reach √d/δ), so this is **negative evidence, not a poly proof**. Sim 2 confirmed P1,P2. Net: crux still genuinely open; confidence unchanged, not raised (honesty rail: de-risk ≠ proof). |
 | 2026-06-22 (Round 1) | ~67% (↑2) | GPT-Pro PARTIAL, both audits VALID. New verified substrate (P6 angle-sep, P2′, P1-sharp, P4-upgrade ⇒ HS1 rigorous, P3′ ⇒ poly-many directions) makes an exponential construction structurally harder and turns the crux into a clean finitary geometry problem (G1). BUT the core poly-TV/summability question is untouched and BV-lit gives exponential — progress is reduction-clarity, not proof. Modest uptick only. |
 | 2026-06-22 (Round 2) | ~72% (↑5) | GPT-Pro PARTIAL (93%), both audits VALID. Proven NEW local theorem P7 (`O(r²/δ²)` certificate); `(★)` ⟺ bounded dual-drift lemma (one clean well-posed lemma) with a concrete P3′+P6 attack; direct TV numerics show sub-linear/poly growth tracking `√d/δ`, no exponential. Tempered: global integrability unproven, N2 + 2026 BV counterexamples show real subtlety, TV is a lower-bound search. Not a proof. |
+| 2026-06-22 (Round 3) | ~72% (held) | GPT-Pro PARTIAL (96%), all math SOUND. **STALL #1:** P7 sharpened to `r/δ` + P8 dynamics, but the P3′+P6 attack DIED (N3: P6 doesn't transfer to projected images) and the round is net refutation+reformulation (`(★)`⟺DA/PC). Counterweight: dual-drift numeric `sup_j‖p_j‖` bounded & flat in N ~`r/δ` ⟹ conclusion likely TRUE. Two-sided ⟹ held. K_stall=2: Round 4 = last before escalation. |
 
 ---
 

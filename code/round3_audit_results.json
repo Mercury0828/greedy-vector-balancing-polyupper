@@ -1,0 +1,142 @@
+{
+  "prop1": [
+    {
+      "r": 3,
+      "delta_T": 0.3271,
+      "m": 5,
+      "worst_cert_norm": 6.085,
+      "r_over_delta": 9.17,
+      "violations_vs_r_over_delta": 0
+    },
+    {
+      "r": 4,
+      "delta_T": 0.3486,
+      "m": 5,
+      "worst_cert_norm": 6.114,
+      "r_over_delta": 11.473,
+      "violations_vs_r_over_delta": 0
+    },
+    {
+      "r": 5,
+      "delta_T": 0.3394,
+      "m": 5,
+      "worst_cert_norm": 5.294,
+      "r_over_delta": 14.734,
+      "violations_vs_r_over_delta": 0
+    },
+    {
+      "r": 6,
+      "delta_T": 0.2819,
+      "m": 7,
+      "worst_cert_norm": 6.439,
+      "r_over_delta": 21.286,
+      "violations_vs_r_over_delta": 0
+    },
+    {
+      "r": 4,
+      "delta_T": 0.5667,
+      "m": 4,
+      "worst_cert_norm": 3.81,
+      "r_over_delta": 7.059,
+      "violations_vs_r_over_delta": 0
+    }
+  ],
+  "identities": {
+    "telescoping_max_abs_err": 0.0,
+    "note": "\u22480 confirms I\u2212Q_NQ_N\u1d40 = \u03a3 R_j P_{H_j} R_j\u1d40 (eq 6) \u27f9 Bessel (7)"
+  },
+  "dual_drift": [
+    {
+      "r": 3,
+      "delta_T": 0.4959,
+      "r_over_delta": 6.05,
+      "sup_by_len": [
+        {
+          "N": 10,
+          "sup_norm": 4.132
+        },
+        {
+          "N": 25,
+          "sup_norm": 4.22
+        },
+        {
+          "N": 50,
+          "sup_norm": 4.242
+        },
+        {
+          "N": 90,
+          "sup_norm": 4.335
+        }
+      ]
+    },
+    {
+      "r": 4,
+      "delta_T": 0.2517,
+      "r_over_delta": 15.89,
+      "sup_by_len": [
+        {
+          "N": 10,
+          "sup_norm": 11.365
+        },
+        {
+          "N": 25,
+          "sup_norm": 11.892
+        },
+        {
+          "N": 50,
+          "sup_norm": 12.621
+        },
+        {
+          "N": 90,
+          "sup_norm": 13.267
+        }
+      ]
+    },
+    {
+      "r": 5,
+      "delta_T": 0.4143,
+      "r_over_delta": 12.07,
+      "sup_by_len": [
+        {
+          "N": 10,
+          "sup_norm": 7.796
+        },
+        {
+          "N": 25,
+          "sup_norm": 6.827
+        },
+        {
+          "N": 50,
+          "sup_norm": 8.648
+        },
+        {
+          "N": 90,
+          "sup_norm": 9.258
+        }
+      ]
+    },
+    {
+      "r": 6,
+      "delta_T": 0.3254,
+      "r_over_delta": 18.44,
+      "sup_by_len": [
+        {
+          "N": 10,
+          "sup_norm": 8.934
+        },
+        {
+          "N": 25,
+          "sup_norm": 8.091
+        },
+        {
+          "N": 50,
+          "sup_norm": 13.762
+        },
+        {
+          "N": 90,
+          "sup_norm": 13.567
+        }
+      ]
+    }
+  ]
+}

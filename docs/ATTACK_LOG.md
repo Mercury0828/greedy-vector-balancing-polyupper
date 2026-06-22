@@ -13,7 +13,10 @@
 | 2 | 2026-06-22 | `docs/round2_brief.md` | dispatched | Targets G1/G2; ships P1-sharp/P2′/P6/P3′/P4-upgrade; methods free. |
 | 2 | 2026-06-22 | `docs/round2_response.md` | **PARTIAL** (GPT-5.5-Pro, conf 93%) | NEW Theorem 1 (chamber certificate `O(r²/δ²)`); `(★)`⟺bounded cyclic-monotone selection; rank-3 obstruction; bounded dual-drift lemma = the remaining crux. |
 | 2 | 2026-06-22 | `docs/round2_audit.md` + `code/round2_audit_checks.py` | **AUDITED — all claims VALID** | Numeric + analytic (line-by-line). Freeze **P7** (Theorem 1), **N2** (rank-3 obstruction). Direct TV probe: sub-linear/poly growth tracking √d/δ. No FATAL vs `(★)`. Conf 67→72%. |
-| 3 | 2026-06-22 | `docs/round3_brief.md` | **READY — awaiting owner relay to GPT-5.5-Pro** | Targets the **bounded dual-drift lemma**; ships P7/N2 + P3′+P6 attack (history-dependent energy/Friedrichs-angle); methods free. |
+| 3 | 2026-06-22 | `docs/round3_brief.md` | dispatched | Targets bounded dual-drift lemma; P3′+P6 Friedrichs-angle attack suggested. |
+| 3 | 2026-06-22 | `docs/round3_response.md` | **PARTIAL** (GPT-5.5-Pro, conf 96%) | P7→`r/δ`; exact dual dynamics (P8); **P6-attack DEAD** (projected images not T-spanned); `(★)`⟺DA/PC. |
+| 3 | 2026-06-22 | `docs/round3_audit.md` + `code/round3_audit_checks.py` | **AUDITED — all math SOUND; STALL #1** | Numeric + analytic. Update **P7→r/δ**, freeze **P8** (dynamics), **N3** (dead P6-attack). Dual-drift numeric POSITIVE (sup_j‖p_j‖ bounded in N). No FATAL. Conf held 72%. NH3 (Betke-797 attribution). |
+| 4 | 2026-06-22 | `docs/round4_brief.md` | **READY — awaiting owner relay to GPT-5.5-Pro** | Targets DA/PC via **itinerary-admissibility / radial-budget Lyapunov** (NOT angle-transfer); last GPT-Pro round before escalation if it stalls. |
 
 ## Stop criteria (guide §4) — AI convergence only when ALL hold
 1. solver explicitly claims closure of `(★)` + assembly, no further conditions;
