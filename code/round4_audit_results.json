@@ -1,0 +1,72 @@
+{
+  "S2": {
+    "units": [
+      1.0,
+      1.0,
+      1.0
+    ],
+    "delta_T": 0.661438,
+    "claim_sqrt7/4": 0.661438,
+    "pm_in_Pminus(min_constraint)": 1.0,
+    "pp_in_Pplus(min_constraint)": 1.0,
+    "d_coef_in_t1t2": [
+      4.57143,
+      3.42857
+    ],
+    "claim_(32/7,24/7)": [
+      4.57143,
+      3.42857
+    ],
+    "proj_matches_pp": true,
+    "norm_pm^2": 15.14286,
+    "norm_pp^2": 22.0,
+    "R0^2": 20.57143,
+    "ESCAPES_ball (||pm||<R0<||pp||)": true
+  },
+  "S3": {
+    "delta_Tp": 0.330719,
+    "claim_sqrt7/8": 0.330719,
+    "z_perp_w": 0.0,
+    "x=z+(s3/2)w_err": 0.0,
+    "signs_at_x (t1,t2,t3,w)": [
+      0,
+      1,
+      1,
+      1
+    ],
+    "w_slack_pm(>1)": 2.7404,
+    "w_slack_pp(>1)": 3.7404,
+    "claim_w_slacks": [
+      2.7404,
+      3.7404
+    ],
+    "<d,x>/||x||": 0.002268,
+    "energy_jump ||pp||^2-||pm||^2": 6.85714,
+    "claim_48/7": 6.85714,
+    "LOCAL_payment_dead (<d,x>/||x|| -> 0 while jump fixed)": true
+  },
+  "S4": {
+    "viol_Delta<=4sum_common": 0,
+    "worst (Delta-4sum_common)": 0.0,
+    "eq9_cases (no common active)": 41,
+    "eq9_violations (Delta>0)": 0
+  },
+  "S7": {
+    "inversion_identity_max_err": 0.0,
+    "note": "\u22480 confirms \u2016I(z)\u2212I(w)\u2016=\u2016z\u2212w\u2016/(\u2016z\u2016\u2016w\u2016)"
+  },
+  "DRIFT2": [
+    {
+      "r": 3,
+      "delta_T": 0.1326,
+      "r_over_delta": 22.63,
+      "max_sup_norm_over_N<=100": 16.126
+    },
+    {
+      "r": 4,
+      "delta_T": 0.8857,
+      "r_over_delta": 4.52,
+      "max_sup_norm_over_N<=100": 3.0
+    }
+  ]
+}

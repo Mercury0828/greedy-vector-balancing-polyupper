@@ -1,9 +1,9 @@
 # PROJECT_STATE — `greedy-vector-balancing-polyupper`
 
-**Last updated:** 2026-06-22 · **Current phase:** ATTACK LOOP — Round 3 COMPLETE & audited (PARTIAL, all
-math sound; **STALL #1**; `(★)` ⟺ DA/PC; dual-drift numeric positive); **Round 4 brief READY**
-(`docs/round4_brief.md`). Target = SODA 2027 (time waived). **K_stall=2: Round 4 is the last GPT-Pro round
-before escalation to a fresh-context attacker.**
+**Last updated:** 2026-06-22 · **Current phase:** ATTACK LOOP — Round 4 COMPLETE & audited (PARTIAL, all
+math correct, genuine progress; obstruction localized to codim-≥2 clusters; **refutation hunt NEGATIVE** ⟹
+`(★)` likely TRUE). **ESCALATING:** Round-5 fresh-context attacker brief READY (`docs/round5_brief_fresh.md`).
+Target = SODA 2027 (time waived). Confidence ~75%.
 **Role:** Claude = orchestrator/referee/archivist (NOT prover). Target: **SODA 2027** (deadline
 **2026-07-09 AoE**, lightweight double-blind — confirmed live 2026-06-21).
 
@@ -12,36 +12,37 @@ before escalation to a fresh-context attacker.**
 ## ▶ COLD-START (read this first to resume)
 
 **One-liner:** Phase 0 done & GREEN; external-solver attack loop with **GPT-5.5-Pro** (owner-relayed).
-Rounds 1–3 = PARTIAL (all fully audited; all math sound). Round 3 = **STALL #1**. **Round 4 brief is written
-and waiting to be sent** (last round before escalation).
+Rounds 1–4 = PARTIAL (all fully audited; all math correct). Obstruction now localized to codim-≥2 clusters;
+refutation hunt NEGATIVE ⟹ `(★)` likely TRUE. **ESCALATING — Round-5 fresh-context attacker brief is written
+and waiting to be sent.**
 
 **Read in this order to rebuild context:** `guide.md` (read-only constitution) → this file →
 `LEDGER_polyupper.md` (frozen model/substrate/`(★)`/confidence) → `docs/ATTACK_LOG.md` (round index) →
 latest `docs/round{n}_*.md`. 🔴 Never work from memory; re-read these first.
 
-**THE NEXT ACTION (resume here):** owner relays **`docs/round4_brief.md`** (the `✂️`-delimited block) to
-GPT-5.5-Pro → pastes the reply back → Claude archives `docs/round4_response.md`, runs an independent
-adversarial audit (`docs/round4_audit.md`; 3 if closure claimed), classifies, updates confidence. **If Round
-4 also stalls (no new closing lemma) → K_stall=2 → ESCALATE: spawn a fresh-context attacker with a
-method-free brief (first-class lever), or batch a re-framed brief.** No-retreat: escalate, never downgrade.
+**THE NEXT ACTION (resume here):** owner relays **`docs/round5_brief_fresh.md`** (the `✂️` block) to a
+**NEW / fresh GPT-5.5-Pro conversation** (escalation — fresh context, clean no-cusp framing) → pastes the
+reply back → Claude archives `docs/round5_response.md`, runs an independent audit (`docs/round5_audit.md`;
+3 if closure claimed), classifies, updates confidence. No-retreat: escalate/attack harder, never downgrade.
 
-**Where the math stands (after Round 3):** `(★)` = "prove `G(T) ≤ poly(d,1/δ_T)`" is reduced to ONE clean
-open lemma — **bounded dual-drift ⟺ DA ⟺ PC**: along a reversed projection trajectory,
-`p_{j+1}=Proj_{P_{s_{j+1}}}(p_j)` (init `‖p_1‖≤r/δ` by P7) has `sup_j‖p_j‖≤poly(r,1/δ)` ⟹ `G(T)≤2·poly`
-(reduction audited). The RADIAL/feasibility part is solved (certificate radius `r/δ`); **only the accumulated
-curl/circulation `C(Γ)` is open.** Dual-drift NUMERIC is positive (`sup_j‖p_j‖` bounded & flat in N ~`r/δ`)
-⟹ the lemma's conclusion (hence `(★)`) is likely TRUE. **Live attack (Round 4):** itinerary-admissibility /
-radial-budget Lyapunov (NOT angle-transfer — that's dead, N3). Verified substrate (use freely): P1-sharp,
-P2/P2′, **P6** `sinθ≥δ/r`, **P3′** `|T|≤2πr⁴/δ`, **P4-upgrade**, **P7** (`r/δ` certificate), **P8** (exact
-dual dynamics + energy/telescoping/Bessel). Refuted: N1, **N2** (rank-3), **N3** (P6/Friedrichs-angle attack).
-Retracted: "unit-vectors-WLOG". **Confidence (B-side true): ~72% (held).**
+**Where the math stands (after Round 4):** `(★)` = "prove `G(T) ≤ poly(d,1/δ_T)`" ⟺ **bounded dual-drift ⟺
+DA ⟺ PC ⟺ NC** (`sup_j‖p_j‖≤poly` ⟹ `G(T)≤2·poly`; reduction audited). Round 4 **localized** the obstruction:
+`P9` (positive dual drift only at switches sharing active constraints both sides; no-common ⟹ no increase) +
+`P10` (all UNPAID drift in a poly-thin tube around a **codim-≥2 wall cluster**). The local per-switch payment
+route is DEAD (`N4`). The single missing ingredient: **a polynomial multiwall-cluster RETURN-POINT / no-cusp
+theorem** (needs the ordered oriented-matroid gallery). **Numerics strongly support TRUTH:** dual-drift
+`sup_j‖p_j‖` is bounded & flat in N even under TARGETED codim-≥2 cluster stress (refutation hunt NEGATIVE) —
+the §3-chain accumulation does NOT happen. Verified substrate (use freely): P1-sharp, P2/P2′, **P6**, **P3′**
+`|T|≤2πr⁴/δ`, **P4-upgrade**, **P7** (`r/δ` certificate), **P8** (dual dynamics), **P9** (KKT localization),
+**P10** (codim-≥2 confinement), **NC** (inversive no-cusp). Refuted: N1, **N2**, **N3**, **N4**. Retracted:
+"unit-vectors-WLOG". **Confidence (B-side true): ~75%.**
 
-**Pending human items:** NH1 (κ_A≤1/δ_A proof in 2510.20301); NH2 (BV constants non-poly, confirmed);
-**NH3** (Betke optimization-online-797 `κ·2^{3r/2}` attribution unverified); P5 hand-proof audit. 🔴 Nothing
-is frozen as "proved".
+**Pending human items:** NH1 (κ_A≤1/δ_A proof in 2510.20301); NH2 (BV constants non-poly, confirmed); **NH3**
+(Betke-797 attribution); **NH4** (§1 `P_s⊆C_s+(r/δ)B_2` holds within `E=span T` only); P5 hand-proof audit.
+🔴 Nothing is frozen as "proved".
 
-**Repro:** `python code/sim1_killtest.py` · `sim2_levers.py` · `round1_audit_checks.py` ·
-`round2_audit_checks.py` · `round3_audit_checks.py` (Python 3.11 + numpy + scipy; seeds in-file; JSON out).
+**Repro:** `python code/sim1_killtest.py` · `sim2_levers.py` · `round{1,2,3,4}_audit_checks.py` ·
+`round4_refutation_hunt.py` (Python 3.11 + numpy + scipy; seeds in-file; JSON outputs alongside).
 
 ---
 
@@ -101,16 +102,15 @@ handled (GREEN = "no death-evidence, attempt the proof", NOT "(★) likely true"
 
 - ✅ Owner rulings (2026-06-21): (1) GREEN — start attack loop, solver = **GPT-5.5-Pro** (relayed);
   (2) target **SODA 2027**, ignore time; (3) **HS2 = sole primary route**.
-- ✅ Rounds 1–3 done: GPT-Pro PARTIAL each → archived `docs/round{1,2,3}_response.md`; all audited
-  (numeric + fresh-agent) `docs/round{1,2,3}_audit.md`; ledger + substrate updated.
-- 🔴 **AWAITING OWNER:** relay `docs/round4_brief.md` to GPT-5.5-Pro, paste reply back. If Round 4 stalls →
-  escalate to a fresh-context attacker (K_stall=2). No-retreat: escalate, never downgrade.
-- Attack-loop state in `docs/ATTACK_LOG.md`. NEEDS-HUMAN: NH1 (κ_A≤1/δ_A proof in 2510.20301), NH2 (BV
-  non-poly), **NH3** (Betke-797 attribution). P5 hand-proof audit.
-- **Substrate gains (frozen):** R1 — P1-sharp, P2′, P6 `sinθ≥δ/r`, P4-upgrade, P3′ `|T|≤2πr⁴/δ`; R2 — **P7**
-  chamber certificate (R3-sharpened to **`r/δ`**); R3 — **P8** exact dual dynamics + energy/telescoping/Bessel.
-  **Open crux:** bounded dual-drift ⟺ DA ⟺ PC (radial part solved; curl `C(Γ)` open). Refuted: N1, **N2**
-  (rank-3), **N3** (P6/Friedrichs-angle attack). Retracted: unit-vectors-WLOG.
+- ✅ Rounds 1–4 done: GPT-Pro PARTIAL each → archived `docs/round{1..4}_response.md`; all audited (numeric +
+  fresh-agent; R4 also a decisive refutation hunt) `docs/round{1..4}_audit.md`; ledger + substrate updated.
+- 🔴 **AWAITING OWNER:** relay `docs/round5_brief_fresh.md` to a **NEW / fresh GPT-5.5-Pro conversation**
+  (escalation). Paste reply back. No-retreat: escalate/attack harder, never downgrade.
+- Attack-loop state in `docs/ATTACK_LOG.md`. NEEDS-HUMAN: NH1, NH2, **NH3**, **NH4**; P5 hand-proof audit.
+- **Substrate gains (frozen):** R1 — P1-sharp, P2′, P6, P4-upgrade, P3′; R2 — **P7** (R3→`r/δ`); R3 — **P8**
+  dynamics; R4 — **P9** KKT-localization, **P10** codim-≥2 confinement, **NC** inversive no-cusp.
+  **Open crux:** the polynomial **multiwall-cluster return-point / no-cusp theorem** (= DA ⟺ PC ⟺ NC).
+  Refuted: N1, **N2**, **N3**, **N4** (no local per-switch payment). Retracted: unit-vectors-WLOG.
 - Re-confirm at submission / at convergence: SODA27 anonymity wording on live CFP (caveat C1); Lemma 1.4
   dimension bookkeeping S^{2d-1} (caveat C2); anchor v2/scoop re-scan.
 
@@ -123,3 +123,4 @@ handled (GREEN = "no death-evidence, attempt the proof", NOT "(★) likely true"
 | 2026-06-22 (Round 1) | ~67% (↑2) | GPT-Pro PARTIAL, both audits VALID. New substrate (P6/P2′/P1-sharp/P4-upgrade/P3′) → crux is now a clean finitary geometry problem; exponential structurally harder. But poly-TV/summability untouched, BV-lit exponential → reduction-clarity, not proof. Modest uptick. |
 | 2026-06-22 (Round 2) | ~72% (↑5) | GPT-Pro PARTIAL (93%), both audits VALID. Proven local theorem P7 (`O(r²/δ²)` certificate); `(★)`⟺bounded dual-drift lemma (one clean lemma) + concrete P3′+P6 attack; direct TV numerics sub-linear/poly tracking √d/δ. Tempered: global integrability unproven, N2 + 2026 BV counterexamples show subtlety; TV is lower-bound search. Not a proof. |
 | 2026-06-22 (Round 3) | ~72% (held) | GPT-Pro PARTIAL (96%), all math sound. STALL #1: P7→`r/δ` + P8 dynamics, but P3′+P6 attack DIED (N3) and net = refutation+reformulation (`(★)`⟺DA/PC). Counterweight: dual-drift numeric bounded & flat in N ⟹ conclusion likely TRUE. Two-sided → held. Round 4 = last before escalation. |
+| 2026-06-22 (Round 4) | ~75% (↑3) | GPT-Pro PARTIAL (97%), all math correct (genuine progress). Obstruction localized to codim-≥2 clusters (P9/P10); local payment dead (N4); NC reformulation. **Refutation hunt NEGATIVE** — `sup_j‖p_j‖` flat in N under cluster stress ⟹ §3-chain accumulation does NOT happen ⟹ evidence `(★)` TRUE. Tempered: deep no-cusp proof absent, numerics heuristic. Escalating to fresh attacker. |

@@ -1,0 +1,161 @@
+{
+  "results": [
+    {
+      "r": 3,
+      "n_plane": 6,
+      "ang_gap_deg": 30.0,
+      "delta_T": 0.5,
+      "r_over_delta": 6.0,
+      "sup_by_N": [
+        [
+          25,
+          3.991
+        ],
+        [
+          50,
+          3.991
+        ],
+        [
+          100,
+          3.991
+        ],
+        [
+          200,
+          3.991
+        ],
+        [
+          350,
+          3.991
+        ]
+      ],
+      "fit_vs_sqrtN_slope": 0.0,
+      "fit_loglogN_slope": 0.0
+    },
+    {
+      "r": 3,
+      "n_plane": 7,
+      "ang_gap_deg": 26.0,
+      "delta_T": 0.4067,
+      "r_over_delta": 7.38,
+      "sup_by_N": [
+        [
+          25,
+          4.913
+        ],
+        [
+          50,
+          4.913
+        ],
+        [
+          100,
+          4.913
+        ],
+        [
+          200,
+          4.913
+        ],
+        [
+          350,
+          4.913
+        ]
+      ],
+      "fit_vs_sqrtN_slope": -0.0,
+      "fit_loglogN_slope": 0.0
+    },
+    {
+      "r": 3,
+      "n_plane": 9,
+      "ang_gap_deg": 20.0,
+      "delta_T": 0.342,
+      "r_over_delta": 8.77,
+      "sup_by_N": [
+        [
+          25,
+          5.845
+        ],
+        [
+          50,
+          5.845
+        ],
+        [
+          100,
+          5.845
+        ],
+        [
+          200,
+          5.845
+        ],
+        [
+          350,
+          5.845
+        ]
+      ],
+      "fit_vs_sqrtN_slope": -0.0,
+      "fit_loglogN_slope": -0.0
+    },
+    {
+      "r": 4,
+      "n_plane": 6,
+      "ang_gap_deg": 30.0,
+      "delta_T": 0.5,
+      "r_over_delta": 8.0,
+      "sup_by_N": [
+        [
+          25,
+          4.114
+        ],
+        [
+          50,
+          4.114
+        ],
+        [
+          100,
+          4.114
+        ],
+        [
+          200,
+          4.114
+        ],
+        [
+          350,
+          4.114
+        ]
+      ],
+      "fit_vs_sqrtN_slope": -0.0,
+      "fit_loglogN_slope": -0.0
+    },
+    {
+      "r": 4,
+      "n_plane": 8,
+      "ang_gap_deg": 24.0,
+      "delta_T": 0.2079,
+      "r_over_delta": 19.24,
+      "sup_by_N": [
+        [
+          25,
+          9.671
+        ],
+        [
+          50,
+          9.671
+        ],
+        [
+          100,
+          9.671
+        ],
+        [
+          200,
+          9.671
+        ],
+        [
+          350,
+          9.671
+        ]
+      ],
+      "fit_vs_sqrtN_slope": -0.0,
+      "fit_loglogN_slope": 0.0
+    }
+  ],
+  "verdict": "BOUNDED-in-N (DA-consistent; no refutation found)",
+  "max_loglogN_slope": 0.0
+}

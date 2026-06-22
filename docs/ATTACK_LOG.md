@@ -16,7 +16,10 @@
 | 3 | 2026-06-22 | `docs/round3_brief.md` | dispatched | Targets bounded dual-drift lemma; P3′+P6 Friedrichs-angle attack suggested. |
 | 3 | 2026-06-22 | `docs/round3_response.md` | **PARTIAL** (GPT-5.5-Pro, conf 96%) | P7→`r/δ`; exact dual dynamics (P8); **P6-attack DEAD** (projected images not T-spanned); `(★)`⟺DA/PC. |
 | 3 | 2026-06-22 | `docs/round3_audit.md` + `code/round3_audit_checks.py` | **AUDITED — all math SOUND; STALL #1** | Numeric + analytic. Update **P7→r/δ**, freeze **P8** (dynamics), **N3** (dead P6-attack). Dual-drift numeric POSITIVE (sup_j‖p_j‖ bounded in N). No FATAL. Conf held 72%. NH3 (Betke-797 attribution). |
-| 4 | 2026-06-22 | `docs/round4_brief.md` | **READY — awaiting owner relay to GPT-5.5-Pro** | Targets DA/PC via **itinerary-admissibility / radial-budget Lyapunov** (NOT angle-transfer); last GPT-Pro round before escalation if it stalls. |
+| 4 | 2026-06-22 | `docs/round4_brief.md` | dispatched | Targets DA/PC via itinerary-admissibility / radial-budget Lyapunov. |
+| 4 | 2026-06-22 | `docs/round4_response.md` | **PARTIAL** (GPT-5.5-Pro, conf 97%) | Localized obstruction: P9 KKT-localization, P10 codim-≥2 confinement, NC inversive reformulation; killed radial-budget Lyapunov (N4). |
+| 4 | 2026-06-22 | `docs/round4_audit.md` + `code/round4_audit_checks.py` + `round4_refutation_hunt.py` | **AUDITED — all math CORRECT; genuine progress** | Numeric + analytic + **decisive refutation hunt NEGATIVE** (`sup_j‖p_j‖` flat in N under codim-≥2 stress ⟹ DA conclusion likely TRUE). Freeze P9/P10/NC, N4. Conf 72→75%. |
+| 5 | 2026-06-22 | `docs/round5_brief_fresh.md` | **READY (ESCALATION) — awaiting owner relay to a NEW GPT-5.5-Pro session** | Fresh-context attacker: clean NC / multiwall-cluster return-point theorem, invites oriented-matroid / projection-orbit machinery. |
 
 ## Stop criteria (guide §4) — AI convergence only when ALL hold
 1. solver explicitly claims closure of `(★)` + assembly, no further conditions;

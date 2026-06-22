@@ -7,6 +7,20 @@
 
 ## ▶ HEADLINE (latest status line on top)
 
+**2026-06-22 — ROUND 4 COMPLETE (audited). Obstruction localized to codim-≥2 clusters; refutation hunt
+NEGATIVE; confidence ~75%; ESCALATING to fresh-context attacker.** GPT-5.5-Pro PARTIAL (97%); all math
+CORRECT (genuine progress, not stall). NET: (i) **P9** KKT localization — every positive dual jump comes
+from constraints active on BOTH sides of a switch, `Δ≤4Σλ_common`, **no-common-active ⟹ Δ≤0**; (ii) **P10**
+all UNPAID drift confined to a poly-thin tube around a **codim-≥2 stratum**; (iii) **NC** inversive no-cusp
+reformulation `(★)⟺ inf_j‖z_j‖≥1/poly`; (iv) **N4** no LOCAL per-switch payment exists (r/δ ball not
+invariant; genuine itinerary with `Δ=48/7`, radial→0). **DECISIVE refutation hunt:** on codim-≥2 cluster
+stress, `sup_j‖p_j‖` is **flat in N** (slope 0.000), ≤`r/δ` — the feared §3-chain accumulation does NOT
+happen ⟹ DA conclusion holds in the danger zone. Confidence **~75%** (↑3). **Crux = polynomial
+multiwall-cluster return-point/no-cusp theorem** (needs oriented-matroid gallery). → escalate: fresh GPT-Pro
+session, `docs/round5_brief_fresh.md`. **NOTHING frozen as "proved".**
+
+---
+
 **2026-06-22 — ROUND 3 COMPLETE (audited). STALL round #1; `(★)` ⟺ DA/PC; confidence ~72% (held).**
 GPT-5.5-Pro PARTIAL (96%); both audits confirm **all mathematics SOUND**. NET: (i) **P7 sharpened to
 `R_loc=r/δ`**; (ii) **P8** exact dual dynamics `p⁺=P_{H^⊥}p+q_B` (+ energy/telescoping/Bessel identities,
@@ -78,6 +92,17 @@ P3′. See `docs/round1_*`.)*
   **`‖p_s‖ ≤ r/δ_T`** (vertex of `P_s` + `r` independent active normals + P1; was `O(r²/δ²)` via
   Carathéodory). *Status:* **✅ proven (analytic VALID both forms) + numerically confirmed** (cert norms 4–6,
   0 violations vs `r/δ`). Inherits NH1 via P3′. *Use:* LOCAL feasibility; integrability open (see `(★)`).
+- `P9` (NEW 2026-06-22, Round-4) **KKT localization of dual drift:** for an adjacent transition (flipped
+  normal `b_0`, common active normals `b_i`), `Δ=‖p⁺‖²−‖p⁻‖²=2Σλ_i−‖d‖² ≤ 4Σ_{i≥1}λ_i`, and **no common
+  active constraint ⟹ Δ≤0**. *Status:* **✅ analytic VALID (`β≥2` load-bearing) + numeric (0 violations).**
+  *Use:* positive dual drift only at switches sharing active constraints on both sides.
+- `P10` (NEW 2026-06-22, Round-4) **codim-≥2 confinement:** `Δ_+ ≤ (4/η)⟨d,u⟩+4Σ_{i∈Z}λ_i`; the unpaid part
+  forces `dist(u,J^⊥)≤rη/δ`, `dim J≥2`. *Status:* **✅ VALID.** *Use:* all UNPAID drift sits in a poly-thin
+  tube around a codim-≥2 stratum (clustered multiwall). **Refutation hunt: that mechanism does NOT
+  accumulate — `sup_j‖p_j‖` flat in N (`code/round4_refutation_results.json`).**
+- `NC` (NEW 2026-06-22, Round-4) **inversive no-cusp reformulation:** `I(p)=p/‖p‖²`, `I(P_s)=L_s∖{0}`
+  (`L_s=∩B(v_i/2,½)`), `(★)⟺ inf_j‖z_j‖≥1/poly` (`z_j=I(p_j)`). *Status:* **✅ VALID (exact).** Cleanest
+  standalone statement of the crux.
 - `P8` (NEW 2026-06-22, Round-3) **exact dual-drift dynamics:** the dual update is an affine projection
   `p⁺=Proj_{P_s}(p)=P_{H^⊥}p+q_B`, `H`=active-face normal span, `q_B`=its affine hull's min-norm point,
   `‖q_B‖≤r/δ_T`; with **energy identity** `‖p⁺‖²−‖p‖²=‖q_B‖²−‖P_H p‖²`, **telescoping**
@@ -112,6 +137,10 @@ P3′. See `docs/round1_*`.)*
   δ_T=√(5/14)): margins force `(1−2c)Σw≥3` ⟹ `−½Σw≥3`, impossible (numeric LP infeasible + analytic VALID).
   ⇒ any HS1/HS2 proof MUST refine the chamber fan, vary the gradient inside chambers, or carry HISTORY. Does
   NOT refute `(★)`.
+- `N4` (refuted approach 2026-06-22, Round-4): any **LOCAL per-switch payment** estimate (`positive dual
+  jump ≤ poly·local radial/transition budget`), e.g. the radial-budget Lyapunov. DEAD: the `r/δ` ball is
+  not projection-invariant (one adjacent projection escapes), and on a GENUINE constant-δ itinerary a switch
+  adds `Δ=48/7` while `⟨d,x⟩/‖x‖→0` (verified S2/S3). The cancellation must be cluster-level/history-dependent.
 - `N3` (refuted approach 2026-06-22, Round-3): the **P6/Friedrichs-angle charging attack** (charge dual-drift
   reorientations using `sinθ≥δ/r`). DEAD: the interacting spaces are the dynamically projected images
   `R_j H_j=P_{H_N^⊥}⋯P_{H_{j+1}^⊥}H_j`, NOT `T`-spanned — P6 inapplicable; they form an infinite family
@@ -157,9 +186,14 @@ P3′. See `docs/round1_*`.)*
 > > (`q_j∈H_j`, `‖q_j‖≤r/δ`); `PC: C(Γ)=Σ∫ρ d⟨a_s,u⟩ ≤ poly·‖y_0‖`. Radial part solved; only accumulated
 > > curl open. **Dual-drift numeric (Round-3): `sup_j‖p_j‖` bounded & flat in N ~`r/δ` ⟹ conclusion holds
 > > empirically.** ❌ Dead attack `N3`: P6/Friedrichs-angle (P6 doesn't transfer to projected images).
-> > ✅ Round-4 attack: itinerary-admissibility / radial-budget Lyapunov — `‖p_j‖` non-increasing on fixed-face
-> > sub-runs; growth only at reorientations, which are itinerary-coupled (successive faces share `x_j`); make
-> > `C(Γ)` summable via history-dependent `a_s` tied to ρ-monotonicity. NOT angle-transfer.
+> > **Round-4 result:** localized — `P9` (drift only at switches sharing active constraints both sides;
+> > no-common ⟹ no increase) + `P10` (all UNPAID drift in a codim-≥2 cluster tube). Radial-budget Lyapunov
+> > DEAD (`N4`: no local per-switch payment). Equivalent clean form **NC** (inversive): the relative-nearest-
+> > point process on tangent lobes never cusps into 0. **Refutation hunt NEGATIVE** (`sup_j‖p_j‖` flat in N
+> > even under codim-≥2 stress) ⟹ conclusion likely TRUE.
+> > **Missing ingredient (Round-5 target): a polynomial multiwall-cluster RETURN-POINT / no-cusp theorem** —
+> > cluster excursions must cancel after the admissible cluster+revisits without re-paying rank/angle; needs
+> > the ordered oriented-matroid gallery. **ESCALATED to a fresh-context attacker** (`docs/round5_brief_fresh.md`).
 >
 > 🔴 `(★)` is ATTACKER-originated (web GPT-5.5-Pro), NOT Claude. Pivot trigger if refuted (TV provably
 > exponential at constant δ ⟹ truth is A-side). **Routing:** HS1 reduction rigorous (P4-upgrade) + Theorem 1
@@ -175,6 +209,7 @@ P3′. See `docs/round1_*`.)*
 | 2026-06-22 (Round 1) | ~67% (↑2) | GPT-Pro PARTIAL, both audits VALID. New verified substrate (P6 angle-sep, P2′, P1-sharp, P4-upgrade ⇒ HS1 rigorous, P3′ ⇒ poly-many directions) makes an exponential construction structurally harder and turns the crux into a clean finitary geometry problem (G1). BUT the core poly-TV/summability question is untouched and BV-lit gives exponential — progress is reduction-clarity, not proof. Modest uptick only. |
 | 2026-06-22 (Round 2) | ~72% (↑5) | GPT-Pro PARTIAL (93%), both audits VALID. Proven NEW local theorem P7 (`O(r²/δ²)` certificate); `(★)` ⟺ bounded dual-drift lemma (one clean well-posed lemma) with a concrete P3′+P6 attack; direct TV numerics show sub-linear/poly growth tracking `√d/δ`, no exponential. Tempered: global integrability unproven, N2 + 2026 BV counterexamples show real subtlety, TV is a lower-bound search. Not a proof. |
 | 2026-06-22 (Round 3) | ~72% (held) | GPT-Pro PARTIAL (96%), all math SOUND. **STALL #1:** P7 sharpened to `r/δ` + P8 dynamics, but the P3′+P6 attack DIED (N3: P6 doesn't transfer to projected images) and the round is net refutation+reformulation (`(★)`⟺DA/PC). Counterweight: dual-drift numeric `sup_j‖p_j‖` bounded & flat in N ~`r/δ` ⟹ conclusion likely TRUE. Two-sided ⟹ held. K_stall=2: Round 4 = last before escalation. |
+| 2026-06-22 (Round 4) | ~75% (↑3) | GPT-Pro PARTIAL (97%), all math CORRECT (genuine progress). Obstruction localized to codim-≥2 clusters (P9/P10); N4 kills local payment; NC clean reformulation. **Decisive refutation hunt NEGATIVE** — `sup_j‖p_j‖` flat in N under cluster stress ⟹ the §3-chain accumulation does NOT happen ⟹ strong evidence DA/`(★)` TRUE. Tempered: proof absent (deep no-cusp theorem), numerics heuristic. Escalating to fresh attacker. |
 
 ---
 
