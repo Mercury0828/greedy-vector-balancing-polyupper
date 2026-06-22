@@ -1,0 +1,259 @@
+{
+  "seed": 20260621,
+  "delta": 0.25,
+  "per_d": [
+    {
+      "d": 2,
+      "best_maxnorm": 1.4142,
+      "sqrt_d_over_delta": 5.6569,
+      "exp_bound": 8.0,
+      "winner": "dep_pairs(k=1,n=3)",
+      "families": {
+        "gadgets(dp=1,dim=2)": {
+          "maxnorm": 1.0,
+          "delta_T": 0.25,
+          "dim": 2,
+          "n": 2
+        },
+        "rand_indep(n=2)+opt": {
+          "maxnorm": 1.4047,
+          "delta_T": 0.9999,
+          "dim": 2,
+          "n": 2
+        },
+        "dep_pairs(k=1,n=3)": {
+          "maxnorm": 1.4142,
+          "delta_T": 0.7071,
+          "dim": 2,
+          "n": 3
+        },
+        "near_dep_chain": {
+          "maxnorm": 1.0,
+          "delta_T": 0.25,
+          "dim": 2,
+          "n": 2
+        }
+      }
+    },
+    {
+      "d": 3,
+      "best_maxnorm": 2.0,
+      "sqrt_d_over_delta": 6.9282,
+      "exp_bound": 64.0,
+      "winner": "rand_indep(n=3)+opt",
+      "families": {
+        "gadgets(dp=1,dim=2)": {
+          "maxnorm": 1.0,
+          "delta_T": 0.25,
+          "dim": 2,
+          "n": 2
+        },
+        "rand_indep(n=3)+opt": {
+          "maxnorm": 2.0,
+          "delta_T": 0.7509,
+          "dim": 3,
+          "n": 3
+        },
+        "dep_pairs(k=1,n=4)": {
+          "maxnorm": 1.7321,
+          "delta_T": 0.7071,
+          "dim": 3,
+          "n": 4
+        }
+      }
+    },
+    {
+      "d": 4,
+      "best_maxnorm": 2.4408,
+      "sqrt_d_over_delta": 8.0,
+      "exp_bound": 512.0,
+      "winner": "rand_indep(n=4)+opt",
+      "families": {
+        "gadgets(dp=2,dim=4)": {
+          "maxnorm": 1.4142,
+          "delta_T": 0.25,
+          "dim": 4,
+          "n": 4
+        },
+        "rand_indep(n=4)+opt": {
+          "maxnorm": 2.4408,
+          "delta_T": 0.5543,
+          "dim": 4,
+          "n": 4
+        },
+        "dep_pairs(k=2,n=6)": {
+          "maxnorm": 2.0,
+          "delta_T": 0.7071,
+          "dim": 4,
+          "n": 6
+        }
+      }
+    },
+    {
+      "d": 5,
+      "best_maxnorm": 2.9893,
+      "sqrt_d_over_delta": 8.9443,
+      "exp_bound": 4096.0,
+      "winner": "rand_indep(n=5)+opt",
+      "families": {
+        "gadgets(dp=2,dim=4)": {
+          "maxnorm": 1.4142,
+          "delta_T": 0.25,
+          "dim": 4,
+          "n": 4
+        },
+        "rand_indep(n=5)+opt": {
+          "maxnorm": 2.9893,
+          "delta_T": 0.3554,
+          "dim": 5,
+          "n": 5
+        },
+        "dep_pairs(k=2,n=7)": {
+          "maxnorm": 2.2361,
+          "delta_T": 0.7071,
+          "dim": 5,
+          "n": 7
+        }
+      }
+    },
+    {
+      "d": 6,
+      "best_maxnorm": 3.6216,
+      "sqrt_d_over_delta": 9.798,
+      "exp_bound": 32768.0,
+      "winner": "rand_indep(n=6)+opt",
+      "families": {
+        "gadgets(dp=3,dim=6)": {
+          "maxnorm": 1.7321,
+          "delta_T": 0.25,
+          "dim": 6,
+          "n": 6
+        },
+        "rand_indep(n=6)+opt": {
+          "maxnorm": 3.6216,
+          "delta_T": 0.3628,
+          "dim": 6,
+          "n": 6
+        },
+        "dep_pairs(k=2,n=8)": {
+          "maxnorm": 2.4495,
+          "delta_T": 0.7071,
+          "dim": 6,
+          "n": 8
+        }
+      }
+    },
+    {
+      "d": 7,
+      "best_maxnorm": 4.8979,
+      "sqrt_d_over_delta": 10.583,
+      "exp_bound": 262144.0,
+      "winner": "rand_indep(n=7)+opt",
+      "families": {
+        "gadgets(dp=3,dim=6)": {
+          "maxnorm": 1.7321,
+          "delta_T": 0.25,
+          "dim": 6,
+          "n": 6
+        },
+        "rand_indep(n=7)+opt": {
+          "maxnorm": 4.8979,
+          "delta_T": 0.3668,
+          "dim": 7,
+          "n": 7
+        },
+        "dep_pairs(k=2,n=9)": {
+          "maxnorm": 2.6458,
+          "delta_T": 0.7071,
+          "dim": 7,
+          "n": 9
+        }
+      }
+    },
+    {
+      "d": 8,
+      "best_maxnorm": 5.2384,
+      "sqrt_d_over_delta": 11.3137,
+      "exp_bound": 2097152.0,
+      "winner": "rand_indep(n=8)+opt",
+      "families": {
+        "gadgets(dp=4,dim=8)": {
+          "maxnorm": 2.0,
+          "delta_T": 0.25,
+          "dim": 8,
+          "n": 8
+        },
+        "rand_indep(n=8)+opt": {
+          "maxnorm": 5.2384,
+          "delta_T": 0.2912,
+          "dim": 8,
+          "n": 8
+        },
+        "dep_pairs(k=2,n=10)": {
+          "maxnorm": 2.8284,
+          "delta_T": 0.7071,
+          "dim": 8,
+          "n": 10
+        }
+      }
+    },
+    {
+      "d": 9,
+      "best_maxnorm": 5.0503,
+      "sqrt_d_over_delta": 12.0,
+      "exp_bound": 16777216.0,
+      "winner": "rand_indep(n=9)+opt",
+      "families": {
+        "gadgets(dp=4,dim=8)": {
+          "maxnorm": 2.0,
+          "delta_T": 0.25,
+          "dim": 8,
+          "n": 8
+        },
+        "rand_indep(n=9)+opt": {
+          "maxnorm": 5.0503,
+          "delta_T": 0.2937,
+          "dim": 9,
+          "n": 9
+        },
+        "dep_pairs(k=2,n=11)": {
+          "maxnorm": 3.0,
+          "delta_T": 0.7071,
+          "dim": 9,
+          "n": 11
+        }
+      }
+    },
+    {
+      "d": 10,
+      "best_maxnorm": 4.0891,
+      "sqrt_d_over_delta": 12.6491,
+      "exp_bound": 134217728.0,
+      "winner": "rand_indep(n=10)+opt",
+      "families": {
+        "gadgets(dp=5,dim=10)": {
+          "maxnorm": 2.2361,
+          "delta_T": 0.25,
+          "dim": 10,
+          "n": 10
+        },
+        "rand_indep(n=10)+opt": {
+          "maxnorm": 4.0891,
+          "delta_T": 0.3567,
+          "dim": 10,
+          "n": 10
+        },
+        "dep_pairs(k=2,n=12)": {
+          "maxnorm": 3.1623,
+          "delta_T": 0.7071,
+          "dim": 10,
+          "n": 12
+        }
+      }
+    }
+  ],
+  "fit": {
+    "poly_loglog_slope": 0.8154,
+    "exp_semilog_slope": 0.1508
+  }
+}

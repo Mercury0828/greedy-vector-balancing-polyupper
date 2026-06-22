@@ -1,0 +1,88 @@
+{
+  "A": {
+    "delta_T": 0.25,
+    "unit_only_maxnorm": 1.0,
+    "scaled_explicit_final_norm": 4.0,
+    "scaled_maxnorm_along_traj": 4.0,
+    "VERDICT": "scaled > unit-only"
+  },
+  "B": {
+    "worst_ratio_lhs_over_bound": 0.7139,
+    "violations": 0,
+    "note": "ratio<=1 means refined P2 holds"
+  },
+  "C": {
+    "pairs_checked": 3768,
+    "worst_ratio_sin_over_bound": 5.0796,
+    "violations": 0,
+    "note": "ratio>=1 means sin\u03b8>=\u03b4_T/r holds"
+  },
+  "D": {
+    "cases": [
+      {
+        "name": "dep_pairs(d=4,k=2)",
+        "delta_A": 0.7071,
+        "kappa_A": 1.4142,
+        "1/delta_A": 1.4142,
+        "circuits": 2,
+        "kappa<=1/delta_A": true
+      },
+      {
+        "name": "dep_pairs(d=6,k=3)",
+        "delta_A": 0.7071,
+        "kappa_A": 1.4142,
+        "1/delta_A": 1.4142,
+        "circuits": 3,
+        "kappa<=1/delta_A": true
+      },
+      {
+        "name": "rand_unit(d=3,n=5)",
+        "delta_A": 0.1264,
+        "kappa_A": 7.0005,
+        "1/delta_A": 7.9101,
+        "circuits": 5,
+        "kappa<=1/delta_A": true
+      },
+      {
+        "name": "rand_unit(d=4,n=6)",
+        "delta_A": 0.0687,
+        "kappa_A": 12.5721,
+        "1/delta_A": 14.5455,
+        "circuits": 6,
+        "kappa<=1/delta_A": true
+      },
+      {
+        "name": "rand_unit(d=4,n=7)",
+        "delta_A": 0.0186,
+        "kappa_A": 35.2421,
+        "1/delta_A": 53.8382,
+        "circuits": 21,
+        "kappa<=1/delta_A": true
+      },
+      {
+        "name": "rand_unit(d=5,n=7)",
+        "delta_A": 0.0041,
+        "kappa_A": 177.9657,
+        "1/delta_A": 246.5912,
+        "circuits": 7,
+        "kappa<=1/delta_A": true
+      },
+      {
+        "name": "near_dep_triple",
+        "delta_A": 0.2075,
+        "kappa_A": 1.0,
+        "1/delta_A": 4.8189,
+        "circuits": 0,
+        "kappa<=1/delta_A": true
+      }
+    ],
+    "any_violation": null
+  },
+  "E": {
+    "||P_J x||": 10.0,
+    "<t,x>": 0.0,
+    "||P_{J+<t>}x||": 40.0,
+    "B/delta": 40.0,
+    "VERDICT": "static additive switch lemma FALSE"
+  }
+}
