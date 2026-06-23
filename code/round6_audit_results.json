@@ -1,0 +1,60 @@
+{
+  "RANK3": {
+    "cases": [
+      {
+        "m": 3,
+        "delta_T": 0.6782,
+        "sup": 3.303,
+        "sqrt53/delta^2": 15.83,
+        "8/delta^2": 17.395,
+        "ok(<=sqrt53/d^2)": "True"
+      },
+      {
+        "m": 4,
+        "delta_T": 0.2836,
+        "sup": 8.739,
+        "sqrt53/delta^2": 90.498,
+        "8/delta^2": 99.447,
+        "ok(<=sqrt53/d^2)": "True"
+      },
+      {
+        "m": 3,
+        "delta_T": 0.5299,
+        "sup": 5.736,
+        "sqrt53/delta^2": 25.926,
+        "8/delta^2": 28.489,
+        "ok(<=sqrt53/d^2)": "True"
+      }
+    ],
+    "worst_sup_over_sqrt53bound": 0.2212,
+    "violations": 0
+  },
+  "RANK4_obstruction": {
+    "P_L(e4)_norm": 0.0,
+    "survivor_in_(J+L)perp_norm": 1.0,
+    "VERDICT": "survivor hides: P_L z = 0 while z in (J+L)^perp is full"
+  },
+  "RANK4_drift": [
+    {
+      "delta_T": 0.2575,
+      "sup": 12.28,
+      "sqrt53/d^2": 109.79,
+      "r/d=4/d": 15.53,
+      "D_exp_huge": "yes"
+    },
+    {
+      "delta_T": 0.1805,
+      "sup": 24.195,
+      "sqrt53/d^2": 223.38,
+      "r/d=4/d": 22.16,
+      "D_exp_huge": "yes"
+    },
+    {
+      "delta_T": 0.4897,
+      "sup": 6.43,
+      "sqrt53/d^2": 30.36,
+      "r/d=4/d": 8.17,
+      "D_exp_huge": "yes"
+    }
+  ]
+}

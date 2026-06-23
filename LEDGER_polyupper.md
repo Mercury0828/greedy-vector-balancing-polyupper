@@ -7,6 +7,19 @@
 
 ## ▶ HEADLINE (latest status line on top)
 
+**2026-06-22 — ROUND 6 COMPLETE (audited). rank 3 CLOSED; obstruction pinpointed at rank 4; confidence
+~75% (held).** Fresh-thread GPT-5.5-Pro PARTIAL+WHERE (97%); both audits VALID. NET: (i) **P12** — rank 3
+fully CLOSED, `sup_j‖p_j‖ ≤ √53/δ² < 8/δ²` (degree 2 in 1/δ), admissible itineraries — via a plane-cluster
+"survivor" recurrence (leaving a plane DETECTS its `J^⊥` amplitude, A1) that traps `|a|≤7/δ²`; (ii) the
+argument **first genuinely fails at rank 4** — the "multidimensional survivor" hides in `(J+L)^⊥` (explicit
+`δ=1` example `P_L z=0`), so rank 3 does NOT template r→r+1; (iii) crux sharpened to the **polynomial
+FLAG-HOLONOMY lemma** `b_B=c_τ−Q_B c_σ` (flag-indexed), with the **rank-4 closed-excursion core case**
+(`b_B=(I−Q_B)c_{J,ω}`) as the pivotal first-unresolved case. Rank-4 numeric drift still bounded/small.
+**Best path: Round-7 = the rank-4 flag-holonomy core** (closing it likely templates the general induction).
+**NOTHING frozen as "proved" beyond P11, P12, D_exp.**
+
+---
+
 **2026-06-22 — ROUND 5 COMPLETE (audited; fresh-context escalation paid off). rank≤2 CLOSED; all-word
 exp bound; `(★)` ⟺ cocycle identity; confidence ~75% (held).** Fresh GPT-5.5-Pro PARTIAL+WHERE (97% on
 the rank-exp theorem, 72% the full poly lemma true); both audits VALID. NET: (i) **P11** — rank ≤2 fully
@@ -119,6 +132,12 @@ P3′. See `docs/round1_*`.)*
   (`H_j=E ⟹ p_{j+1}=q_j`) + "two distinct central walls meet only at 0". *Status:* **✅ analytic VALID &
   RIGOROUS + numeric SATURATED** (worst sup/(r/δ)=0.9971, 0 violations). First closed *orbit* bound (vs the
   P7 *certificate*). *Use:* base case for a rank induction r→r+1.
+- `P12` (NEW 2026-06-22, Round-6) **rank 3 CLOSED:** for `r=3`, admissible itineraries, `δ≤1`,
+  `sup_j‖p_j‖ ≤ √53/δ² < 8/δ²` (degree 2 in 1/δ); hence `(★)` at rank 3. *Proof:* P1,P9,P11,B4,exact-J +
+  plane-cluster survivor recurrence (leaving a plane detects its `J^⊥` amplitude via A1 ⟹ `|a|≤7/δ²`).
+  *Status:* **✅ analytic VALID (8/8 steps) + numeric (`sup≤√53/δ²`, 0 viol, ratio 0.22).** Caveats:
+  admissibility load-bearing (all-word = D_exp); NH5 (write the simultaneous→adjacent gallery refinement).
+  🔴 **rank 3 is SPECIAL — does NOT template r→r+1** (the survivor can't hide when `J+L=E`; fails at rank ≥4).
 - `D_exp` (NEW 2026-06-22, Round-5) **all-word bound:** for ANY chamber word (no admissibility),
   `sup_j‖p_j‖ ≤ 2(r/δ)·5^{r-1}·(2r/δ)^{r(r-1)}`. *Proof:* two-flat regularity (`K=2r/δ`) + full-rank block
   contraction `‖Q‖≤β_k=1/√(1+K^{-2(k-1)})` + recursion `F_k≤(R_0+F_{k-1})/(1−β_k)`. *Status:* **✅ VALID**
@@ -219,10 +238,13 @@ P3′. See `docs/round1_*`.)*
 > > `b_B = c_τ − Q_B c_σ` (closed block: `b_B=(I−Q_B)c_σ`), `‖c_σ‖≤poly`, for the affine map
 > > `A_B(p)=Q_B p+b_B` of each admissible cluster block — i.e. per-block translations COBOUNDARY-cancel
 > > rather than accumulate the `(1−β_k)^{-1}≍K^{2(k-1)}` factor. **`(★)` ⟺ this cocycle (route-equivalence).**
-> > Proven: rank ≤2 (P11); all-word exp ceiling (D_exp). **Best path (Round-6): rank induction r→r+1** —
-> > run the rank-r bound inside each proper J (exact-J-cluster: `P_{J^⊥}p` invariant) + prove the cocycle for
-> > top-rank full-span blocks. Refutation target: a repeatable admissible closed block with `‖(I−Q_B)^†b_B‖`
-> > super-poly (none found; probe stayed ~r/δ).
+> > Proven: rank ≤3 (P11 + **P12 rank 3, `√53/δ²`**); all-word exp ceiling (D_exp). **Round-6 finding: rank 3
+> > is SPECIAL (no survivor hides), the general case first fails at rank 4** (multidimensional survivor in
+> > `(J+L)^⊥`). Sharpest form = the **polynomial FLAG-HOLONOMY lemma** (flag-indexed `c_σ`). **Pivotal open
+> > case (Round-7): the rank-4 closed-excursion core** — excursions from a rank-2 `J`-cluster through rank-3
+> > superflats back to the same `J`-state have `b_B=(I−Q_B)c_{J,ω}`, `‖c_{J,ω}‖≤poly(1/δ)`; closing it likely
+> > templates general r. Refutation target: a repeatable admissible closed block with `‖(I−Q_B)^†b_B‖`
+> > super-poly (none found; probe ~r/δ).
 >
 > 🔴 `(★)` is ATTACKER-originated (web GPT-5.5-Pro), NOT Claude. Pivot trigger if refuted (TV provably
 > exponential at constant δ ⟹ truth is A-side). **Routing:** HS1 reduction rigorous (P4-upgrade) + Theorem 1
@@ -240,6 +262,7 @@ P3′. See `docs/round1_*`.)*
 | 2026-06-22 (Round 3) | ~72% (held) | GPT-Pro PARTIAL (96%), all math SOUND. **STALL #1:** P7 sharpened to `r/δ` + P8 dynamics, but the P3′+P6 attack DIED (N3: P6 doesn't transfer to projected images) and the round is net refutation+reformulation (`(★)`⟺DA/PC). Counterweight: dual-drift numeric `sup_j‖p_j‖` bounded & flat in N ~`r/δ` ⟹ conclusion likely TRUE. Two-sided ⟹ held. K_stall=2: Round 4 = last before escalation. |
 | 2026-06-22 (Round 4) | ~75% (↑3) | GPT-Pro PARTIAL (97%), all math CORRECT (genuine progress). Obstruction localized to codim-≥2 clusters (P9/P10); N4 kills local payment; NC clean reformulation. **Decisive refutation hunt NEGATIVE** — `sup_j‖p_j‖` flat in N under cluster stress ⟹ the §3-chain accumulation does NOT happen ⟹ strong evidence DA/`(★)` TRUE. Tempered: proof absent (deep no-cusp theorem), numerics heuristic. Escalating to fresh attacker. |
 | 2026-06-22 (Round 5) | ~75% (held) | Fresh-context attacker PARTIAL+WHERE (72% full lemma), both audits VALID. **rank ≤2 CLOSED (P11, saturated)** + all-word exp bound (D_exp, avoids dead route) + `(★)`⟺cocycle identity. Cocycle refutation probe NEGATIVE. Net: base case + sharp algebraic crux + clearest path (rank induction). Confidence held (positive structure vs deep step still unproven; N2 ⟹ induction must be history-dependent). |
+| 2026-06-22 (Round 6) | ~75% (held) | Fresh-thread PARTIAL+WHERE (97%), both audits VALID. **rank 3 CLOSED (P12, `√53/δ²`)** via survivor recurrence. But rank 3 is SPECIAL — general case first fails at rank 4 (multidimensional survivor), so it does NOT template r→r+1; crux = the rank-4 flag-holonomy core. Rank-4 drift still bounded numerically. Held: another base case + obstruction pinpointed, but the deep holonomy cancellation unproven and now known to be genuinely rank-4-new. |
 
 ---
 

@@ -22,7 +22,10 @@
 | 5 | 2026-06-22 | `docs/round5_brief_fresh.md` | dispatched (ESCALATION, fresh context) | Clean NC / multiwall-cluster return-point theorem. |
 | 5 | 2026-06-22 | `docs/round5_response.md` | **PARTIAL+WHERE** (fresh GPT-5.5-Pro; 97% rank-exp thm, 72% full lemma) | rank≤2 CLOSED; all-word D_exp bound; `(★)`⟺ cocycle identity `b_B=c_τ−Q_B c_σ`. |
 | 5 | 2026-06-22 | `docs/round5_audit.md` + `code/round5_audit_checks.py` | **AUDITED — all 5 claims VALID; genuine progress** | Numeric + analytic. Freeze **P11** (rank≤2, saturated) + **D_exp**. Cocycle = sharp crux. Conf held 75%. Best path: rank induction r→r+1. |
-| 6 | 2026-06-22 | `docs/round6_brief.md` | **READY — awaiting owner relay to GPT-5.5-Pro (continue fresh thread)** | Rank induction r→r+1 (start rank 3) via exact-J-cluster + prove the cocycle identity for top-rank full-span blocks. |
+| 6 | 2026-06-22 | `docs/round6_brief.md` | dispatched (fresh thread) | Rank induction r→r+1 (start rank 3). |
+| 6 | 2026-06-22 | `docs/round6_response.md` | **PARTIAL+WHERE** (GPT-5.5-Pro, conf 97%) | rank 3 CLOSED `sup<8/δ²`; argument first fails at rank 4 (multidimensional survivor); crux = flag-holonomy lemma. |
+| 6 | 2026-06-22 | `docs/round6_audit.md` + `code/round6_audit_checks.py` | **AUDITED — rank 3 CLOSED (8/8 VALID); rank-4 obstruction GENUINE** | Numeric + analytic. Freeze **P12** (rank 3, `√53/δ²`). Rank 3 special (no template). NH5 (gallery refinement). Conf held 75%. |
+| 7 | 2026-06-22 | `docs/round7_brief.md` | **READY — awaiting owner relay to GPT-5.5-Pro (fresh thread)** | The PIVOTAL rank-4 flag-holonomy core case: `b_B=(I−Q_B)c_{J,ω}` for closed rank-3-superflat excursions from a rank-2 J-cluster. |
 
 ## Stop criteria (guide §4) — AI convergence only when ALL hold
 1. solver explicitly claims closure of `(★)` + assembly, no further conditions;
