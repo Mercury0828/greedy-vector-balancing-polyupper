@@ -4,9 +4,12 @@
 > conversation (no prior thread). 8 prior rounds (one solver lineage) reduced the problem to a single core but
 > circled it; the owner is invoking the fresh-context lever for a last full-strength attempt. DESIGN: present
 > the ORIGINAL problem cleanly and invite a genuinely NEW route — the accumulated dual-cylinder framework is
-> given only as an OPTIONAL appendix the attacker may discard. Archive reply → `docs/round9_response.md`;
-> independent audits (3 if closure). If this does not close or refute the core, the project goes to the owner
-> gate (human verification / scope decision).
+> given only as an OPTIONAL appendix the attacker may discard.
+> 🔴 OWNER STEERING (2026-06-22): the brief carries an explicit CLOSURE MANDATE — extracting/relabeling
+> another "core" or "break-point" is declared NOT a useful outcome (8 rounds already did that); the solver is
+> pushed to actually PROVE or REFUTE. Rationale: framing the task as "reduce / extract a break-point" lets the
+> solver settle for a partial instead of going all-out. Archive reply → `docs/round9_response.md`;
+> independent audits (3 if closure). If this does not close or refute, the project goes to the owner gate.
 
 ---
 
@@ -14,8 +17,22 @@
 
 You are attacking, at full strength, a concrete open problem in discrepancy theory. **Solve it your way** —
 bring whatever machinery fits, and feel free to ignore the optional appendix entirely if you see a cleaner
-route. We need either a proof, a precise break-point, or a refutation. End with a definite verdict and a
-confidence (%).
+route. End with a definite verdict and a confidence (%).
+
+🔴 **MANDATE — read before you start.** We want a **PROOF of `(★)`** (or a genuine **REFUTATION**). We do
+**NOT** want another reduction. Over many prior expert attempts this problem has repeatedly been "reduced to
+a cleaner equivalent sub-lemma" or had "a precise break-point extracted" — **that has not helped, and it is
+not what we need.** So:
+- Do **not** treat "isolate/restate a cleaner core" or "hand back a precise break-point" as a successful
+  outcome. Restating the obstruction in new language (a semigroup bound, a cocycle, an invariant-set lemma,
+  etc.) is **explicitly not progress here** — it has been done.
+- Commit your full effort to **actually closing it**: either prove the polynomial bound, or build an explicit
+  super-polynomial counterexample. Push each idea to the end; combine techniques; do the hard estimates.
+- A break-point is acceptable **only as a true last resort**, only **after** a maximal genuine attempt, and
+  only if it is a *concrete, fully-specified, independently-checkable* statement that is **strictly easier
+  than and provably different from** the open core below (not a relabeling of it) — and even then, try hard
+  to settle that statement yourself before reporting it. Default expectation: you return a proof or a
+  refutation.
 
 ### The problem `(★)`
 
@@ -53,10 +70,14 @@ process described in the appendix; targeted near-degenerate stress; trajectories
 `G(T)`-type quantities consistently BOUNDED and polynomial in `d` at constant `δ`, with NO super-polynomial
 growth — so we believe `(★)` is TRUE (~72% confidence), but a proof has resisted.
 
-### What we need back
-1. A proof of `(★)` (any route — a fresh one is very welcome), with an explicit `poly(d,1/δ)` bound. OR a
-   precise break-point. OR a refutation (a constant-`δ` super-polynomial admissible family).
-2. Your confidence (%) and a one-line verdict (closed / partial+where / refuted).
+### What we need back (in priority order)
+1. **A PROOF of `(★)`** (any route — a fresh one is very welcome), with an explicit `poly(d,1/δ)` bound; OR a
+   **REFUTATION** (a constant-`δ`, greedy-realizable family with super-polynomial `G(T)`). One of these is the
+   goal — please aim squarely at it and use your full strength.
+2. Only if (1) genuinely defeats a maximal attempt: a single concrete obstruction that is **strictly easier
+   than and provably distinct from** the open core (NOT a restatement) — with your best partial results toward
+   settling it. (Reminder: merely reducing `(★)` to another clean lemma is *not* a useful deliverable here.)
+3. Your confidence (%) and a one-line verdict (closed / refuted / genuinely-stuck-and-why).
 
 ---
 
