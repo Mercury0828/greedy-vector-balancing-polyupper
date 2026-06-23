@@ -1,0 +1,71 @@
+{
+  "rows": [
+    {
+      "family": "hadamard",
+      "r": 4,
+      "delta": 0.9738,
+      "min_gamma_deficient": 0.92122,
+      "perm_LB_d2/r3": 0.0148,
+      "1/r^2": 0.0625
+    },
+    {
+      "family": "hadamard",
+      "r": 8,
+      "delta": 0.9697,
+      "min_gamma_deficient": 0.90214,
+      "perm_LB_d2/r3": 0.00184,
+      "1/r^2": 0.0156
+    },
+    {
+      "family": "hadamard",
+      "r": 16,
+      "delta": 0.9683,
+      "min_gamma_deficient": 0.90402,
+      "perm_LB_d2/r3": 0.000229,
+      "1/r^2": 0.00391
+    },
+    {
+      "family": "hadamard",
+      "r": 32,
+      "delta": 0.9678,
+      "min_gamma_deficient": 0.90223,
+      "perm_LB_d2/r3": 2.86e-05,
+      "1/r^2": 0.000977
+    },
+    {
+      "family": "random",
+      "r": 4,
+      "delta": 0.5139,
+      "min_gamma_deficient": 0.1912,
+      "perm_LB_d2/r3": 0.00413,
+      "1/r^2": 0.0625
+    },
+    {
+      "family": "random",
+      "r": 6,
+      "delta": 0.5096,
+      "min_gamma_deficient": 0.19595,
+      "perm_LB_d2/r3": 0.0012,
+      "1/r^2": 0.0278
+    },
+    {
+      "family": "random",
+      "r": 8,
+      "delta": 0.251,
+      "min_gamma_deficient": 0.039056,
+      "perm_LB_d2/r3": 0.000123,
+      "1/r^2": 0.0156
+    },
+    {
+      "family": "random",
+      "r": 10,
+      "delta": 0.2628,
+      "min_gamma_deficient": 0.027185,
+      "perm_LB_d2/r3": 6.91e-05,
+      "1/r^2": 0.01
+    }
+  ],
+  "hadamard_loglog_slope": -0.009,
+  "min_gamma": 0.027185,
+  "verdict": "\u03b3 stays \u2265 ~1/poly (no super-poly collapse) \u27f9 NO refutation; BST supported on the hard region"
+}

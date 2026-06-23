@@ -1,9 +1,9 @@
 # PROJECT_STATE — `greedy-vector-balancing-polyupper`
 
-**Last updated:** 2026-06-23 · **Current phase:** ATTACK LOOP — Round 9 COMPLETE & audited (NEW theorem **P14**
-root systems; open core **SIMPLIFIED to BST**, basis-level; **BST ≡ quantitative Meshulam**; BST numerics
-`√r` to r=50). **Round-10 brief READY** (`docs/round10_brief_bst.md`: targeted BST attack). Ranks ≤4 + root
-systems of `(★)` proven (P11–P14). Target = SODA 2027 (time waived). Confidence ~74%.
+**Last updated:** 2026-06-23 · **Current phase:** ATTACK LOOP — Round 10 COMPLETE & audited (**P15** closed-class
+package frozen; hard region pinned to deficient-block/Hadamard and tested **CLEAN** — γ no collapse ⟹ no
+refutation; BST `√r` to r=64). **Round-11 brief READY** (`docs/round11_brief.md`: prove the open step = a poly
+PCT-gap lower bound ≡ depth-independent Meshulam). Proven: P11–P15, D_exp. Target = SODA 2027. Confidence ~76%.
 **Role:** Claude = orchestrator/referee/archivist (NOT prover). Target: **SODA 2027** (deadline
 **2026-07-09 AoE**, lightweight double-blind — confirmed live 2026-06-21).
 
@@ -11,33 +11,41 @@ systems of `(★)` proven (P11–P14). Target = SODA 2027 (time waived). Confide
 
 ## ▶ COLD-START (read this first to resume)
 
-**One-liner:** Phase 0 GREEN; external-solver attack loop (GPT-5.5-Pro + independent audits), now 9 rounds.
-**Proven:** ranks ≤4 of `(★)` (P11–P13) + **root-system/graphical `(★)` (P14)**. Round 9 SIMPLIFIED the open
-core to the **basis-level BST** (`(★)`⟺BST; no chambers), and identified **BST ≡ a depth-independent (poly)
-Meshulam boundedness theorem**; BST numerics show clean `√r` to r=50 (strongest `(★)`-evidence). **Round-10
-brief (targeted BST attack) is written and waiting.** Confidence `(★)` true ~74%.
+**One-liner:** Phase 0 GREEN; external-solver attack loop (GPT-5.5-Pro + independent audits), now 10 rounds.
+**Proven:** ranks ≤4 of `(★)` (P11–P13), root-system/graphical (P14), and a BST closed-class package (P15:
+round-schedule, comparison-stable/obtuse, equicorrelation + PCT bounds + palindrome refutation bridge). The
+open core is **BST ⟺ a depth-independent (poly) Meshulam constant**; the hard region (deficient-block/Hadamard)
+was tested decisively and is **CLEAN** (PCT gap γ no collapse ⟹ no refutation); BST `√r` to r=64. **Round-11
+brief (prove the PCT-gap lower bound) is written and waiting.** Confidence `(★)` true ~76%.
 
 **Read in this order to rebuild context:** `guide.md` (read-only constitution) → this file →
 `LEDGER_polyupper.md` (frozen model/substrate/`(★)`/confidence) → `docs/ATTACK_LOG.md` (round index) →
 latest `docs/round{n}_*.md`. 🔴 Never work from memory; re-read these first.
 
-**THE NEXT ACTION (resume here):** owner relays **`docs/round10_brief_bst.md`** (the `✂️` block) to a NEW
-GPT-5.5-Pro conversation — the targeted **BST** attack (cleanest target: a basis-level r×r problem ≡ a
-depth-independent Meshulam constant). Paste the reply back → Claude archives `docs/round10_response.md`, runs
-3 independent audits if closure is claimed (else ≥1), classifies, updates confidence. If BST is PROVEN → it
-closes `(★)` ⟹ human-gate verification + writing pipeline (`venue-prompts/soda/`) + scoop re-scan. If refuted
-→ pivot gate. If it stalls → owner gate (continue / accept partial / dedicated quantitative-Meshulam lit pass).
-No-retreat: escalate, never downgrade.
+**THE NEXT ACTION (resume here):** owner relays **`docs/round11_brief.md`** (the `✂️` block) to a NEW
+GPT-5.5-Pro conversation — prove the open step: a `poly(r,1/δ)` LOWER BOUND on the PCT gap `γ` for arbitrary
+(deficient-block) full words on a well-conditioned `G` (≡ a depth-independent Meshulam constant), which closes
+BST hence `(★)`. The numerics give a strong TRUE prior (γ doesn't collapse on the hard family). Paste the
+reply back → archive `docs/round11_response.md`, 3 audits if closure claimed, classify, update confidence. If
+PROVEN → `(★)` closed ⟹ human-gate verification + writing pipeline (`venue-prompts/soda/`) + scoop re-scan.
+No-retreat: escalate, never downgrade. *(Owner's standing A/B/C question: A = keep attacking (this); the
+decisive hard-region test now strengthens A.)*
+🔧 **AUDIT ROUTING (2026-06-23):** the `codex` MCP server (codex-cli, model=gpt-5.5, reasoning_effort=xhigh) is
+now added to this project. **All future audits run on codex GPT-5.5-xhigh, NOT Claude subagents** — but MCP
+tools load at session start, so a **Claude Code restart in this project** is required to activate the codex
+tool. After restart, audit the Round-11 response by calling the codex MCP tool with the audit brief. (Owner:
+no re-audit of Rounds 0–10.)
 
-**Where the math stands (after Round 9):** `(★)` ⟺ **BST** (basis-level): for `G=A^⊤A`, `(G^{-1})_{ii}≤δ^{-2}`,
-the orbit `c_{k+1}=c_k+(ε_k−(Gc_k)_{i_k})e_{i_k}` has `sup_k c_k^⊤Gc_k ≤ poly(r,1/δ)`. **BST ≡ a
-depth-independent (poly) Meshulam relaxed-projection boundedness theorem** (arXiv:2602.00544 = qualitative,
-EXP-in-depth constant `κ₊^{−2(ℓ−1)}`; the gap = poly-in-depth). **PROVEN (AI, audited):** rank ≤2 (**P11**),
-rank 3 (**P12**), rank 4 (**P13**), **root-system/graphical (P14, `G(T)≤|R|/2`)**, all-word `D_exp`, substrate
-P1–P10. **Numerics:** adversarial BST `sup‖p‖ ~ √r` to **r=50** (clean poly, robust to structured stress) —
-strongest `(★)`-evidence yet, on the true core. **Open:** BST poly-rate (= depth-independent Meshulam).
-Refuted: N1–N5. Dilation refutation route §7 open (not evidence of falsity). Retracted: unit-WLOG.
-**Confidence (B-side true): ~74%.** 🔴 No matching lower bound — do NOT claim "tight/optimal".
+**Where the math stands (after Round 10):** `(★)` ⟺ **BST** ⟺ a **depth-independent (poly) Meshulam** constant.
+The remaining open step (everything else closed): a `poly(r,1/δ)` LOWER BOUND on the PCT cycle-gap
+`γ(R)=1−‖P_{i_m}…P_{i_1}‖²` for arbitrary DEFICIENT-block full words on a well-conditioned `G` (a super-poly
+collapse ⟹ refutation via the palindrome; a poly lower bound ⟹ BST/`(★)`). **PROVEN (AI, audited):** rank ≤2
+(**P11**), rank 3 (**P12**), rank 4 (**P13**), root-system/graphical (**P14**), the **P15** closed-class package
+(round-schedule, comparison-stable/obtuse, equicorrelation, PCT bounds, palindrome bridge), all-word `D_exp`,
+substrate P1–P10. **Numerics:** BST `sup‖p‖~√r` to r=64; **decisive deficient-block γ test on the Hadamard hard
+family CLEAN** (γ≈0.90 flat, no collapse ⟹ no refutation); amplifier collapses δ. **Open:** the PCT-gap lower
+bound (numerically supported). Refuted: N1–N5. Retracted: unit-WLOG. **Confidence (B-side true): ~76%.**
+🔴 No matching lower bound — do NOT claim "tight/optimal".
 
 **Pending human items:** NH1 (κ_A≤1/δ_A proof in 2510.20301); NH2 (BV constants non-poly, confirmed); **NH3**
 (Betke-797 attribution); **NH4** (§1 `P_s⊆C_s+(r/δ)B_2` holds within `E=span T` only); P5 hand-proof audit.

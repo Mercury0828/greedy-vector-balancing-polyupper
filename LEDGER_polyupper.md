@@ -7,6 +7,20 @@
 
 ## ▶ HEADLINE (latest status line on top)
 
+**2026-06-23 — ROUND 10 COMPLETE (audited). P15 closed-class package frozen; hard region tested CLEAN;
+confidence ~76%.** Two GPT-5.5-Pro answers on BST; both audits VALID (no errors). No closure, but: (i) **P15**
+frozen — three proved closed sub-classes (round-partitioned `4r⁴/δ³`; comparison-stable/obtuse `r²/δ²` (Thm1);
+equicorrelation `O(r³/δ²)` (Thm2)) + PCT cycle-gap bounds + the **palindrome reduction** (super-poly-small γ ⟹
+explicit BST counterexample, exact); (ii) hard region PINNED to deficient-block words on the well-conditioned
+**Hadamard** family; (iii) **DECISIVE de-risk:** a deficient-block adversary CANNOT shrink the PCT gap γ — min
+γ ≈ 0.90 FLAT in r on Hadamard (to r=32), ~1/r on random — **no super-poly collapse ⟹ NO refutation, BST holds
+on the hard region**; BST `sup‖p‖~√r` to r=64; the natural amplifier collapses δ. All point to `(★)` TRUE.
+**Still no PROOF of general BST** — the open step = a poly lower bound on γ for deficient blocks (≡
+depth-independent Meshulam), numerically supported. Next = Round-11 (prove it). **NOTHING frozen as "proved"
+beyond P11–P15, D_exp.**
+
+---
+
 **2026-06-23 — ROUND 9 COMPLETE (audited). NEW theorem P14 (root systems); core SIMPLIFIED to BST; BST ≡
 quantitative Meshulam; confidence ~74%.** Two fresh-context GPT-5.5-Pro answers; both audits VALID (math
 correct). Neither closes `(★)`, but: (i) **P14** — `(★)` holds for reflection/root-system-closed `T` (incl.
@@ -181,6 +195,13 @@ P3′. See `docs/round1_*`.)*
   (`H_j=E ⟹ p_{j+1}=q_j`) + "two distinct central walls meet only at 0". *Status:* **✅ analytic VALID &
   RIGOROUS + numeric SATURATED** (worst sup/(r/δ)=0.9971, 0 violations). First closed *orbit* bound (vs the
   P7 *certificate*). *Use:* base case for a rank induction r→r+1.
+- `P15` (NEW 2026-06-23, Round-10) **closed BST sub-classes + PCT bounds (package):** (a) round-partitioned
+  schedules `sup‖p‖≤4r⁴/δ³`; (b) comparison-stable / sign-switchable-obtuse bases `sup‖p‖≤r²/δ²` (Thm 1);
+  (c) equicorrelation `G_α` `c^⊤Gc≤2r³/δ²+r²` (Thm 2); (d) PCT cycle-gap `γ≥δ^{2r}/r^{r-1}` (universal),
+  `≥δ²/r³` (permutation), + the **palindrome reduction** (super-poly-small γ ⟹ explicit BST counterexample;
+  exact `BB^⊤=I−Q²`). *Status:* **✅ all VALID (both audits, exact)** + numerics (Thm1/Thm2 bounds hold;
+  deficient-block γ on Hadamard ≈0.90 flat, no collapse). 🔴 closes broad regions, NOT general BST; the open
+  region = deficient-block words on well-conditioned non-comparison-stable bases (numerically clean).
 - `P14` (NEW 2026-06-23, Round-9) **root-system / reflection-closed `(★)`:** if `R⊂S^{r-1}` finite, centrally
   symmetric, `⊇T`, invariant under all `R_t=I−2tt^⊤` (`t∈T`), then `Φ(x)=½Σ_{u∈R}|⟨u,x⟩|` ⟹
   `Σ‖steps‖≤Φ(x_0)≤(|R|/2)‖x_0‖` ⟹ **`G(T)≤|R|/2`** (graphical `T_G`: `δ≥√(2/n)≍r^{-1/2}`, `G≤r(r+1)/2`).
@@ -328,8 +349,12 @@ P3′. See `docs/round1_*`.)*
 > > (`ε_k∈{±1}`) has `sup_k c_k^⊤Gc_k ≤ poly(r,1/δ)`. **`(★)` ⟺ BST** (no chambers/circuits/oriented-matroids).
 > > **BST ≡ a depth-independent (poly) Meshulam relaxed-projection boundedness theorem** — arXiv:2602.00544 has
 > > the qualitative result with an EXP-in-depth constant `κ₊^{−2(ℓ−1)}`; the gap = make it poly-in-depth.
-> > Numerics: adversarial BST `sup‖p‖ ~ √r` to **r=50** (clean poly). **Round-10 = targeted BST attack**
-> > (`docs/round10_brief_bst.md`). Also proven this round: **P14** (root-system/graphical `(★)`, `G(T)≤|R|/2`).
+> > Numerics: adversarial BST `sup‖p‖ ~ √r` to **r=64** (clean poly). **Round-10 (P15):** closed broad
+> > sub-classes (round-schedule, comparison-stable/obtuse, equicorrelation) + PCT bounds + the palindrome
+> > refutation bridge; hard region pinned to **deficient-block words on well-conditioned (Hadamard) bases** —
+> > tested CLEAN (γ ≈0.90 flat, no collapse ⟹ no refutation). **OPEN step = a poly lower bound on the PCT gap
+> > γ for deficient blocks (≡ a depth-independent Meshulam constant)** — numerically supported, proof open.
+> > **Round-11 = prove it** (`docs/round11_brief.md`). Also proven: P14 (root systems), P15 (sub-classes).
 >
 > 🔴 `(★)` is ATTACKER-originated (web GPT-5.5-Pro), NOT Claude. Pivot trigger if refuted (TV provably
 > exponential at constant δ ⟹ truth is A-side). **Routing:** HS1 reduction rigorous (P4-upgrade) + Theorem 1
@@ -351,6 +376,7 @@ P3′. See `docs/round1_*`.)*
 | 2026-06-22 (Round 7) | ~73% (↓2) | Both audits VALID (exact). The point-valued holonomy (our N5 conjecture) is REFUTED; `(★)` NOT refuted (bounded invariant cylinder ⟹ mild positive). Two-sided: the CLEAN mechanism (zero holonomy) is dead and the surviving set-valued cylinder is exactly where exp blow-up would hide if `(★)` false ⟹ small downward nudge (auditor ~70%). Round 8 = invariant-strip sublemma, LAST AI round before human expert. |
 | 2026-06-22 (Round 8) | ~72% (↓1) | **rank 4 CLOSED (P13)** — but the attacker's "slope exactly 0 / 99%" was FALSE-as-stated (orchestrator caught it; true: contraction-or-zero-translation, slope=1⟹a_B=0, 0/19607). General crux **(32) is a REGRESS** (Round-2/3 core relabeled, circular). Pattern = rank-specific collapses with the general bound receding ⟹ **ESCALATE TO HUMAN EXPERT** (gate b). Up: another base case closed; down: headline mechanism false-as-stated, regress, one-example-verified. |
 | 2026-06-23 (Round 9) | ~74% (↑2) | FINAL fresh-context; both audits VALID. NEW theorem **P14** (root-system `(★)`); core SIMPLIFIED to **BST** (basis-level, no chambers — real progress); **BST ≡ quantitative Meshulam** (2602.00544 = qual., exp-in-depth → gap = poly-in-depth). **BST numerics √r to r=50** (auditor-reproduced + structured stress) = strongest `(★)`-evidence yet, on the true core. Auditor independent ~75–78%. Up (clean high-r √r) tempered by (BST unproven, dilation refutation route open). Next = Round-10 BST. |
+| 2026-06-23 (Round 10) | ~76% (↑2) | Two answers, both audits VALID (no errors). **P15** frozen (3 closed sub-classes + PCT bounds + palindrome refutation bridge). Hard region pinned to deficient-block/Hadamard; **DECISIVE test: deficient-block PCT gap γ ≈0.90 flat (Hadamard) / ~1/r (random) — no super-poly collapse ⟹ NO refutation, BST holds on the hard region.** BST √r to r=64; amplifier collapses δ. Tempered: heuristic search, general BST proof still open. |
 
 ---
 

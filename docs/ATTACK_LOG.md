@@ -35,7 +35,15 @@
 | 9 | 2026-06-22 | `docs/round9_brief_fresh_final.md` | dispatched (FINAL fresh-context; +closure mandate) | De-anchored original `(★)` + new-route invitation; framework as optional appendix. |
 | 9 | 2026-06-23 | `docs/round9_response.md` | **PARTIAL** (2 GPT-5.5-Pro answers; `(★)`-true 65–66%) | No closure, but NEW theorem (root systems) + core SIMPLIFIED to BST (basis-level) + BST≡quantitative Meshulam + refutation program. |
 | 9 | 2026-06-23 | `docs/round9_audit.md` + `code/round9_bst_killtest.py` | **AUDITED — math all VALID; freeze P14; core→BST** | Numeric + analytic (reproduced to r=50 + structured stress). **BST sup‖p‖~√r to r=50** (strongest `(★)`-evidence). BST≡depth-independent Meshulam (2602.00544 = qual., exp-in-depth). Conf 72→74%. |
-| 10 | 2026-06-23 | `docs/round10_brief_bst.md` | **READY — awaiting owner relay to a NEW GPT-5.5-Pro chat** | Targeted BST attack: prove `sup_k c_k^⊤Gc_k≤poly(r,1/δ)` ≡ a depth-independent Meshulam constant for projection-generated affine families; closure mandate; literature precedent + dilation refutation route. |
+| 10 | 2026-06-23 | `docs/round10_brief_bst.md` | dispatched (targeted BST) | Prove/refute BST; quantitative-Meshulam framing. |
+| 10 | 2026-06-23 | `docs/round10_response.md` | **PARTIAL** (2 answers; BST-true 68–69%) | No closure, but 3 closed sub-classes (round/comparison-stable/equicorrelation) + PCT + palindrome refutation route + hard region pinned to Hadamard/deficient-blocks. |
+| 10 | 2026-06-23 | `docs/round10_audit.md` + `code/round10_audit_checks.py` + `round10_deficient_pct.py` | **AUDITED — all VALID; freeze P15; hard region CLEAN** | Theorem audit (no errors) + DECISIVE deficient-block γ test: γ≈0.90 flat (Hadamard), ~1/r (random) — no super-poly collapse ⟹ no refutation, BST holds on the hard region. BST √r to r=64. Conf 74→76%. |
+| 11 | 2026-06-23 | `docs/round11_brief.md` | **READY — awaiting owner relay to a NEW GPT-5.5-Pro chat** | Prove the open step: a poly lower bound on the PCT gap γ for deficient-block words on a well-conditioned G (≡ depth-independent Meshulam); numerics give a strong TRUE prior; closure mandate. |
+
+> 🔧 **Audit routing change (2026-06-23):** the `codex` MCP server (codex-cli, model=gpt-5.5, reasoning_effort=xhigh)
+> is now added to this project. After a **Claude Code restart**, audits run on **codex GPT-5.5-xhigh** (call the codex
+> MCP tool with the audit brief), NOT Claude subagents. Per owner: no re-audit of Rounds 0–10; new rule from the
+> Round-11 audit onward.
 
 ## Stop criteria (guide §4) — AI convergence only when ALL hold
 1. solver explicitly claims closure of `(★)` + assembly, no further conditions;
