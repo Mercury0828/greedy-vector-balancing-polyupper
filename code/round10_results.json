@@ -1,0 +1,127 @@
+{
+  "hadamard_BST": {
+    "rows": [
+      {
+        "r": 4,
+        "lam_min": 0.7205,
+        "delta": 0.9738,
+        "rho_absGmI": 0.375,
+        "sup_norm": 2.3,
+        "r_over_delta": 4.11,
+        "r2_over_d2": 16.9
+      },
+      {
+        "r": 8,
+        "lam_min": 0.6813,
+        "delta": 0.9697,
+        "rho_absGmI": 0.619,
+        "sup_norm": 3.452,
+        "r_over_delta": 8.25,
+        "r2_over_d2": 68.1
+      },
+      {
+        "r": 16,
+        "lam_min": 0.6875,
+        "delta": 0.9683,
+        "rho_absGmI": 0.937,
+        "sup_norm": 4.796,
+        "r_over_delta": 16.52,
+        "r2_over_d2": 273.1
+      },
+      {
+        "r": 32,
+        "lam_min": 0.717,
+        "delta": 0.9678,
+        "rho_absGmI": 1.37,
+        "sup_norm": 6.688,
+        "r_over_delta": 33.07,
+        "r2_over_d2": 1093.3
+      },
+      {
+        "r": 64,
+        "lam_min": 0.7187,
+        "delta": 0.9677,
+        "rho_absGmI": 1.969,
+        "sup_norm": 9.404,
+        "r_over_delta": 66.14,
+        "r2_over_d2": 4373.9
+      }
+    ],
+    "loglog_slope": 0.502
+  },
+  "PCT_min_gap": [
+    {
+      "family": "hadamard",
+      "r": 4,
+      "delta": 0.9738,
+      "min_gamma": 0.9548,
+      "perm_lb_d2/r3": 0.01482
+    },
+    {
+      "family": "hadamard",
+      "r": 8,
+      "delta": 0.9697,
+      "min_gamma": 0.9132,
+      "perm_lb_d2/r3": 0.001836
+    },
+    {
+      "family": "hadamard",
+      "r": 16,
+      "delta": 0.9683,
+      "min_gamma": 0.917,
+      "perm_lb_d2/r3": 0.0002289
+    },
+    {
+      "family": "hadamard",
+      "r": 32,
+      "delta": 0.9678,
+      "min_gamma": 0.9142,
+      "perm_lb_d2/r3": 2.858e-05
+    },
+    {
+      "family": "random",
+      "r": 4,
+      "delta": 0.27,
+      "min_gamma": 0.1073,
+      "perm_lb_d2/r3": 0.001139
+    },
+    {
+      "family": "random",
+      "r": 6,
+      "delta": 0.2629,
+      "min_gamma": 0.07349,
+      "perm_lb_d2/r3": 0.00032
+    },
+    {
+      "family": "random",
+      "r": 8,
+      "delta": 0.6383,
+      "min_gamma": 0.3519,
+      "perm_lb_d2/r3": 0.0007958
+    },
+    {
+      "family": "random",
+      "r": 12,
+      "delta": 0.268,
+      "min_gamma": 0.04027,
+      "perm_lb_d2/r3": 4.156e-05
+    }
+  ],
+  "theorems": {
+    "THM1": {
+      "r": 8,
+      "eta": 0.6804,
+      "sup_norm": 3.149,
+      "bound_r/eta": 11.76,
+      "ok": true
+    },
+    "THM2": {
+      "r": 8,
+      "alpha": 0.3,
+      "delta": 0.8803,
+      "sup_E": 46.4,
+      "bound_2r3/d2+r2": 1385.3,
+      "ok": true
+    }
+  }
+}
