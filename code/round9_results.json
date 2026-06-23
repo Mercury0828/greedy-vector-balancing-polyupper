@@ -1,0 +1,99 @@
+{
+  "BST": {
+    "rows": [
+      {
+        "r": 4,
+        "delta": 0.5139,
+        "sup_norm": 3.667,
+        "r_over_delta": 7.78,
+        "r2_over_d2": 60.6,
+        "exp_bound": 58.94646024034373
+      },
+      {
+        "r": 6,
+        "delta": 0.3438,
+        "sup_norm": 5.176,
+        "r_over_delta": 17.45,
+        "r2_over_d2": 304.6,
+        "exp_bound": 6664.259992463268
+      },
+      {
+        "r": 8,
+        "delta": 0.2558,
+        "sup_norm": 6.166,
+        "r_over_delta": 31.28,
+        "r2_over_d2": 978.4,
+        "exp_bound": 1788091.541530458
+      },
+      {
+        "r": 10,
+        "delta": 0.3172,
+        "sup_norm": 7.593,
+        "r_over_delta": 31.53,
+        "r2_over_d2": 994.1,
+        "exp_bound": 15763506.730507338
+      },
+      {
+        "r": 14,
+        "delta": 0.2587,
+        "sup_norm": 8.203,
+        "r_over_delta": 54.11,
+        "r2_over_d2": 2928.3,
+        "exp_bound": 352163984620.06836
+      },
+      {
+        "r": 18,
+        "delta": 0.2927,
+        "sup_norm": 9.339,
+        "r_over_delta": 61.5,
+        "r2_over_d2": 3782.7,
+        "exp_bound": 154592278666331.8
+      },
+      {
+        "r": 24,
+        "delta": 0.2777,
+        "sup_norm": 8.128,
+        "r_over_delta": 86.41,
+        "r2_over_d2": 7466.7,
+        "exp_bound": 5.246085108834884e+19
+      },
+      {
+        "r": 30,
+        "delta": 0.2484,
+        "sup_norm": 10.119,
+        "r_over_delta": 120.79,
+        "r2_over_d2": 14589.4,
+        "exp_bound": 1.870233632213676e+26
+      }
+    ],
+    "loglog_poly_slope": 0.454,
+    "semilog_exp_slope": 0.03,
+    "verdict": "BOUNDED/POLY in r \u27f9 BST/(\u2605)-consistent (no refutation)"
+  },
+  "graphical": [
+    {
+      "graph": "path6",
+      "n": 6,
+      "edges": 5,
+      "worst_TV/||y0||": 5.824,
+      "C(n,2)_bound": 15.0,
+      "ok(<=)": true
+    },
+    {
+      "graph": "cycle6",
+      "n": 6,
+      "edges": 6,
+      "worst_TV/||y0||": 3.27,
+      "C(n,2)_bound": 15.0,
+      "ok(<=)": true
+    },
+    {
+      "graph": "complete5",
+      "n": 5,
+      "edges": 10,
+      "worst_TV/||y0||": 2.081,
+      "C(n,2)_bound": 10.0,
+      "ok(<=)": true
+    }
+  ]
+}
