@@ -1,10 +1,9 @@
 # PROJECT_STATE — `greedy-vector-balancing-polyupper`
 
-**Last updated:** 2026-06-22 · **Current phase:** ATTACK LOOP — **FINAL fresh-context round (Round 9)**. Owner
-ruling: no human expert available, GPT-Pro fresh context is the best solver → one last full-strength attempt on
-the open core. Brief READY (`docs/round9_brief_fresh_final.md`, de-anchored: original `(★)` + new-route
-invitation; framework as optional appendix). Ranks ≤4 of `(★)` proven (P11–P13). Target = SODA 2027 (time
-waived). Confidence ~72%.
+**Last updated:** 2026-06-23 · **Current phase:** ATTACK LOOP — Round 9 COMPLETE & audited (NEW theorem **P14**
+root systems; open core **SIMPLIFIED to BST**, basis-level; **BST ≡ quantitative Meshulam**; BST numerics
+`√r` to r=50). **Round-10 brief READY** (`docs/round10_brief_bst.md`: targeted BST attack). Ranks ≤4 + root
+systems of `(★)` proven (P11–P14). Target = SODA 2027 (time waived). Confidence ~74%.
 **Role:** Claude = orchestrator/referee/archivist (NOT prover). Target: **SODA 2027** (deadline
 **2026-07-09 AoE**, lightweight double-blind — confirmed live 2026-06-21).
 
@@ -12,32 +11,33 @@ waived). Confidence ~72%.
 
 ## ▶ COLD-START (read this first to resume)
 
-**One-liner:** Phase 0 GREEN; 8-round external-solver attack loop (GPT-5.5-Pro + independent audits) has
-**concluded** with **ranks ≤4 of `(★)` CLOSED (P11,P12,P13)**, the full reduction chain, and the open core
-precisely isolated. The general core (cross-state invariant-cylinder cocycle, rank ≥5) is now **handed to a
-human expert** (`docs/HUMAN_EXPERT_HANDOFF.md`). Numerics support `(★)` TRUE (~72%). **Awaiting owner gate (b).**
+**One-liner:** Phase 0 GREEN; external-solver attack loop (GPT-5.5-Pro + independent audits), now 9 rounds.
+**Proven:** ranks ≤4 of `(★)` (P11–P13) + **root-system/graphical `(★)` (P14)**. Round 9 SIMPLIFIED the open
+core to the **basis-level BST** (`(★)`⟺BST; no chambers), and identified **BST ≡ a depth-independent (poly)
+Meshulam boundedness theorem**; BST numerics show clean `√r` to r=50 (strongest `(★)`-evidence). **Round-10
+brief (targeted BST attack) is written and waiting.** Confidence `(★)` true ~74%.
 
 **Read in this order to rebuild context:** `guide.md` (read-only constitution) → this file →
 `LEDGER_polyupper.md` (frozen model/substrate/`(★)`/confidence) → `docs/ATTACK_LOG.md` (round index) →
 latest `docs/round{n}_*.md`. 🔴 Never work from memory; re-read these first.
 
-**THE NEXT ACTION (resume here):** owner relays **`docs/round9_brief_fresh_final.md`** (the `✂️` block) to a
-**NEW / fresh GPT-5.5-Pro conversation** (the FINAL decisive attack; owner ruling — GPT-Pro fresh context is
-our best available "expert"). Paste the reply back → Claude archives `docs/round9_response.md`, runs 3
-independent audits if closure is claimed (else ≥1), classifies, updates confidence. **After Round 9:** if it
-closes/refutes the core → human gate (b) for verification + writing pipeline (`venue-prompts/soda/`) + scoop
-re-scan; if it stalls again → owner gate (the realistic options are then: accept the strong partial / new
-framework as a weaker paper, or keep it open). No-retreat: this is escalation, not downgrade.
+**THE NEXT ACTION (resume here):** owner relays **`docs/round10_brief_bst.md`** (the `✂️` block) to a NEW
+GPT-5.5-Pro conversation — the targeted **BST** attack (cleanest target: a basis-level r×r problem ≡ a
+depth-independent Meshulam constant). Paste the reply back → Claude archives `docs/round10_response.md`, runs
+3 independent audits if closure is claimed (else ≥1), classifies, updates confidence. If BST is PROVEN → it
+closes `(★)` ⟹ human-gate verification + writing pipeline (`venue-prompts/soda/`) + scoop re-scan. If refuted
+→ pivot gate. If it stalls → owner gate (continue / accept partial / dedicated quantitative-Meshulam lit pass).
+No-retreat: escalate, never downgrade.
 
-**Where the math stands (after Round 8):** `(★)` ⟺ the **set-valued cross-state INVARIANT-CYLINDER cocycle**
-(`A_B(C_σ)⊆C_τ`, `sup‖c‖≤poly`; nonexpansive ⟹ top-rank `V_σ={0}` gives `(★)`). **PROVEN (AI, audited):** rank
-≤2 (**P11**), **rank 3 (P12, `√53/δ²`)**, **rank 4 (P13, corrected; pending NH6)**, all-word exp ceiling
-(**D_exp**), + substrate P1–P10/NC. **OPEN CORE (rank ≥5 → human expert):** the cocycle above ≡ a quantitative
-no-accumulation-along-joint-neutral-directions theorem (degree independent of flag depth). **Round-8 finding:**
-the proposed (32) is a REGRESS (Round-2/3 core relabeled; circular; `P_{V_σ}b_B=0` = refuted N5 in neutral
-form). Refuted: N1–N5 (+N5b). Retracted: unit-WLOG. **Confidence (B-side true): ~72%.** Numerics consistently
-support TRUTH; no refutation in 8 rounds; but the general core is genuinely hard. 🔴 No matching lower bound —
-do NOT claim "tight/optimal".
+**Where the math stands (after Round 9):** `(★)` ⟺ **BST** (basis-level): for `G=A^⊤A`, `(G^{-1})_{ii}≤δ^{-2}`,
+the orbit `c_{k+1}=c_k+(ε_k−(Gc_k)_{i_k})e_{i_k}` has `sup_k c_k^⊤Gc_k ≤ poly(r,1/δ)`. **BST ≡ a
+depth-independent (poly) Meshulam relaxed-projection boundedness theorem** (arXiv:2602.00544 = qualitative,
+EXP-in-depth constant `κ₊^{−2(ℓ−1)}`; the gap = poly-in-depth). **PROVEN (AI, audited):** rank ≤2 (**P11**),
+rank 3 (**P12**), rank 4 (**P13**), **root-system/graphical (P14, `G(T)≤|R|/2`)**, all-word `D_exp`, substrate
+P1–P10. **Numerics:** adversarial BST `sup‖p‖ ~ √r` to **r=50** (clean poly, robust to structured stress) —
+strongest `(★)`-evidence yet, on the true core. **Open:** BST poly-rate (= depth-independent Meshulam).
+Refuted: N1–N5. Dilation refutation route §7 open (not evidence of falsity). Retracted: unit-WLOG.
+**Confidence (B-side true): ~74%.** 🔴 No matching lower bound — do NOT claim "tight/optimal".
 
 **Pending human items:** NH1 (κ_A≤1/δ_A proof in 2510.20301); NH2 (BV constants non-poly, confirmed); **NH3**
 (Betke-797 attribution); **NH4** (§1 `P_s⊆C_s+(r/δ)B_2` holds within `E=span T` only); P5 hand-proof audit.
@@ -104,16 +104,15 @@ handled (GREEN = "no death-evidence, attempt the proof", NOT "(★) likely true"
 
 - ✅ Owner rulings (2026-06-21): (1) GREEN — start attack loop, solver = **GPT-5.5-Pro** (relayed);
   (2) target **SODA 2027**, ignore time; (3) **HS2 = sole primary route**.
-- ✅ Rounds 1–8 done: archived `docs/round{1..8}_response.md`; all audited `docs/round{1..8}_audit.md`. **AI
-  attack loop CONCLUDED at Round 8.**
-- 🔴 **AWAITING OWNER:** relay `docs/round9_brief_fresh_final.md` to a NEW GPT-5.5-Pro chat (FINAL decisive
-  round; owner ruling overrides the human-expert handoff — fresh GPT-Pro IS our best solver). Paste reply back.
-  (`docs/HUMAN_EXPERT_HANDOFF.md` retained as the reference open-core statement.)
-- Attack-loop state in `docs/ATTACK_LOG.md`. NEEDS-HUMAN: NH1–NH5; **NH6** (general rank-4 write-up); the OPEN
-  CORE = the cross-state invariant-cylinder cocycle (human expert). P5 hand-proof audit.
+- ✅ Rounds 1–9 done: archived `docs/round{1..9}_response.md`; all audited `docs/round{1..9}_audit.md`.
+- 🔴 **AWAITING OWNER:** relay `docs/round10_brief_bst.md` to a NEW GPT-5.5-Pro chat (targeted BST attack).
+  Paste reply back. (`docs/HUMAN_EXPERT_HANDOFF.md` retained as reference.)
+- Attack-loop state in `docs/ATTACK_LOG.md`. NEEDS-HUMAN: NH1–NH6; the OPEN CORE = BST ≡ a depth-independent
+  Meshulam constant. P5 hand-proof audit.
 - **Substrate gains (frozen):** R1 — P1-sharp, P2′, P6, P4-upgrade, P3′; R2 — **P7**; R3 — **P8**; R4 — **P9**,
-  **P10**, **NC**; R5 — **P11** (rank ≤2), **D_exp**; R6 — **P12** (rank 3); R8 — **P13** (rank 4, corrected).
-  **Open core:** the cross-state invariant-cylinder cocycle (rank ≥5). Refuted: N1–N5 (+N5b). Retracted: unit-WLOG.
+  **P10**, **NC**; R5 — **P11** (rank ≤2), **D_exp**; R6 — **P12** (rank 3); R8 — **P13** (rank 4); R9 — **P14**
+  (root-system/graphical). **Open core:** **BST** (basis-level) ≡ depth-independent Meshulam. Refuted: N1–N5.
+  Retracted: unit-WLOG.
 - Re-confirm at submission / at convergence: SODA27 anonymity wording on live CFP (caveat C1); Lemma 1.4
   dimension bookkeeping S^{2d-1} (caveat C2); anchor v2/scoop re-scan.
 
@@ -131,3 +130,4 @@ handled (GREEN = "no death-evidence, attempt the proof", NOT "(★) likely true"
 | 2026-06-22 (Round 6) | ~75% (held) | rank 3 CLOSED (P12, `√53/δ²`, degree 2) via survivor recurrence; both audits VALID. But rank 3 is SPECIAL — general first fails at rank 4 (multidimensional survivor); crux = rank-4 flag-holonomy core. Rank-4 drift still bounded numerically. Held: another base case + obstruction pinpointed, deep holonomy step now known rank-4-new and unproven. |
 | 2026-06-22 (Round 7) | ~73% (↓2) | Both audits VALID (exact). Our point-cocycle conjecture REFUTED (N5); `(★)` NOT refuted (bounded invariant cylinder = mild positive). Two-sided: clean mechanism (zero holonomy) dead, surviving set-valued cylinder is where exp blow-up hides if `(★)` false ⟹ small downward nudge (auditor ~70%). Round 8 = invariant-strip, LAST AI round before human expert. |
 | 2026-06-22 (Round 8) | ~72% (↓1) | rank 4 CLOSED (P13, corrected) but the "slope exactly 0 / 99%" was FALSE-as-stated (orchestrator caught it); general (32) is a REGRESS. Pattern = rank-specific collapses, general bound receding ⟹ ESCALATE TO HUMAN EXPERT (gate b). AI attack loop concluded. Up: base case closed; down: regress, one-example-verified. |
+| 2026-06-23 (Round 9) | ~74% (↑2) | FINAL fresh-context, both audits VALID. NEW theorem P14 (root systems); core SIMPLIFIED to BST (basis-level, real progress); BST≡quantitative Meshulam (gap = poly-in-depth). BST numerics √r to r=50 (auditor-reproduced + structured stress) = strongest `(★)`-evidence on the true core; auditor ~75–78%. Tempered: BST unproven, dilation refutation route open. |

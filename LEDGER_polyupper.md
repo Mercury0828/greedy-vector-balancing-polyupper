@@ -7,6 +7,20 @@
 
 ## ▶ HEADLINE (latest status line on top)
 
+**2026-06-23 — ROUND 9 COMPLETE (audited). NEW theorem P14 (root systems); core SIMPLIFIED to BST; BST ≡
+quantitative Meshulam; confidence ~74%.** Two fresh-context GPT-5.5-Pro answers; both audits VALID (math
+correct). Neither closes `(★)`, but: (i) **P14** — `(★)` holds for reflection/root-system-closed `T` (incl.
+all GRAPHICAL) via `Φ=½Σ_{u∈R}|⟨u,x⟩|`, `G(T)≤|R|/2`, even at `δ≈r^{-1/2}` (FROZEN; first global-potential
+closure of an infinite subclass at small δ; caveat: poly-size root system); (ii) **the open core is SIMPLIFIED
+to BST** (basis-level adversarial coordinate descent; NO chambers/circuits/oriented-matroids — supersedes the
+CORE framing; genuinely simpler, obstruction survives); (iii) **BST ≡ a depth-independent (poly) Meshulam
+boundedness theorem** — arXiv:2602.00544 gives the qualitative result with an EXP-in-depth constant, pinning
+the exact gap. **Numerics: BST adversarial sup‖p‖ ~ √r to r=50** (clean poly, no super-poly) — strongest
+`(★)`-evidence yet. Next = **Round-10 targeted BST attack** (`docs/round10_brief_bst.md`). **NOTHING frozen as
+"proved" beyond P11–P14, D_exp.**
+
+---
+
 **2026-06-22 — ROUND 9 DISPATCHED (FINAL fresh-context decisive attack).** Owner ruling: no human expert
 available; GPT-Pro fresh context is the best solver → one last full-strength round on the open core. Brief
 `docs/round9_brief_fresh_final.md` is **de-anchored** (presents the original `(★)` + invites a NEW route; the
@@ -167,6 +181,12 @@ P3′. See `docs/round1_*`.)*
   (`H_j=E ⟹ p_{j+1}=q_j`) + "two distinct central walls meet only at 0". *Status:* **✅ analytic VALID &
   RIGOROUS + numeric SATURATED** (worst sup/(r/δ)=0.9971, 0 violations). First closed *orbit* bound (vs the
   P7 *certificate*). *Use:* base case for a rank induction r→r+1.
+- `P14` (NEW 2026-06-23, Round-9) **root-system / reflection-closed `(★)`:** if `R⊂S^{r-1}` finite, centrally
+  symmetric, `⊇T`, invariant under all `R_t=I−2tt^⊤` (`t∈T`), then `Φ(x)=½Σ_{u∈R}|⟨u,x⟩|` ⟹
+  `Σ‖steps‖≤Φ(x_0)≤(|R|/2)‖x_0‖` ⟹ **`G(T)≤|R|/2`** (graphical `T_G`: `δ≥√(2/n)≍r^{-1/2}`, `G≤r(r+1)/2`).
+  *Status:* **✅ analytic VALID + numeric (TV≤C(n,2), 0 viol).** First global-potential closure of an infinite
+  subclass at small δ. Caveat: needs a **poly-size** root system (value = the TECHNIQUE). Non-extension:
+  naive `Σ_t|⟨t,x⟩|` increases under a projection (R² 0°/30°/60°).
 - `P13` (NEW 2026-06-22, Round-8) **rank 4 CLOSED:** `sup_j‖p_j‖=poly(1/δ)` at r=4 (all-word `O(δ^{-13})`;
   structural cross-section `O(δ^{-9})`, per-K absorbing interval `O(δ^{-7})`). *Mechanism (CORRECTED — the
   attacker's "slope exactly 0 / Q_B=P_{K^⊥}" is FALSE as stated):* each K-confined return induces on
@@ -249,6 +269,10 @@ P3′. See `docs/round1_*`.)*
   bound G1 needs. The poly QUANTITATIVE bound is the open part (G1). **2026 follow-ups confirmed (Round-2
   audit):** arXiv:2601.07002 (polyhedral cones; limiting counterexamples), arXiv:2602.00544 (affine
   subspaces, empty intersection; qualitative boundedness only) — **neither gives poly-in-(r,1/δ).**
+  🔑 **Round-9 sharpening:** arXiv:2602.00544 (Meshulam-lineage) is EXACTLY the qualitative version of the core
+  (bounded relaxed-projection orbits), but its constant `(τ+D)/(1−√(1−λ(2−λ)κ₊^{−2(ℓ−1)}))` is **exponential in
+  depth ℓ**. So **BST ≡ a depth-independent (poly) Meshulam boundedness theorem**; making that constant
+  poly-in-depth IS the gap. (Kaczmarz/POCS = decay-to-solution, not the adversarial driven-away boundedness BST needs.)
 - `B2` any construction giving **exponential TV at constant δ** is evidence the truth is the **exponential
   (A) side** — if found, report as a refutation of `(★)`, not a failure (→ human gate, pivot-to-A).
 
@@ -298,8 +322,14 @@ P3′. See `docs/round1_*`.)*
 > > (rank ≥5 → HUMAN EXPERT):** the **cross-state invariant-cylinder cocycle** `A_B(C_σ)⊆C_τ`,
 > > `sup‖c‖≤poly(r,1/δ)` ≡ a quantitative no-accumulation-along-joint-neutral-directions theorem, degree
 > > independent of flag depth. Proven ranks ≤4 (rank-specific collapses); the multidimensional-survivor case
-> > (rank ≥5) is the genuine open problem. **Handoff:** `docs/HUMAN_EXPERT_HANDOFF.md`. The AI loop has circled
-> > this core since Round 2; → human expert (oriented-matroid galleries / projection-orbit cocycles). No-retreat.
+> > (rank ≥5) is the genuine open problem. **Handoff:** `docs/HUMAN_EXPERT_HANDOFF.md`.
+> > **Round-9 (FINAL fresh-context) — the core is SIMPLIFIED below the chamber framing to the BASIS level:**
+> > **BST** — for a basis `T`, `G=A^⊤A`, `(G^{-1})_{ii}≤δ^{-2}`, the orbit `c_{k+1}=c_k+(ε_k−(Gc_k)_{i_k})e_{i_k}`
+> > (`ε_k∈{±1}`) has `sup_k c_k^⊤Gc_k ≤ poly(r,1/δ)`. **`(★)` ⟺ BST** (no chambers/circuits/oriented-matroids).
+> > **BST ≡ a depth-independent (poly) Meshulam relaxed-projection boundedness theorem** — arXiv:2602.00544 has
+> > the qualitative result with an EXP-in-depth constant `κ₊^{−2(ℓ−1)}`; the gap = make it poly-in-depth.
+> > Numerics: adversarial BST `sup‖p‖ ~ √r` to **r=50** (clean poly). **Round-10 = targeted BST attack**
+> > (`docs/round10_brief_bst.md`). Also proven this round: **P14** (root-system/graphical `(★)`, `G(T)≤|R|/2`).
 >
 > 🔴 `(★)` is ATTACKER-originated (web GPT-5.5-Pro), NOT Claude. Pivot trigger if refuted (TV provably
 > exponential at constant δ ⟹ truth is A-side). **Routing:** HS1 reduction rigorous (P4-upgrade) + Theorem 1
@@ -320,6 +350,7 @@ P3′. See `docs/round1_*`.)*
 | 2026-06-22 (Round 6) | ~75% (held) | Fresh-thread PARTIAL+WHERE (97%), both audits VALID. **rank 3 CLOSED (P12, `√53/δ²`)** via survivor recurrence. But rank 3 is SPECIAL — general case first fails at rank 4 (multidimensional survivor), so it does NOT template r→r+1; crux = the rank-4 flag-holonomy core. Rank-4 drift still bounded numerically. Held: another base case + obstruction pinpointed, but the deep holonomy cancellation unproven and now known to be genuinely rank-4-new. |
 | 2026-06-22 (Round 7) | ~73% (↓2) | Both audits VALID (exact). The point-valued holonomy (our N5 conjecture) is REFUTED; `(★)` NOT refuted (bounded invariant cylinder ⟹ mild positive). Two-sided: the CLEAN mechanism (zero holonomy) is dead and the surviving set-valued cylinder is exactly where exp blow-up would hide if `(★)` false ⟹ small downward nudge (auditor ~70%). Round 8 = invariant-strip sublemma, LAST AI round before human expert. |
 | 2026-06-22 (Round 8) | ~72% (↓1) | **rank 4 CLOSED (P13)** — but the attacker's "slope exactly 0 / 99%" was FALSE-as-stated (orchestrator caught it; true: contraction-or-zero-translation, slope=1⟹a_B=0, 0/19607). General crux **(32) is a REGRESS** (Round-2/3 core relabeled, circular). Pattern = rank-specific collapses with the general bound receding ⟹ **ESCALATE TO HUMAN EXPERT** (gate b). Up: another base case closed; down: headline mechanism false-as-stated, regress, one-example-verified. |
+| 2026-06-23 (Round 9) | ~74% (↑2) | FINAL fresh-context; both audits VALID. NEW theorem **P14** (root-system `(★)`); core SIMPLIFIED to **BST** (basis-level, no chambers — real progress); **BST ≡ quantitative Meshulam** (2602.00544 = qual., exp-in-depth → gap = poly-in-depth). **BST numerics √r to r=50** (auditor-reproduced + structured stress) = strongest `(★)`-evidence yet, on the true core. Auditor independent ~75–78%. Up (clean high-r √r) tempered by (BST unproven, dilation refutation route open). Next = Round-10 BST. |
 
 ---
 

@@ -32,7 +32,10 @@
 | 8 | 2026-06-22 | `docs/round8_response.md` | **CLOSED rank 4** (GPT-5.5-Pro, conf 99%) | Zero-slope reset; rank 4 closed; general crux proposed as (32). |
 | 8 | 2026-06-22 | `docs/round8_audit.md` + `code/round8_audit_checks.py` | **AUDITED — rank 4 genuinely closed (P13, CORRECTED); (32) = REGRESS; ESCALATE** | Numeric (0/19607 slope=1⟹a_B=0) + analytic. "slope exactly 0 / 99%" FALSE-as-stated (caught). (★) NOT reduced to (32). Conf 73→72%. |
 | — | 2026-06-22 | **`docs/HUMAN_EXPERT_HANDOFF.md`** | reference doc | Standalone open-core statement + proven P1–P13/D_exp + dead routes N1–N5 + candidate machinery. |
-| 9 | 2026-06-22 | `docs/round9_brief_fresh_final.md` | **READY (FINAL, FRESH-CONTEXT decisive round) — awaiting owner relay to a NEW GPT-5.5-Pro chat** | OWNER ruling: no human expert available; GPT-Pro fresh context is the best solver → one last full-strength attempt. **De-anchored design:** presents the ORIGINAL `(★)` + invites a NEW route; dual-cylinder framework + rank≤4 + open core (CORE) given as OPTIONAL appendix; N1–N5 listed. |
+| 9 | 2026-06-22 | `docs/round9_brief_fresh_final.md` | dispatched (FINAL fresh-context; +closure mandate) | De-anchored original `(★)` + new-route invitation; framework as optional appendix. |
+| 9 | 2026-06-23 | `docs/round9_response.md` | **PARTIAL** (2 GPT-5.5-Pro answers; `(★)`-true 65–66%) | No closure, but NEW theorem (root systems) + core SIMPLIFIED to BST (basis-level) + BST≡quantitative Meshulam + refutation program. |
+| 9 | 2026-06-23 | `docs/round9_audit.md` + `code/round9_bst_killtest.py` | **AUDITED — math all VALID; freeze P14; core→BST** | Numeric + analytic (reproduced to r=50 + structured stress). **BST sup‖p‖~√r to r=50** (strongest `(★)`-evidence). BST≡depth-independent Meshulam (2602.00544 = qual., exp-in-depth). Conf 72→74%. |
+| 10 | 2026-06-23 | `docs/round10_brief_bst.md` | **READY — awaiting owner relay to a NEW GPT-5.5-Pro chat** | Targeted BST attack: prove `sup_k c_k^⊤Gc_k≤poly(r,1/δ)` ≡ a depth-independent Meshulam constant for projection-generated affine families; closure mandate; literature precedent + dilation refutation route. |
 
 ## Stop criteria (guide §4) — AI convergence only when ALL hold
 1. solver explicitly claims closure of `(★)` + assembly, no further conditions;
