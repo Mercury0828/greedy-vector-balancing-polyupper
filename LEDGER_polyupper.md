@@ -7,6 +7,15 @@
 
 ## ▶ HEADLINE (latest status line on top)
 
+**2026-06-22 — ROUND 9 DISPATCHED (FINAL fresh-context decisive attack).** Owner ruling: no human expert
+available; GPT-Pro fresh context is the best solver → one last full-strength round on the open core. Brief
+`docs/round9_brief_fresh_final.md` is **de-anchored** (presents the original `(★)` + invites a NEW route; the
+dual-cylinder framework + rank≤4 + the open `(CORE)` are an OPTIONAL appendix; N1–N5 listed to avoid repeats).
+Awaiting owner relay to a NEW GPT-5.5-Pro chat. State: ranks ≤4 proven (P11–P13); `(★)` open at the cross-state
+invariant-cylinder cocycle (rank ≥5); confidence ~72%. **NOTHING frozen as "proved" beyond P11,P12,P13,D_exp.**
+
+---
+
 **2026-06-22 — ROUND 8 COMPLETE (audited). rank 4 CLOSED (P13, corrected); (32) is a REGRESS; → HUMAN-EXPERT
 HANDOFF (gate b). Confidence ~72%.** Fresh-thread GPT-5.5-Pro claimed CLOSED rank 4 (99%); both audits: **rank
 4 genuinely closed**, BUT the headline mechanism "Q_B=P_{K^⊥} / slope exactly 0" is **FALSE as stated** (true:

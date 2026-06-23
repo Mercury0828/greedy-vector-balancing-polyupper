@@ -1,9 +1,10 @@
 # PROJECT_STATE — `greedy-vector-balancing-polyupper`
 
-**Last updated:** 2026-06-22 · **Current phase:** 🔴 **HUMAN-EXPERT HANDOFF (human gate b).** Round 8: rank 4
-CLOSED (P13); the AI attack loop (8 rounds) has reached its limit — ranks ≤4 proven, full reduction chain,
-the open core precisely isolated (cross-state invariant-cylinder cocycle, rank ≥5). Handoff doc:
-**`docs/HUMAN_EXPERT_HANDOFF.md`**. Target = SODA 2027 (time waived). Confidence ~72%. **Awaiting owner gate.**
+**Last updated:** 2026-06-22 · **Current phase:** ATTACK LOOP — **FINAL fresh-context round (Round 9)**. Owner
+ruling: no human expert available, GPT-Pro fresh context is the best solver → one last full-strength attempt on
+the open core. Brief READY (`docs/round9_brief_fresh_final.md`, de-anchored: original `(★)` + new-route
+invitation; framework as optional appendix). Ranks ≤4 of `(★)` proven (P11–P13). Target = SODA 2027 (time
+waived). Confidence ~72%.
 **Role:** Claude = orchestrator/referee/archivist (NOT prover). Target: **SODA 2027** (deadline
 **2026-07-09 AoE**, lightweight double-blind — confirmed live 2026-06-21).
 
@@ -20,14 +21,13 @@ human expert** (`docs/HUMAN_EXPERT_HANDOFF.md`). Numerics support `(★)` TRUE (
 `LEDGER_polyupper.md` (frozen model/substrate/`(★)`/confidence) → `docs/ATTACK_LOG.md` (round index) →
 latest `docs/round{n}_*.md`. 🔴 Never work from memory; re-read these first.
 
-**THE NEXT ACTION (resume here) — OWNER GATE (b):** the AI attack loop has concluded. Owner decides:
-**(a)** hand the open core in **`docs/HUMAN_EXPERT_HANDOFF.md`** to a human expert (oriented-matroid galleries
-/ projection-orbit cocycles / quantitative affine IFS) — if proven, submit the full resolution to SODA; OR
-**(b)** any scope/venue change (e.g. a weaker "partial-progress + new framework" paper) — owner's call, the AI
-loop does NOT downgrade by default (no-retreat). *(Further AI rounds are NOT recommended — the open core has
-been circled since Round 2; one more round most likely yields another relabeling, cf. Round-8's (32) regress.)*
-If the human expert returns a proof, the orchestrator resumes for: independent verification + writing pipeline
-(`venue-prompts/soda/`) + final novelty/scoop re-scan.
+**THE NEXT ACTION (resume here):** owner relays **`docs/round9_brief_fresh_final.md`** (the `✂️` block) to a
+**NEW / fresh GPT-5.5-Pro conversation** (the FINAL decisive attack; owner ruling — GPT-Pro fresh context is
+our best available "expert"). Paste the reply back → Claude archives `docs/round9_response.md`, runs 3
+independent audits if closure is claimed (else ≥1), classifies, updates confidence. **After Round 9:** if it
+closes/refutes the core → human gate (b) for verification + writing pipeline (`venue-prompts/soda/`) + scoop
+re-scan; if it stalls again → owner gate (the realistic options are then: accept the strong partial / new
+framework as a weaker paper, or keep it open). No-retreat: this is escalation, not downgrade.
 
 **Where the math stands (after Round 8):** `(★)` ⟺ the **set-valued cross-state INVARIANT-CYLINDER cocycle**
 (`A_B(C_σ)⊆C_τ`, `sup‖c‖≤poly`; nonexpansive ⟹ top-rank `V_σ={0}` gives `(★)`). **PROVEN (AI, audited):** rank
@@ -106,8 +106,9 @@ handled (GREEN = "no death-evidence, attempt the proof", NOT "(★) likely true"
   (2) target **SODA 2027**, ignore time; (3) **HS2 = sole primary route**.
 - ✅ Rounds 1–8 done: archived `docs/round{1..8}_response.md`; all audited `docs/round{1..8}_audit.md`. **AI
   attack loop CONCLUDED at Round 8.**
-- 🔴 **AWAITING OWNER (gate b):** accept the human-expert handoff (`docs/HUMAN_EXPERT_HANDOFF.md`), or a
-  scope/venue change (owner's call; no default downgrade). Further AI rounds NOT recommended.
+- 🔴 **AWAITING OWNER:** relay `docs/round9_brief_fresh_final.md` to a NEW GPT-5.5-Pro chat (FINAL decisive
+  round; owner ruling overrides the human-expert handoff — fresh GPT-Pro IS our best solver). Paste reply back.
+  (`docs/HUMAN_EXPERT_HANDOFF.md` retained as the reference open-core statement.)
 - Attack-loop state in `docs/ATTACK_LOG.md`. NEEDS-HUMAN: NH1–NH5; **NH6** (general rank-4 write-up); the OPEN
   CORE = the cross-state invariant-cylinder cocycle (human expert). P5 hand-proof audit.
 - **Substrate gains (frozen):** R1 — P1-sharp, P2′, P6, P4-upgrade, P3′; R2 — **P7**; R3 — **P8**; R4 — **P9**,

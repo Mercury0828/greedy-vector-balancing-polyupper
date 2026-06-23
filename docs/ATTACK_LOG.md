@@ -31,7 +31,8 @@
 | 8 | 2026-06-22 | `docs/round8_brief.md` | dispatched (fresh thread; last AI round on pivot) | rank-4 invariant-strip sublemma. |
 | 8 | 2026-06-22 | `docs/round8_response.md` | **CLOSED rank 4** (GPT-5.5-Pro, conf 99%) | Zero-slope reset; rank 4 closed; general crux proposed as (32). |
 | 8 | 2026-06-22 | `docs/round8_audit.md` + `code/round8_audit_checks.py` | **AUDITED — rank 4 genuinely closed (P13, CORRECTED); (32) = REGRESS; ESCALATE** | Numeric (0/19607 slope=1⟹a_B=0) + analytic. "slope exactly 0 / 99%" FALSE-as-stated (caught). (★) NOT reduced to (32). Conf 73→72%. |
-| — | 2026-06-22 | **`docs/HUMAN_EXPERT_HANDOFF.md`** | **HANDOFF READY (human gate b)** | Standalone open-core statement (cross-state invariant-cylinder cocycle, rank ≥5) + proven P1–P13/D_exp + dead routes N1–N5 + candidate machinery. **AI attack loop concluded.** |
+| — | 2026-06-22 | **`docs/HUMAN_EXPERT_HANDOFF.md`** | reference doc | Standalone open-core statement + proven P1–P13/D_exp + dead routes N1–N5 + candidate machinery. |
+| 9 | 2026-06-22 | `docs/round9_brief_fresh_final.md` | **READY (FINAL, FRESH-CONTEXT decisive round) — awaiting owner relay to a NEW GPT-5.5-Pro chat** | OWNER ruling: no human expert available; GPT-Pro fresh context is the best solver → one last full-strength attempt. **De-anchored design:** presents the ORIGINAL `(★)` + invites a NEW route; dual-cylinder framework + rank≤4 + open core (CORE) given as OPTIONAL appendix; N1–N5 listed. |
 
 ## Stop criteria (guide §4) — AI convergence only when ALL hold
 1. solver explicitly claims closure of `(★)` + assembly, no further conditions;
