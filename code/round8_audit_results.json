@@ -1,0 +1,10 @@
+{
+  "every_P_fixes_Kperp": true,
+  "max_slope_over_PROMOTIONS (use e)": 0.166667,
+  "promotions_with_slope~1_and_translation": 0,
+  "max_slope_over_pure-J (no e)": 1.0,
+  "slope_pure_{a,b}_word (should be 1, NOT a promotion)": 1.0,
+  "slope_full-K_{a,b,e}_face (should be 0)": -0.0,
+  "slope_2flat_promotion_{a,e}{b,e}x6 (contraction<1?)": 0.0,
+  "VERDICT": "OK: no e-promotion has slope 1; reset is slope 0 (full-K) or contraction<1 (2-flats)"
+}

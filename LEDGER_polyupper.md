@@ -7,6 +7,19 @@
 
 ## ▶ HEADLINE (latest status line on top)
 
+**2026-06-22 — ROUND 8 COMPLETE (audited). rank 4 CLOSED (P13, corrected); (32) is a REGRESS; → HUMAN-EXPERT
+HANDOFF (gate b). Confidence ~72%.** Fresh-thread GPT-5.5-Pro claimed CLOSED rank 4 (99%); both audits: **rank
+4 genuinely closed**, BUT the headline mechanism "Q_B=P_{K^⊥} / slope exactly 0" is **FALSE as stated** (true:
+contraction-or-zero-translation; slope=1 ⟹ a_B=0, verified 0/19607) — orchestrator caught the over-claim;
+freeze **P13** with the corrected statement. The proposed general crux **(32) is a REGRESS** (the Round-2/3
+open core relabeled; `P_{V_σ}b_B=0` = neutral form of the refuted N5; (32)⟹(★) circular). **Pattern: ranks
+2,3,4 each closed by a rank-specific collapse, general bound keeps receding** ⟹ per the pre-registered trigger
+**ESCALATE TO A HUMAN EXPERT** on the genuine open core (the cross-state invariant-cylinder cocycle /
+no-accumulation-along-joint-neutral-directions; open for rank ≥5). Handoff doc: `docs/HUMAN_EXPERT_HANDOFF.md`.
+**NOTHING frozen as "proved" beyond P11, P12, P13 (corrected, pending NH6), D_exp.**
+
+---
+
 **2026-06-22 — ROUND 7 COMPLETE (audited). Point-cocycle REFUTED (our own conjecture, N5); crux is now
 set-valued (invariant-cylinder); confidence ~73%.** Fresh-thread GPT-5.5-Pro PARTIAL+WHERE (98%); both
 audits VALID (exact). NET: (i) **N5** — the orchestrator's Round-7 point-valued holonomy `b_B=(I−Q_B)c_{J,ω}`
@@ -145,6 +158,13 @@ P3′. See `docs/round1_*`.)*
   (`H_j=E ⟹ p_{j+1}=q_j`) + "two distinct central walls meet only at 0". *Status:* **✅ analytic VALID &
   RIGOROUS + numeric SATURATED** (worst sup/(r/δ)=0.9971, 0 violations). First closed *orbit* bound (vs the
   P7 *certificate*). *Use:* base case for a rank induction r→r+1.
+- `P13` (NEW 2026-06-22, Round-8) **rank 4 CLOSED:** `sup_j‖p_j‖=poly(1/δ)` at r=4 (all-word `O(δ^{-13})`;
+  structural cross-section `O(δ^{-9})`, per-K absorbing interval `O(δ^{-7})`). *Mechanism (CORRECTED — the
+  attacker's "slope exactly 0 / Q_B=P_{K^⊥}" is FALSE as stated):* each K-confined return induces on
+  `L=K∩J^⊥` a map that is a **contraction (ratio ≤1−poly(δ)) OR an identity with ZERO translation**
+  (slope=1 ⟹ a_B=0; verified 0/19607). Uniformly absorbing ⟹ invariant cross-section. *Status:* **✅ closed
+  (corrected) — numeric+analytic;** caveat NH6 (general-arrangement write-up of slope=1⟹a_B=0). 🔴 rank 4 is
+  itself SPECIAL (1-dim returned layer; Q_B a projector onto an original flat) — does NOT template r≥5.
 - `P12` (NEW 2026-06-22, Round-6) **rank 3 CLOSED:** for `r=3`, admissible itineraries, `δ≤1`,
   `sup_j‖p_j‖ ≤ √53/δ² < 8/δ²` (degree 2 in 1/δ); hence `(★)` at rank 3. *Proof:* P1,P9,P11,B4,exact-J +
   plane-cluster survivor recurrence (leaving a plane detects its `J^⊥` amplitude via A1 ⟹ `|a|≤7/δ²`).
@@ -193,6 +213,9 @@ P3′. See `docs/round1_*`.)*
   δ_T=√(5/14)): margins force `(1−2c)Σw≥3` ⟹ `−½Σw≥3`, impossible (numeric LP infeasible + analytic VALID).
   ⇒ any HS1/HS2 proof MUST refine the chamber fan, vary the gradient inside chambers, or carry HISTORY. Does
   NOT refute `(★)`.
+- `N5b` (2026-06-22, Round-8): the **neutral-space point form** `P_{V_σ}b_B=0` (Round-8's (32)) is the SAME
+  dead point-coboundary at rank ≥5 — the surviving target must be **set-valued** (invariant cylinders). (32)
+  as a whole is a REGRESS (the Round-2/3 open core relabeled; `(32)⟹(★)` circular). Do not chase (32) as a new crux.
 - `N5` (refuted reduction 2026-06-22, Round-7; was the ORCHESTRATOR's own conjecture): the **point-valued
   holonomy** `b_B=(I−Q_B)c_{J,ω}` (one common memory vector per `(J,ω)`). DEAD: explicit constant-δ rank-4
   arrangement (`δ_T=√(242/1875)`) with two admissible closed excursions from the same `(J,ω)`, same linear
@@ -261,10 +284,13 @@ P3′. See `docs/round1_*`.)*
 > > `(J+L)^⊥`). **Round-7: the point-valued holonomy (one `c_{J,ω}`) is REFUTED (N5)** — return holonomy is
 > > bounded but NONZERO ⟹ must be **SET-VALUED**. Sharpest form now = the **Polynomial INVARIANT-CYLINDER
 > > theorem**: compact convex `C_σ⊂V_σ^⊥`, `sup‖c‖≤poly`, `A_B(C_σ+V_σ)⊆C_τ+V_τ`; nonexpansive ⟹ `dist`
-> > nonincreasing ⟹ top-rank `V_σ={0}` gives `(★)`. **Round-8 target = the rank-4 invariant-strip sublemma**
-> > (common invariant interval of radius poly(1/δ) on `K∩J^⊥`); LAST AI round on the rank-4 pivot, then HUMAN
-> > EXPERT. Refutation target: an admissible excursion family whose invariant set has super-poly radius (none
-> > found — the one explicit example's cylinder is bounded ⟹ mild positive evidence).
+> > nonincreasing ⟹ top-rank `V_σ={0}` gives `(★)`. **Round-8: rank 4 CLOSED (P13)** (contraction-or-zero-
+> > translation reset); the proposed (32) is a REGRESS (Round-2/3 core relabeled; circular). **OPEN CORE
+> > (rank ≥5 → HUMAN EXPERT):** the **cross-state invariant-cylinder cocycle** `A_B(C_σ)⊆C_τ`,
+> > `sup‖c‖≤poly(r,1/δ)` ≡ a quantitative no-accumulation-along-joint-neutral-directions theorem, degree
+> > independent of flag depth. Proven ranks ≤4 (rank-specific collapses); the multidimensional-survivor case
+> > (rank ≥5) is the genuine open problem. **Handoff:** `docs/HUMAN_EXPERT_HANDOFF.md`. The AI loop has circled
+> > this core since Round 2; → human expert (oriented-matroid galleries / projection-orbit cocycles). No-retreat.
 >
 > 🔴 `(★)` is ATTACKER-originated (web GPT-5.5-Pro), NOT Claude. Pivot trigger if refuted (TV provably
 > exponential at constant δ ⟹ truth is A-side). **Routing:** HS1 reduction rigorous (P4-upgrade) + Theorem 1
@@ -284,6 +310,7 @@ P3′. See `docs/round1_*`.)*
 | 2026-06-22 (Round 5) | ~75% (held) | Fresh-context attacker PARTIAL+WHERE (72% full lemma), both audits VALID. **rank ≤2 CLOSED (P11, saturated)** + all-word exp bound (D_exp, avoids dead route) + `(★)`⟺cocycle identity. Cocycle refutation probe NEGATIVE. Net: base case + sharp algebraic crux + clearest path (rank induction). Confidence held (positive structure vs deep step still unproven; N2 ⟹ induction must be history-dependent). |
 | 2026-06-22 (Round 6) | ~75% (held) | Fresh-thread PARTIAL+WHERE (97%), both audits VALID. **rank 3 CLOSED (P12, `√53/δ²`)** via survivor recurrence. But rank 3 is SPECIAL — general case first fails at rank 4 (multidimensional survivor), so it does NOT template r→r+1; crux = the rank-4 flag-holonomy core. Rank-4 drift still bounded numerically. Held: another base case + obstruction pinpointed, but the deep holonomy cancellation unproven and now known to be genuinely rank-4-new. |
 | 2026-06-22 (Round 7) | ~73% (↓2) | Both audits VALID (exact). The point-valued holonomy (our N5 conjecture) is REFUTED; `(★)` NOT refuted (bounded invariant cylinder ⟹ mild positive). Two-sided: the CLEAN mechanism (zero holonomy) is dead and the surviving set-valued cylinder is exactly where exp blow-up would hide if `(★)` false ⟹ small downward nudge (auditor ~70%). Round 8 = invariant-strip sublemma, LAST AI round before human expert. |
+| 2026-06-22 (Round 8) | ~72% (↓1) | **rank 4 CLOSED (P13)** — but the attacker's "slope exactly 0 / 99%" was FALSE-as-stated (orchestrator caught it; true: contraction-or-zero-translation, slope=1⟹a_B=0, 0/19607). General crux **(32) is a REGRESS** (Round-2/3 core relabeled, circular). Pattern = rank-specific collapses with the general bound receding ⟹ **ESCALATE TO HUMAN EXPERT** (gate b). Up: another base case closed; down: headline mechanism false-as-stated, regress, one-example-verified. |
 
 ---
 

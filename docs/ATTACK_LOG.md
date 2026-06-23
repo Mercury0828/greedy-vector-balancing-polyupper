@@ -28,7 +28,10 @@
 | 7 | 2026-06-22 | `docs/round7_brief.md` | dispatched (fresh thread) | Pivotal rank-4 flag-holonomy core: point-valued `b_B=(I−Q_B)c_{J,ω}`. |
 | 7 | 2026-06-22 | `docs/round7_response.md` | **PARTIAL+WHERE** (GPT-5.5-Pro, conf 98%) | REFUTES the point-cocycle (our ask): explicit rank-4 example, 2 excursions, same Q, `b_A≠b_B`. `(★)` NOT refuted (bounded invariant cylinder). Crux → set-valued invariant-cylinder. |
 | 7 | 2026-06-22 | `docs/round7_audit.md` + `code/round7_audit_checks.py` | **AUDITED — refutation CORRECT (exact)** | Numeric + analytic, sympy-confirmed. Freeze **N5** (point-cocycle dead = our own conjecture). Bounded hysteresis = mild positive. Conf 75→73%. ONE more AI round then human expert. |
-| 8 | 2026-06-22 | `docs/round8_brief.md` | **READY — awaiting owner relay to GPT-5.5-Pro (fresh thread); LAST AI round on rank-4 pivot** | The rank-4 invariant-strip sublemma: common invariant interval of radius poly(1/δ) on `K∩J^⊥`. If it resists → human expert. |
+| 8 | 2026-06-22 | `docs/round8_brief.md` | dispatched (fresh thread; last AI round on pivot) | rank-4 invariant-strip sublemma. |
+| 8 | 2026-06-22 | `docs/round8_response.md` | **CLOSED rank 4** (GPT-5.5-Pro, conf 99%) | Zero-slope reset; rank 4 closed; general crux proposed as (32). |
+| 8 | 2026-06-22 | `docs/round8_audit.md` + `code/round8_audit_checks.py` | **AUDITED — rank 4 genuinely closed (P13, CORRECTED); (32) = REGRESS; ESCALATE** | Numeric (0/19607 slope=1⟹a_B=0) + analytic. "slope exactly 0 / 99%" FALSE-as-stated (caught). (★) NOT reduced to (32). Conf 73→72%. |
+| — | 2026-06-22 | **`docs/HUMAN_EXPERT_HANDOFF.md`** | **HANDOFF READY (human gate b)** | Standalone open-core statement (cross-state invariant-cylinder cocycle, rank ≥5) + proven P1–P13/D_exp + dead routes N1–N5 + candidate machinery. **AI attack loop concluded.** |
 
 ## Stop criteria (guide §4) — AI convergence only when ALL hold
 1. solver explicitly claims closure of `(★)` + assembly, no further conditions;
