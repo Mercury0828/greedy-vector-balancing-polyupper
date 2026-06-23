@@ -1,0 +1,54 @@
+{
+  "ARR": {
+    "units": {
+      "a": 1.0,
+      "b": 1.0,
+      "c": 1.0,
+      "d": 1.0,
+      "e": 1.0
+    },
+    "delta_T": 0.359258,
+    "claim_sqrt(242/1875)": 0.359258,
+    "rank_J": 2,
+    "rank_K": 3,
+    "rank_E": 4,
+    "p0_signed_vals": {
+      "a": 1.0,
+      "b": 1.0,
+      "c": 5.4913,
+      "d": 1.4606,
+      "e": 3.4689
+    },
+    "p0_in_P_s0": true,
+    "||p0||": 6.1644
+  },
+  "MAPS": {
+    "Q_A==Q_B": 0.0,
+    "Q==proj_onto_n": 0.0,
+    "b_A_matches_eq7": 0.0,
+    "b_B_matches_eq7": 0.0,
+    "||b_A - b_B||": 0.515034,
+    "b_A!=b_B (no common c)": true,
+    "bA": [
+      1.0,
+      1.0,
+      0.7082,
+      0.9443
+    ],
+    "bB": [
+      1.0,
+      1.0,
+      1.0173,
+      1.3564
+    ]
+  },
+  "CYL": {
+    "m_coord_interval": [
+      0.2361,
+      0.3391
+    ],
+    "max_m_excursion_A": 0.0,
+    "max_m_excursion_B": 0.0,
+    "cylinder_invariant(both)": true
+  }
+}

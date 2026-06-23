@@ -7,6 +7,19 @@
 
 ## ▶ HEADLINE (latest status line on top)
 
+**2026-06-22 — ROUND 7 COMPLETE (audited). Point-cocycle REFUTED (our own conjecture, N5); crux is now
+set-valued (invariant-cylinder); confidence ~73%.** Fresh-thread GPT-5.5-Pro PARTIAL+WHERE (98%); both
+audits VALID (exact). NET: (i) **N5** — the orchestrator's Round-7 point-valued holonomy `b_B=(I−Q_B)c_{J,ω}`
+is **FALSE** (explicit constant-δ rank-4 example: two excursions, same `Q`, `b_A≠b_B` ⟹ no common `c_{J,ω}`);
+healthy self-correction by the loop. (ii) **`(★)` NOT refuted** — both maps keep a bounded **invariant
+cylinder** (bounded hysteresis, no drift) ⟹ mild POSITIVE evidence. (iii) Crux → **set-valued Polynomial
+invariant-cylinder theorem** / **rank-4 invariant-strip sublemma** (common invariant interval of radius
+poly(1/δ) on `K∩J^⊥`). **Round 8 = the invariant-strip sublemma — LAST AI round on the rank-4 pivot; if it
+resists → human expert** (oriented-matroid galleries / projection cocycles). **NOTHING frozen as "proved"
+beyond P11, P12, D_exp.**
+
+---
+
 **2026-06-22 — ROUND 6 COMPLETE (audited). rank 3 CLOSED; obstruction pinpointed at rank 4; confidence
 ~75% (held).** Fresh-thread GPT-5.5-Pro PARTIAL+WHERE (97%); both audits VALID. NET: (i) **P12** — rank 3
 fully CLOSED, `sup_j‖p_j‖ ≤ √53/δ² < 8/δ²` (degree 2 in 1/δ), admissible itineraries — via a plane-cluster
@@ -180,6 +193,11 @@ P3′. See `docs/round1_*`.)*
   δ_T=√(5/14)): margins force `(1−2c)Σw≥3` ⟹ `−½Σw≥3`, impossible (numeric LP infeasible + analytic VALID).
   ⇒ any HS1/HS2 proof MUST refine the chamber fan, vary the gradient inside chambers, or carry HISTORY. Does
   NOT refute `(★)`.
+- `N5` (refuted reduction 2026-06-22, Round-7; was the ORCHESTRATOR's own conjecture): the **point-valued
+  holonomy** `b_B=(I−Q_B)c_{J,ω}` (one common memory vector per `(J,ω)`). DEAD: explicit constant-δ rank-4
+  arrangement (`δ_T=√(242/1875)`) with two admissible closed excursions from the same `(J,ω)`, same linear
+  part `Q`, `b_A≠b_B` (verified exactly). ⟹ the return holonomy is bounded but NONZERO; must be **set-valued**
+  (invariant cylinder/strip), not a point coboundary. *Does NOT refute `(★)`* (the example's hysteresis is bounded).
 - `N4` (refuted approach 2026-06-22, Round-4): any **LOCAL per-switch payment** estimate (`positive dual
   jump ≤ poly·local radial/transition budget`), e.g. the radial-budget Lyapunov. DEAD: the `r/δ` ball is
   not projection-invariant (one adjacent projection escapes), and on a GENUINE constant-δ itinerary a switch
@@ -240,11 +258,13 @@ P3′. See `docs/round1_*`.)*
 > > rather than accumulate the `(1−β_k)^{-1}≍K^{2(k-1)}` factor. **`(★)` ⟺ this cocycle (route-equivalence).**
 > > Proven: rank ≤3 (P11 + **P12 rank 3, `√53/δ²`**); all-word exp ceiling (D_exp). **Round-6 finding: rank 3
 > > is SPECIAL (no survivor hides), the general case first fails at rank 4** (multidimensional survivor in
-> > `(J+L)^⊥`). Sharpest form = the **polynomial FLAG-HOLONOMY lemma** (flag-indexed `c_σ`). **Pivotal open
-> > case (Round-7): the rank-4 closed-excursion core** — excursions from a rank-2 `J`-cluster through rank-3
-> > superflats back to the same `J`-state have `b_B=(I−Q_B)c_{J,ω}`, `‖c_{J,ω}‖≤poly(1/δ)`; closing it likely
-> > templates general r. Refutation target: a repeatable admissible closed block with `‖(I−Q_B)^†b_B‖`
-> > super-poly (none found; probe ~r/δ).
+> > `(J+L)^⊥`). **Round-7: the point-valued holonomy (one `c_{J,ω}`) is REFUTED (N5)** — return holonomy is
+> > bounded but NONZERO ⟹ must be **SET-VALUED**. Sharpest form now = the **Polynomial INVARIANT-CYLINDER
+> > theorem**: compact convex `C_σ⊂V_σ^⊥`, `sup‖c‖≤poly`, `A_B(C_σ+V_σ)⊆C_τ+V_τ`; nonexpansive ⟹ `dist`
+> > nonincreasing ⟹ top-rank `V_σ={0}` gives `(★)`. **Round-8 target = the rank-4 invariant-strip sublemma**
+> > (common invariant interval of radius poly(1/δ) on `K∩J^⊥`); LAST AI round on the rank-4 pivot, then HUMAN
+> > EXPERT. Refutation target: an admissible excursion family whose invariant set has super-poly radius (none
+> > found — the one explicit example's cylinder is bounded ⟹ mild positive evidence).
 >
 > 🔴 `(★)` is ATTACKER-originated (web GPT-5.5-Pro), NOT Claude. Pivot trigger if refuted (TV provably
 > exponential at constant δ ⟹ truth is A-side). **Routing:** HS1 reduction rigorous (P4-upgrade) + Theorem 1
@@ -263,6 +283,7 @@ P3′. See `docs/round1_*`.)*
 | 2026-06-22 (Round 4) | ~75% (↑3) | GPT-Pro PARTIAL (97%), all math CORRECT (genuine progress). Obstruction localized to codim-≥2 clusters (P9/P10); N4 kills local payment; NC clean reformulation. **Decisive refutation hunt NEGATIVE** — `sup_j‖p_j‖` flat in N under cluster stress ⟹ the §3-chain accumulation does NOT happen ⟹ strong evidence DA/`(★)` TRUE. Tempered: proof absent (deep no-cusp theorem), numerics heuristic. Escalating to fresh attacker. |
 | 2026-06-22 (Round 5) | ~75% (held) | Fresh-context attacker PARTIAL+WHERE (72% full lemma), both audits VALID. **rank ≤2 CLOSED (P11, saturated)** + all-word exp bound (D_exp, avoids dead route) + `(★)`⟺cocycle identity. Cocycle refutation probe NEGATIVE. Net: base case + sharp algebraic crux + clearest path (rank induction). Confidence held (positive structure vs deep step still unproven; N2 ⟹ induction must be history-dependent). |
 | 2026-06-22 (Round 6) | ~75% (held) | Fresh-thread PARTIAL+WHERE (97%), both audits VALID. **rank 3 CLOSED (P12, `√53/δ²`)** via survivor recurrence. But rank 3 is SPECIAL — general case first fails at rank 4 (multidimensional survivor), so it does NOT template r→r+1; crux = the rank-4 flag-holonomy core. Rank-4 drift still bounded numerically. Held: another base case + obstruction pinpointed, but the deep holonomy cancellation unproven and now known to be genuinely rank-4-new. |
+| 2026-06-22 (Round 7) | ~73% (↓2) | Both audits VALID (exact). The point-valued holonomy (our N5 conjecture) is REFUTED; `(★)` NOT refuted (bounded invariant cylinder ⟹ mild positive). Two-sided: the CLEAN mechanism (zero holonomy) is dead and the surviving set-valued cylinder is exactly where exp blow-up would hide if `(★)` false ⟹ small downward nudge (auditor ~70%). Round 8 = invariant-strip sublemma, LAST AI round before human expert. |
 
 ---
 

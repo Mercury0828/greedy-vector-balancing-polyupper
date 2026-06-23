@@ -25,7 +25,10 @@
 | 6 | 2026-06-22 | `docs/round6_brief.md` | dispatched (fresh thread) | Rank induction r→r+1 (start rank 3). |
 | 6 | 2026-06-22 | `docs/round6_response.md` | **PARTIAL+WHERE** (GPT-5.5-Pro, conf 97%) | rank 3 CLOSED `sup<8/δ²`; argument first fails at rank 4 (multidimensional survivor); crux = flag-holonomy lemma. |
 | 6 | 2026-06-22 | `docs/round6_audit.md` + `code/round6_audit_checks.py` | **AUDITED — rank 3 CLOSED (8/8 VALID); rank-4 obstruction GENUINE** | Numeric + analytic. Freeze **P12** (rank 3, `√53/δ²`). Rank 3 special (no template). NH5 (gallery refinement). Conf held 75%. |
-| 7 | 2026-06-22 | `docs/round7_brief.md` | **READY — awaiting owner relay to GPT-5.5-Pro (fresh thread)** | The PIVOTAL rank-4 flag-holonomy core case: `b_B=(I−Q_B)c_{J,ω}` for closed rank-3-superflat excursions from a rank-2 J-cluster. |
+| 7 | 2026-06-22 | `docs/round7_brief.md` | dispatched (fresh thread) | Pivotal rank-4 flag-holonomy core: point-valued `b_B=(I−Q_B)c_{J,ω}`. |
+| 7 | 2026-06-22 | `docs/round7_response.md` | **PARTIAL+WHERE** (GPT-5.5-Pro, conf 98%) | REFUTES the point-cocycle (our ask): explicit rank-4 example, 2 excursions, same Q, `b_A≠b_B`. `(★)` NOT refuted (bounded invariant cylinder). Crux → set-valued invariant-cylinder. |
+| 7 | 2026-06-22 | `docs/round7_audit.md` + `code/round7_audit_checks.py` | **AUDITED — refutation CORRECT (exact)** | Numeric + analytic, sympy-confirmed. Freeze **N5** (point-cocycle dead = our own conjecture). Bounded hysteresis = mild positive. Conf 75→73%. ONE more AI round then human expert. |
+| 8 | 2026-06-22 | `docs/round8_brief.md` | **READY — awaiting owner relay to GPT-5.5-Pro (fresh thread); LAST AI round on rank-4 pivot** | The rank-4 invariant-strip sublemma: common invariant interval of radius poly(1/δ) on `K∩J^⊥`. If it resists → human expert. |
 
 ## Stop criteria (guide §4) — AI convergence only when ALL hold
 1. solver explicitly claims closure of `(★)` + assembly, no further conditions;

@@ -1,9 +1,9 @@
 # PROJECT_STATE — `greedy-vector-balancing-polyupper`
 
-**Last updated:** 2026-06-22 · **Current phase:** ATTACK LOOP — Round 6 COMPLETE & audited (**rank 3 CLOSED,
-P12, `√53/δ²`**; obstruction pinpointed at rank 4: multidimensional survivor). **Round-7 brief READY**
-(`docs/round7_brief.md`: the pivotal rank-4 flag-holonomy core case). Target = SODA 2027 (time waived).
-Confidence ~75%.
+**Last updated:** 2026-06-22 · **Current phase:** ATTACK LOOP — Round 7 COMPLETE & audited (our point-cocycle
+conjecture REFUTED → N5; `(★)` NOT refuted — bounded hysteresis; crux is now set-valued invariant-cylinder).
+**Round-8 brief READY** (`docs/round8_brief.md`: rank-4 invariant-strip sublemma — **LAST AI round on the
+rank-4 pivot before human-expert escalation**). Target = SODA 2027 (time waived). Confidence ~73%.
 **Role:** Claude = orchestrator/referee/archivist (NOT prover). Target: **SODA 2027** (deadline
 **2026-07-09 AoE**, lightweight double-blind — confirmed live 2026-06-21).
 
@@ -12,31 +12,30 @@ Confidence ~75%.
 ## ▶ COLD-START (read this first to resume)
 
 **One-liner:** Phase 0 done & GREEN; external-solver attack loop with **GPT-5.5-Pro** (owner-relayed).
-Rounds 1–6 = PARTIAL (all fully audited; all math correct). **rank ≤3 now CLOSED (P11, P12 `√53/δ²`)**; the
-general case first fails at rank 4 (multidimensional survivor); crux = the **flag-holonomy cocycle**. All
-numerics + refutation hunts support `(★)` TRUE. **Round-7 brief (pivotal rank-4 core) is written and waiting.**
+Rounds 1–7 = PARTIAL (all fully audited). **rank ≤3 CLOSED (P11, P12)**; the general case first fails at rank 4;
+Round 7 REFUTED the point-cocycle (set-valued holonomy / bounded hysteresis), so crux = the **invariant-cylinder
+theorem**. Numerics still support `(★)` TRUE (~73%). **Round-8 brief (rank-4 invariant-strip, LAST AI round
+before human expert) is written and waiting.**
 
 **Read in this order to rebuild context:** `guide.md` (read-only constitution) → this file →
 `LEDGER_polyupper.md` (frozen model/substrate/`(★)`/confidence) → `docs/ATTACK_LOG.md` (round index) →
 latest `docs/round{n}_*.md`. 🔴 Never work from memory; re-read these first.
 
-**THE NEXT ACTION (resume here):** owner relays **`docs/round7_brief.md`** (the `✂️` block) to GPT-5.5-Pro
-(continue the fresh thread) → pastes the reply back → Claude archives `docs/round7_response.md`, runs an
-independent audit (`docs/round7_audit.md`; 3 if closure claimed), classifies, updates confidence. No-retreat:
-escalate/attack harder, never downgrade. (If the pivotal rank-4 case resists a focused round → escalate to a
-human expert: oriented-matroid galleries / projection-orbit cocycles.)
+**THE NEXT ACTION (resume here):** owner relays **`docs/round8_brief.md`** (the `✂️` block) to GPT-5.5-Pro
+(continue the fresh thread) → pastes the reply back → Claude archives `docs/round8_response.md`, runs an
+independent audit (`docs/round8_audit.md`; 3 if closure claimed), classifies, updates confidence. 🔴 **Round 8
+is the LAST AI attacker round on the rank-4 pivot; if it neither builds the invariant interval nor pins a clean
+obstruction → ESCALATE TO A HUMAN EXPERT** (oriented-matroid galleries / projection-orbit cocycles). No-retreat:
+escalate, never downgrade.
 
-**Where the math stands (after Round 6):** `(★)` ⟺ the **polynomial FLAG-HOLONOMY cocycle** `b_B=c_τ−Q_B c_σ`
-(flag-indexed `c_σ`, fixed degree). **PROVEN now:** rank ≤2 (**P11**, `r/δ`) AND **rank 3 (P12, `√53/δ²`,
-degree 2)** fully closed; an all-word exp ceiling (**D_exp**). **KEY Round-6 finding:** rank 3 is SPECIAL (the
-`J^⊥` survivor can't hide because `J+L=E`) and does NOT template r→r+1; the general difficulty (the
-multidimensional survivor hiding in `(J+L)^⊥`) first appears at **rank 4**. **Pivotal open case (Round 7):
-the rank-4 flag-holonomy core** — closed admissible excursions from a rank-2 `J`-cluster through rank-3
-superflats back to the same `J`-state must have holonomy `b_B=(I−Q_B)c_{J,ω}`, `‖c_{J,ω}‖≤poly(1/δ)`; closing
-it likely templates general `r`. **Numerics strongly support TRUTH** (rank-4 drift still bounded/small; all
-refutation/cocycle probes NEGATIVE). Verified substrate (use freely): P1-sharp, P2/P2′, P6, P3′, P4-upgrade,
-P7, P8, P9, P10, NC, **P11** (rank≤2), **P12** (rank 3), **D_exp**. Refuted: N1–N4. Retracted: unit-WLOG.
-**Confidence (B-side true): ~75%.**
+**Where the math stands (after Round 7):** `(★)` ⟺ the **set-valued Polynomial INVARIANT-CYLINDER theorem**
+(`A_B(C_σ+V_σ)⊆C_τ+V_τ`, `sup‖c‖≤poly`; nonexpansive ⟹ top-rank `V_σ={0}` gives `(★)`). **PROVEN:** rank ≤2
+(**P11**, `r/δ`), **rank 3 (P12, `√53/δ²`)**, all-word exp ceiling (**D_exp**). **Round-7 finding:** the
+point-valued holonomy (one `c_{J,ω}`) is **REFUTED (N5)** — return holonomy is bounded but NONZERO ⟹ must be
+set-valued; the example's bounded invariant cylinder ⟹ `(★)` NOT refuted, mild POSITIVE. **Round-8 target =
+the rank-4 invariant-strip sublemma** (common invariant interval of radius poly(1/δ) on `K∩J^⊥`). Verified
+substrate (use freely): P1-sharp, P2/P2′, P6, P3′, P4-upgrade, P7, P8, P9, P10, NC, **P11**, **P12**, **D_exp**.
+Refuted: N1–N5. Retracted: unit-WLOG. **Confidence (B-side true): ~73%.**
 
 **Pending human items:** NH1 (κ_A≤1/δ_A proof in 2510.20301); NH2 (BV constants non-poly, confirmed); **NH3**
 (Betke-797 attribution); **NH4** (§1 `P_s⊆C_s+(r/δ)B_2` holds within `E=span T` only); P5 hand-proof audit.
@@ -103,16 +102,16 @@ handled (GREEN = "no death-evidence, attempt the proof", NOT "(★) likely true"
 
 - ✅ Owner rulings (2026-06-21): (1) GREEN — start attack loop, solver = **GPT-5.5-Pro** (relayed);
   (2) target **SODA 2027**, ignore time; (3) **HS2 = sole primary route**.
-- ✅ Rounds 1–6 done: GPT-Pro PARTIAL each → archived `docs/round{1..6}_response.md`; all audited (numeric +
-  fresh-agent) `docs/round{1..6}_audit.md`.
-- 🔴 **AWAITING OWNER:** relay `docs/round7_brief.md` to GPT-5.5-Pro (continue fresh thread). Paste reply back.
-  No-retreat: escalate/attack harder, never downgrade. (Rank-4 resists → human expert.)
-- Attack-loop state in `docs/ATTACK_LOG.md`. NEEDS-HUMAN: NH1–NH4; **NH5** (gallery refinement of simultaneous
-  crossings); P5 hand-proof audit.
+- ✅ Rounds 1–7 done: GPT-Pro PARTIAL each → archived `docs/round{1..7}_response.md`; all audited (numeric +
+  fresh-agent) `docs/round{1..7}_audit.md`.
+- 🔴 **AWAITING OWNER:** relay `docs/round8_brief.md` to GPT-5.5-Pro (fresh thread) — the LAST AI round on the
+  rank-4 pivot. Paste reply back. If it resists → human expert. No-retreat: escalate, never downgrade.
+- Attack-loop state in `docs/ATTACK_LOG.md`. NEEDS-HUMAN: NH1–NH5; the deep step = invariant-cylinder/strip
+  theorem (human-expert candidate). P5 hand-proof audit.
 - **Substrate gains (frozen):** R1 — P1-sharp, P2′, P6, P4-upgrade, P3′; R2 — **P7**; R3 — **P8**; R4 — **P9**,
-  **P10**, **NC**; R5 — **P11** (rank ≤2), **D_exp**; R6 — **P12** (rank 3, `√53/δ²`). **Open crux:** the
-  polynomial **flag-holonomy cocycle**; pivotal case = the rank-4 closed-excursion core. Rank 3 is special (no
-  template). Refuted: N1–N4. Retracted: unit-WLOG.
+  **P10**, **NC**; R5 — **P11** (rank ≤2), **D_exp**; R6 — **P12** (rank 3). **Open crux:** the set-valued
+  **invariant-cylinder theorem** (Round-8 = rank-4 invariant-strip sublemma). Refuted: N1–N5 (N5 = our own
+  point-cocycle conjecture, refuted R7). Retracted: unit-WLOG.
 - Re-confirm at submission / at convergence: SODA27 anonymity wording on live CFP (caveat C1); Lemma 1.4
   dimension bookkeeping S^{2d-1} (caveat C2); anchor v2/scoop re-scan.
 
@@ -128,3 +127,4 @@ handled (GREEN = "no death-evidence, attempt the proof", NOT "(★) likely true"
 | 2026-06-22 (Round 4) | ~75% (↑3) | GPT-Pro PARTIAL (97%), all math correct (genuine progress). Obstruction localized to codim-≥2 clusters (P9/P10); local payment dead (N4); NC reformulation. **Refutation hunt NEGATIVE** — `sup_j‖p_j‖` flat in N under cluster stress ⟹ §3-chain accumulation does NOT happen ⟹ evidence `(★)` TRUE. Tempered: deep no-cusp proof absent, numerics heuristic. Escalating to fresh attacker. |
 | 2026-06-22 (Round 5) | ~75% (held) | Fresh-context escalation paid off: rank ≤2 CLOSED (P11, saturated) + all-word exp bound (D_exp) + `(★)`⟺cocycle identity. Both audits VALID; cocycle probe NEGATIVE. Base case + sharp algebraic crux + clear path (rank induction). Held: positive structure vs deep coboundary step unproven (N2 ⟹ history-dependent). |
 | 2026-06-22 (Round 6) | ~75% (held) | rank 3 CLOSED (P12, `√53/δ²`, degree 2) via survivor recurrence; both audits VALID. But rank 3 is SPECIAL — general first fails at rank 4 (multidimensional survivor); crux = rank-4 flag-holonomy core. Rank-4 drift still bounded numerically. Held: another base case + obstruction pinpointed, deep holonomy step now known rank-4-new and unproven. |
+| 2026-06-22 (Round 7) | ~73% (↓2) | Both audits VALID (exact). Our point-cocycle conjecture REFUTED (N5); `(★)` NOT refuted (bounded invariant cylinder = mild positive). Two-sided: clean mechanism (zero holonomy) dead, surviving set-valued cylinder is where exp blow-up hides if `(★)` false ⟹ small downward nudge (auditor ~70%). Round 8 = invariant-strip, LAST AI round before human expert. |
